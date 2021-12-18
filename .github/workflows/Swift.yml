@@ -15,8 +15,8 @@ jobs:
     name: Build and Test
     strategy:
       matrix:
-        swift: '5.5'
-        os: ubuntu-latest
+        swift: [5.5]
+        os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
 
