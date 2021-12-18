@@ -15,6 +15,7 @@ class Parrot {
     
     var speed: Double {
         switch parrotType {
+
         case .european:
             return baseSpeed
             
