@@ -22,6 +22,10 @@ jobs:
         uses: fwal/setup-swift@v1
         with:
           swift-version: "5.5"
+      - name: display Version
+        run: |
+          swift --version
+          pwd
       - name: Build
         run: swift build
       - name: Run tests
