@@ -19,7 +19,7 @@ jobs:
       - name: checkout Project
         uses: actions/checkout@v2
       - name: Setup Swift
-        uses: fwal/setup-swift@master
+        uses: fwal/setup-swift@v1
         with:
           swift-version: "5.5"
       - name: Build
