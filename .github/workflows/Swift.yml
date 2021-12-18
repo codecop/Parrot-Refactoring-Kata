@@ -27,8 +27,12 @@ jobs:
           swift --version
           pwd
       - name: Build
-        run: swift build
+        working-directory: Swift
+        run: |
+          pwd
+          swift build
       - name: Run tests
+        working-directory: Swift
         run: swift test
       - name: Clean up
-        run: rm -rf .build/
+        run: rm -rf Swift/.build
