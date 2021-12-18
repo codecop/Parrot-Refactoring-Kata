@@ -1,6 +1,6 @@
-name: Test Swift
+name: Swift Test
 
-on:
+on: 
   push:
     paths:
       - 'Swift/**'
@@ -11,26 +11,13 @@ on:
       - '.github/workflows/Swift.yml'
 
 jobs:
-  test:
-    name: Build and Test
-    strategy:
-      matrix:
-        swift: [5.5]
-        os: [ubuntu-latest]
+  build:
 
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
 
     steps:
-    - name: Install Swift
-      uses: slashmo/install-swift@v0.1.0
-      with:
-        version: ${{ matrix.swift }}
-
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Build
-      run: xcodebuild clean build -workspace "project.xcworkspace"
-
-    - name: Run tests
-      run: xcodebuild clean test -workspace "project.xcworkspace"
+      - uses: actions/checkout@v2
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
