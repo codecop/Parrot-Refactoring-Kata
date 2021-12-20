@@ -14,18 +14,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
+    - name: Check out the repo
+      uses: actions/checkout@v2
 
-      - name: Setup Swift
-        uses: fwal/setup-swift@v1
-        with:
-          swift-version: "5.5"
+    - name: Setup Swift
+      uses: fwal/setup-swift@v1
+      with:
+        swift-version: "5.5"
 
-      - name: Build
-        working-directory: Swift
-        run: swift build
+    - name: Build
+      working-directory: Swift
+      run: swift build
 
-      - name: Test
-        working-directory: Swift
-        run: swift test
+    - name: Test
+      working-directory: Swift
+      run: swift test
