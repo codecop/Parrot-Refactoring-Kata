@@ -22,7 +22,7 @@ double Parrot::getSpeed() {
 }
 
 double Parrot::getBaseSpeed() {
-    return 12.0;
+    return 13.0;
 }
 
 double Parrot::getLoadFactor() {

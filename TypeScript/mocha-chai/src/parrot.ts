@@ -24,7 +24,7 @@ export class Parrot {
     }
 
     private getBaseSpeed(): number {
-        return 12;
+        return 13;
     }
 
     private getLoadFactor(): number {
