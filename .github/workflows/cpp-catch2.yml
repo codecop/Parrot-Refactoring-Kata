@@ -1,0 +1,32 @@
+name: Test Cpp Catch2
+
+on:
+  push:
+    paths:
+      - 'cpp/catch2/**'
+      - '.github/workflows/cpp-catch2.yml'
+  pull_request:
+    paths:
+      - 'cpp/catch2/**'
+      - '.github/workflows/cpp-catch2.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v2
+
+    - name: Build
+      working-directory: cpp/catch2
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        cmake --build .
+
+    - name: Test
+      working-directory: cpp/catch2
+      run: |
+        cd build
+        ctest

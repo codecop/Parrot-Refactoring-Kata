@@ -1,14 +1,14 @@
-name: Test TypeScript
+name: Test TypeScript Jest
 
 on:
   push:
     paths:
-      - 'TypeScript/**'
-      - '.github/workflows/TypeScript.yml'
+      - 'TypeScript/jest/**'
+      - '.github/workflows/TypeScript-jest.yml'
   pull_request:
     paths:
-      - 'TypeScript/**'
-      - '.github/workflows/TypeScript.yml'
+      - 'TypeScript/jest/**'
+      - '.github/workflows/TypeScript-jest.yml'
 
 jobs:
   build:
@@ -23,11 +23,11 @@ jobs:
         node-version: 15.x
 
     - name: Set up dependencies
-      working-directory: TypeScript
+      working-directory: TypeScript/jest
       run: npm install
 
     - name: Test
-      working-directory: TypeScript
+      working-directory: TypeScript/jest
       run: npm test
 
     - name: Report using branch name (dynamic, use for a pair on each branch)

@@ -1,0 +1,31 @@
+name: Test Swift
+
+on:
+  push:
+    paths:
+      - 'Swift/**'
+      - '.github/workflows/Swift.yml'
+  pull_request:
+    paths:
+      - 'Swift/**'
+      - '.github/workflows/Swift.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Setup Swift
+        uses: fwal/setup-swift@v1
+        with:
+          swift-version: "5.5"
+
+      - name: Build
+        working-directory: Swift
+        run: swift build
+
+      - name: Test
+        working-directory: Swift
+        run: swift test
