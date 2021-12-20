@@ -1,13 +1,13 @@
-name: Test TypeScript
+name: Test TypeScript Mocha
 
 on:
   push:
     paths:
-      - 'TypeScript/**'
+      - 'TypeScript/mocha-chai/**'
       - '.github/workflows/TypeScript-mocha-chai.yml'
   pull_request:
     paths:
-      - 'TypeScript/**'
+      - 'TypeScript/mocha-chai/**'
       - '.github/workflows/TypeScript-mocha-chai.yml'
 
 jobs:

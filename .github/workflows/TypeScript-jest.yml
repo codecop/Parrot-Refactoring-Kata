@@ -1,13 +1,13 @@
-name: Test TypeScript
+name: Test TypeScript Jest
 
 on:
   push:
     paths:
-      - 'TypeScript/**'
+      - 'TypeScript/jest/**'
       - '.github/workflows/TypeScript-jest.yml'
   pull_request:
     paths:
-      - 'TypeScript/**'
+      - 'TypeScript/jest/**'
       - '.github/workflows/TypeScript-jest.yml'
 
 jobs:

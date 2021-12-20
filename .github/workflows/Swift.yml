@@ -1,6 +1,6 @@
-name: Swift Test
+name: Test Swift
 
-on: 
+on:
   push:
     paths:
       - 'Swift/**'
@@ -12,21 +12,20 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-      - name: checkout Project
+      - name: Check out the repo
         uses: actions/checkout@v2
+
       - name: Setup Swift
         uses: fwal/setup-swift@v1
         with:
           swift-version: "5.5"
+
       - name: Build
         working-directory: Swift
         run: swift build
-      - name: Run tests
+
+      - name: Test
         working-directory: Swift
         run: swift test
-      - name: Clean up
-        run: rm -rf Swift/.build
