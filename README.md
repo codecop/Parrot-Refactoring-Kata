@@ -10,6 +10,7 @@ See [slides](https://www.slideshare.net/pkofler/coding-dojo-baby-steps-push-chal
 
 * C
 * Clojure
+* cpp (gtest and catch2)
 * Crystal
 * CSharp
 * Go
@@ -22,15 +23,15 @@ See [slides](https://www.slideshare.net/pkofler/coding-dojo-baby-steps-push-chal
 * Ruby
 * Rust
 * Scala
-* TypeScript
+* Swift
+* TypeScript (Mocha and Jest)
 
 ### NOT Supported
 
-* cpp
 * Objective-C
 * Pascal
 * Scheme
-* Swift
+* XSLT
 
 ## Parrot Refactoring Kata
 
