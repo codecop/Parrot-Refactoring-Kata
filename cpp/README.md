@@ -14,3 +14,4 @@ To install CMake (if you don't use CLion) on macOS using brew
     brew install cmake
 
 Tested on CMake 3.15.3 (included with CLion 2019.3) on 	macOS
+ 
