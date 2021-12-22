@@ -26,9 +26,8 @@ private:
     double voltage;
     bool isNailed;
 
-    double getBaseSpeed(double voltage);
+	double getBaseSpeed(double voltage);
     double getLoadFactor();
-    double getBaseSpeed();
 };
 
 
