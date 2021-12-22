@@ -7,7 +7,7 @@ class EuropeanParrot : public Parrot {
 public:
 	EuropeanParrot();
 
-	double getSpeed();
+	double getSpeed() override;
 };
 
 
