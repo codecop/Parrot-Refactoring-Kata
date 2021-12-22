@@ -28,6 +28,7 @@ class ParrotAfrican : public ParrotBase
 	int numberOfCoconuts;
 public:
 	ParrotAfrican(int numberOfCoconuts);
+
 	virtual double getSpeed() override;
 };
 
