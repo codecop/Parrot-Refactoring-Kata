@@ -3,7 +3,8 @@
 
 class Parrot {
 public:
-	virtual double getSpeed();
+	virtual double getSpeed() = 0;
+
 protected:
 
 	enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };

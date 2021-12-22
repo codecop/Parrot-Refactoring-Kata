@@ -8,12 +8,6 @@ using namespace std;
 Parrot::Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
     : parrotType(parrotType), numberOfCoconuts(numberOfCoconuts), voltage(voltage), isNailed(isNailed) {}
 
-double Parrot::getSpeed() {
-    switch (parrotType) {
-    default:
-        throw std::invalid_argument("Should be unreachable");
-    }
-}
 
 double Parrot::getBaseSpeed() {
     return 12.0;
