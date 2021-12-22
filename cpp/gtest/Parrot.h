@@ -47,5 +47,11 @@ private:
     double getLoadFactor();
 };
 
+class NorwegianBlueParrot
+    : public Parrot
+{
+public:
+    using Parrot::Parrot;
+};
 
 #endif //PARROT_PARROT_H
