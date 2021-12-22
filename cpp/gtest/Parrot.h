@@ -9,7 +9,7 @@ protected:
 
 	enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };
 
-    Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
+    Parrot(int numberOfCoconuts, double voltage, bool isNailed);
 
 	int numberOfCoconuts;
 
