@@ -12,7 +12,7 @@ double Parrot::getBaseSpeed() {
     return 12.0;
 }
 
-EuropeanParrot::EuropeanParrot() : Parrot()
+EuropeanParrot::EuropeanParrot()
 {
 
 }
