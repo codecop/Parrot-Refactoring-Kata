@@ -8,6 +8,8 @@ class Parrot
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
+    static Parrot ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
+
     double getSpeed();
     ParrotType GetParrotType();
 private:
