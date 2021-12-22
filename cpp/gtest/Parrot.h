@@ -32,6 +32,7 @@ public:
     double getSpeed() override;
 
 private:
+    static constexpr double DefaultLoadFactor = 9.0;
     int numberOfCoconuts;
 
     double getLoadFactor();

@@ -26,7 +26,7 @@ double AfricanParrot::getSpeed()
 }
 
 double AfricanParrot::getLoadFactor() {
-    return 9.0;
+    return DefaultLoadFactor;
 }
 
 
