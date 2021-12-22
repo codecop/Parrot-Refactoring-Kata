@@ -2,10 +2,7 @@
 
 #include <memory>
 
-using namespace std;
-
 #include "Parrot.h"
-
 
 TEST(ParrotTest, SpeedOfEuropeanParrot) {
     auto parrot = std::make_unique<EuropeanParrot>();
