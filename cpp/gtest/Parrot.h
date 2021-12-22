@@ -38,12 +38,11 @@ public:
 	virtual double getSpeed();
 private:
     ParrotType parrotType;
-    int numberOfCoconuts;
+	int numberOfCoconuts;
     double voltage;
     bool isNailed;
 
 	double getBaseSpeed(double voltage);
-    double getLoadFactor();
 };
 
 

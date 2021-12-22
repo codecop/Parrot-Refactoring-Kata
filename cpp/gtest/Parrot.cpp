@@ -17,10 +17,6 @@ double Parrot::getSpeed() {
     }
 }
 
-double Parrot::getLoadFactor() {
-    return 9.0;
-}
-
 double Parrot::getBaseSpeed(double current_voltage) {
     return min(24.0, current_voltage * ParrotBase::getSpeed());
 }
