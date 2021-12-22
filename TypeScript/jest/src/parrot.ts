@@ -34,6 +34,8 @@ export class Parrot {
         return new AfricanParrot(this.numberOfCoconuts).getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
         return new NorwegianBlueParrot(this.voltage, this.isNailed).getSpeed();
+    default:
+        return this.MIN_SPEED;
     }
   }
 
