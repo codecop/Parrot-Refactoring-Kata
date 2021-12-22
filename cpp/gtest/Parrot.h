@@ -21,6 +21,19 @@ public:
 	virtual double getSpeed() override;
 };
 
+class ParrotAfrican : public ParrotBase
+{
+	int numberOfCoconuts;
+	double getLoadFactor()
+	{
+		return 9.0;
+	}
+
+public:
+	ParrotAfrican(int numberOfCoconuts);
+	virtual double getSpeed() override;
+};
+
 class Parrot : public ParrotBase {
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
