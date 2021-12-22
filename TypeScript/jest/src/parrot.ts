@@ -31,13 +31,15 @@ export class Parrot {
       case ParrotTypes.EUROPEAN:
         return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
-        const africanParrot = new AfricanParrot()
+        const africanParrot = new AfricanParrot();
         return Math.max(
           this.MIN_SPEED,
           this.BASE_SPEED - this.LOAD_FACTOR * this.numberOfCoconuts
         );
       case ParrotTypes.NORWEGIAN_BLUE:
-        return this.isNailed ? this.MIN_SPEED : this.getBaseSpeedWithVoltage(this.voltage);
+        return this.isNailed
+          ? this.MIN_SPEED
+          : this.getBaseSpeedWithVoltage(this.voltage);
     }
   }
 
@@ -47,17 +49,24 @@ export class Parrot {
 }
 
 class EuropeanParrot extends Parrot {
-    constructor() {
-        super(ParrotTypes.EUROPEAN, 0, 0, false);
-    }
+  constructor() {
+    super(ParrotTypes.EUROPEAN, 0, 0, false);
+  }
 
-    public getSpeed(): number {
-        return this.BASE_SPEED;
-    }
+  public getSpeed(): number {
+    return this.BASE_SPEED;
+  }
 }
 
 class AfricanParrot extends Parrot {
-    constructor() {
-        super(ParrotTypes.AFRICAN, 0, 0, false);
-    }
+  constructor() {
+    super(ParrotTypes.AFRICAN, 0, 0, false);
+  }
+
+  public getSpeed(): number {
+    return Math.max(
+      this.MIN_SPEED,
+      this.BASE_SPEED - this.LOAD_FACTOR * this.numberOfCoconuts
+    );
+  }
 }
