@@ -20,8 +20,6 @@ protected:
 	bool isNailed;
 
 	double getBaseSpeed(double voltage);
-private:
-    ParrotType parrotType;
 };
 
 class EuropeanParrot : public Parrot {
