@@ -25,10 +25,6 @@ export class Parrot {
     this.voltage = voltage;
     this.isNailed = isNailed;
   }
-
-  protected getBaseSpeedWithVoltage(voltage: number): number {
-    return Math.min(24, voltage * this.BASE_SPEED);
-  }
 }
 
 export class EuropeanParrot extends Parrot {
