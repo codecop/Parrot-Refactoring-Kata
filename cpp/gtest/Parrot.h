@@ -1,8 +1,6 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { NORWEGIAN_BLUE};
-
 class IParrot
 {
 public:
@@ -12,7 +10,7 @@ public:
 class ParrotBase : public IParrot
 {
 public:
-	virtual double getSpeed();
+	virtual double getSpeed() override;
 };
 
 class ParrotEuropean : public ParrotBase
