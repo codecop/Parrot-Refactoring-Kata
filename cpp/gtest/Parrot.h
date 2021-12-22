@@ -36,4 +36,10 @@ public:
     AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed);
 };
 
+class NorwegianBlueParrot : public Parrot
+{
+public:
+    NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed);
+};
+
 #endif //PARROT_PARROT_H
