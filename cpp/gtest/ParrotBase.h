@@ -5,11 +5,10 @@
 
 class ParrotBase {
 public:
-    ParrotBase(ParrotType parrotType, bool isNailed);
+    ParrotBase(ParrotType parrotType);
 
 private:
     ParrotType parrotType;
-	bool isNailed;
 
 protected:
     const double baseSpeed = 12.0;

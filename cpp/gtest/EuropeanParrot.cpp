@@ -6,7 +6,7 @@
 using namespace std;
 
 EuropeanParrot::EuropeanParrot()
-: ParrotBase(EUROPEAN,false) {}
+: ParrotBase(EUROPEAN) {}
 
 
 double EuropeanParrot::getSpeed() {

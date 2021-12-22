@@ -5,7 +5,7 @@
 
 using namespace std;
 
-ParrotBase::ParrotBase(ParrotType parrotType,  bool isNailed)
-: parrotType(parrotType),  isNailed(isNailed) {}
+ParrotBase::ParrotBase(ParrotType parrotType)
+: parrotType(parrotType) {}
 
 
