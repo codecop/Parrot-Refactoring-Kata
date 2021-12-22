@@ -25,7 +25,7 @@ double Parrot::getSpeed()
 
 static Parrot ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
 {
-    throw std::invalid_argument("Should be unreachable");
+    return Parrot (parrotType, numberOfCoconuts, voltage, isNailed);
 }
 
 ParrotType Parrot::GetParrotType()
