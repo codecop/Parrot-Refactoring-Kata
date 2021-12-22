@@ -10,6 +10,9 @@ public:
 
     virtual double getSpeed();
 
+protected:
+    double getBaseSpeed();
+
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
@@ -18,7 +21,6 @@ private:
 
     double getBaseSpeed(double voltage);
     double getLoadFactor();
-    double getBaseSpeed();
 };
 
 class EuropeanParrot
@@ -26,6 +28,8 @@ class EuropeanParrot
 {
 public:
     using Parrot::Parrot;
+
+    double getSpeed() override;
 };
 
 
