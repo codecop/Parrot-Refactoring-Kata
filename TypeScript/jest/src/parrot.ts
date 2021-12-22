@@ -31,7 +31,7 @@ export class Parrot {
       case ParrotTypes.EUROPEAN:
         return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
-        return new AfricanParrot(this.numberOfCoconuts).getSpeed();
+        // return new AfricanParrot(this.numberOfCoconuts).getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
         // return new NorwegianBlueParrot(this.voltage, this.isNailed).getSpeed();
     default:
