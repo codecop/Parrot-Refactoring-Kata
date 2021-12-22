@@ -43,6 +43,9 @@ private:
 class Parrot {
 public:
 	Parrot(SpeedStrategy* speedStrategy);
+
+private:
+	SpeedStrategy* m_speedStrategy;
 };
 
 
