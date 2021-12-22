@@ -4,10 +4,10 @@
 
 class Parrot {
 public:
-    Parrot() {};
-    virtual double getSpeed() = 0;
+	Parrot() = default;
+	virtual double getSpeed() = 0;
 protected:
-    const double baseSpeed = 12.0;
+	const double baseSpeed = 12.0;
 
 };
 
