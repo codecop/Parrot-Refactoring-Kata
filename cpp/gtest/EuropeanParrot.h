@@ -1,9 +1,9 @@
 #ifndef EUROPEANPARROT_PARROT_H
 #define EUROPEANPARROT_PARROT_H
 
-#include "Parrot.h"
+#include "ParrotBase.h"
 
-class EuropeanParrot : public Parrot {
+class EuropeanParrot : public ParrotBase {
 public:
     EuropeanParrot();
 

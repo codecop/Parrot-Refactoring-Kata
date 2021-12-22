@@ -1,7 +1,7 @@
-#ifndef PARROT_PARROT_H
-#define PARROT_PARROT_H
+#ifndef PARROTBASE_PARROT_H
+#define PARROTBASE_PARROT_H
 
-enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE};
+#include "Parrot.h"
 
 class ParrotBase {
 public:
