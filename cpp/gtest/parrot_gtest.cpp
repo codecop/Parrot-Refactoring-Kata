@@ -5,36 +5,36 @@
 #include "Parrot.h"
 
 TEST(ParrotTest, SpeedOfEuropeanParrot) {
-    auto parrot = std::make_unique<EuropeanParrot>();
+    auto parrot = std::unique_ptr<EuropeanParrot>(new EuropeanParrot{});
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_One_Coconut) {
-    auto parrot = std::make_unique<AfricanParrot>(1);
+    auto parrot = std::unique_ptr<AfricanParrot>(new AfricanParrot{ 1 });
     EXPECT_NEAR(3.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_Two_Coconuts) {
-    auto parrot = std::make_unique<AfricanParrot>(2);
+    auto parrot = std::unique_ptr<AfricanParrot>(new AfricanParrot{ 2 });
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
-    auto parrot = std::make_unique<AfricanParrot>(0);
+    auto parrot = std::unique_ptr<AfricanParrot>(new AfricanParrot{ 0 });
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
-    auto parrot = std::make_unique<NorwegianBlueParrot>(1.5, true);
+    auto parrot = std::unique_ptr<NorwegianBlueParrot>(new NorwegianBlueParrot{ 1.5, true });
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed) {
-    auto parrot = std::make_unique<NorwegianBlueParrot>(1.5, false);
+    auto parrot = std::unique_ptr<NorwegianBlueParrot>(new NorwegianBlueParrot{ 1.5, false });
     EXPECT_NEAR(18.0, parrot->getSpeed(), 0.0);
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed_high_voltage) {
-    auto parrot = std::make_unique<NorwegianBlueParrot>(4, false);
+    auto parrot = std::unique_ptr<NorwegianBlueParrot>(new NorwegianBlueParrot{ 4, false });
     EXPECT_NEAR(24.0, parrot->getSpeed(), 0.0);
 }
