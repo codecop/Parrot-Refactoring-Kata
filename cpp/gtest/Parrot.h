@@ -12,13 +12,6 @@ public:
 
 protected:
     double getBaseSpeed();
-
-private:
-    ParrotType parrotType{ DERIVED };
-    int numberOfCoconuts{ 0 };
-    double voltage{ 0. };
-    bool isNailed{ false };
-
 };
 
 class EuropeanParrot
