@@ -36,7 +36,7 @@ TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed) {
-    auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 1.5, false);
+    auto parrot = Parrot::ParrotFactory(NORWEGIAN_BLUE, 0, 1.5, false);
     EXPECT_NEAR(18.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
