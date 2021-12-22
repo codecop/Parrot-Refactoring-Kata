@@ -12,7 +12,6 @@ protected:
 	int numberOfCoconuts;
 
 	double getBaseSpeed();
-	double getLoadFactor();
 
 	double voltage;
 	bool isNailed;
@@ -32,6 +31,8 @@ public:
     AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed);
 
     virtual double getSpeed() override;
+private:
+	double getLoadFactor();
 };
 
 class NorwegianBlueParrot : public Parrot {
