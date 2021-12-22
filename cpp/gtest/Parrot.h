@@ -1,6 +1,10 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
+class Parrot {
+
+};
+
 class SpeedStrategy {
 public:
 	virtual double getSpeed() = 0;
