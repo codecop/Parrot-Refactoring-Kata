@@ -1,9 +1,9 @@
-#include <stdexcept>
 #include <algorithm>
 
 #include "Parrot.h"
 
-double Parrot::getBaseSpeed() const {
+double Parrot::getBaseSpeed() const
+{
     return DefaultBaseSpeed;
 }
 
@@ -38,7 +38,8 @@ double NorwegianBlueParrot::getSpeed() const
     return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
 
-double NorwegianBlueParrot::getBaseSpeed(const double currentVoltage) const {
+double NorwegianBlueParrot::getBaseSpeed(const double currentVoltage) const
+{
     static constexpr double MaximumBaseSpeed = 24.0;
     const double voltageBasedSpeed = currentVoltage * Parrot::getBaseSpeed();
     return std::min(MaximumBaseSpeed, voltageBasedSpeed);
