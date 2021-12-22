@@ -19,5 +19,8 @@ private:
     double getBaseSpeed();
 };
 
+class EuropeanParrot : public Parrot {
+    EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+};
 
 #endif //PARROT_PARROT_H
