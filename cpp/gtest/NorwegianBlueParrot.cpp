@@ -6,3 +6,7 @@ NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : Parrot
 {
 
 }
+
+double NorwegianBlueParrot::getSpeed() {
+	return (isNailed) ? 0 : getBaseSpeed(voltage);
+}

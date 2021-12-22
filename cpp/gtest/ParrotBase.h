@@ -10,12 +10,12 @@ public:
     virtual double getSpeed();
 private:
     ParrotType parrotType;
-
-    double getBaseSpeed(double voltage);
-protected:
-    const double baseSpeed = 12.0;
 	double voltage;
 	bool isNailed;
+
+protected:
+    const double baseSpeed = 12.0;
+	double getBaseSpeed(double voltage);
 };
 
 
