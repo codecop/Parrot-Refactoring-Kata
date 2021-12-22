@@ -1,7 +1,7 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { AFRICAN, NORWEGIAN_BLUE};
+enum ParrotType { NORWEGIAN_BLUE};
 
 class IParrot
 {
