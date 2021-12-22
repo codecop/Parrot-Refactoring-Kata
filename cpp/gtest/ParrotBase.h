@@ -5,11 +5,10 @@
 
 class ParrotBase {
 public:
-    ParrotBase(ParrotType parrotType, double voltage, bool isNailed);
+    ParrotBase(ParrotType parrotType, bool isNailed);
 
 private:
     ParrotType parrotType;
-	double voltage;
 	bool isNailed;
 
 protected:
