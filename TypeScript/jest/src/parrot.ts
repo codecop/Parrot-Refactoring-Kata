@@ -66,3 +66,9 @@ class AfricanParrot extends Parrot {
     );
   }
 }
+
+class NorwegianBlueParrot extends Parrot {
+  constructor() {
+    super(ParrotTypes.NORWEGIAN_BLUE, 0, 0, false);
+  }
+}
