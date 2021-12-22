@@ -6,7 +6,7 @@
 using namespace std;
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
-: ParrotBase(AFRICAN, numberOfCoconuts,0,false) {}
+: ParrotBase(AFRICAN, 0,false), numberOfCoconuts(numberOfCoconuts) {}
 
 
 

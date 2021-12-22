@@ -5,7 +5,7 @@
 
 class ParrotBase {
 public:
-    ParrotBase(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
+    ParrotBase(ParrotType parrotType, double voltage, bool isNailed);
 
     virtual double getSpeed();
 private:
@@ -16,7 +16,6 @@ private:
     double getBaseSpeed(double voltage);
 protected:
     const double baseSpeed = 12.0;
-	int numberOfCoconuts;
 };
 
 
