@@ -27,7 +27,7 @@ FetchContent_Declare(
         GIT_SHALLOW    1
 )
 FetchContent_MakeAvailable(ApprovalTests)
-target_compile_options(ApprovalTests PRIVATE -Wno-attributes)
+target_compile_options(ApprovalTests PRIVATE)
 
 # GoogleTest
 FetchContent_Declare(
