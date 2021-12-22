@@ -47,3 +47,6 @@ double Parrot::getBaseSpeed(double current_voltage)
 {
     return min(24.0, current_voltage * getBaseSpeed());
 }
+
+EuropeanParrot::EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed)
+    : Parrot(ParrotType::EUROPEAN, numberOfCoconuts, voltage, isNailed){}

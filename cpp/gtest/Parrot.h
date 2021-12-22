@@ -10,7 +10,7 @@ public:
 
     double getSpeed();
     ParrotType GetParrotType();
-private:
+protected:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
     ParrotType parrotType;
