@@ -29,7 +29,7 @@ export class Parrot {
   public getSpeed(): number {
     switch (this.parrotType) {
       case ParrotTypes.EUROPEAN:
-        return new EuropeanParrot().getSpeed();
+        // return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
         // return new AfricanParrot(this.numberOfCoconuts).getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
