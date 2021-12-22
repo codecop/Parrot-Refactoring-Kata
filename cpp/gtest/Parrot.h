@@ -7,7 +7,7 @@ class Parrot {
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
-    double getSpeed();
+    virtual double getSpeed();
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
@@ -16,6 +16,7 @@ private:
 
     double getBaseSpeed(double voltage);
     const double loadFactor = 9.0;
+protected:
     const double baseSpeed = 12.0;
 };
 

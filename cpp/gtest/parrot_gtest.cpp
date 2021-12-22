@@ -3,12 +3,18 @@
 using namespace std;
 
 #include "Parrot.h"
-
+#include "EuropeanParrot.h"
 
 TEST(ParrotTest, SpeedOfEuropeanParrot) {
     auto *parrot = new Parrot(EUROPEAN, 0, 0, false);
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
     delete parrot;
+}
+
+TEST(ParrotTest, NewSpeedOfEuropeanParrot) {
+	auto* parrot = new EuropeanParrot(0, 0, false);
+	EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
+	delete parrot;
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_One_Coconut) {
