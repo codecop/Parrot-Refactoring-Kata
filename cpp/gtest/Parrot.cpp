@@ -25,7 +25,17 @@ double Parrot::getSpeed()
 
 Parrot* Parrot::ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
 {
-    return new Parrot (parrotType, numberOfCoconuts, voltage, isNailed);
+    switch (parrotType)
+    {
+    case EUROPEAN:
+        return new EuropeanParrot(numberOfCoconuts, voltage, isNailed);
+    case AFRICAN:
+        return new AfricanParrot(numberOfCoconuts, voltage, isNailed);
+    case NORWEGIAN_BLUE:
+        return new NorwegianBlueParrot(numberOfCoconuts, voltage, isNailed);
+    default:
+        throw std::invalid_argument("Should be unreachable");
+    }
 }
 
 double Parrot::getBaseSpeed()
