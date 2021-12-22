@@ -10,8 +10,8 @@ project(Parrot VERSION 1.0
 enable_testing()
 
 set(SRC_LIB_NAME .)
-set(SOURCES Parrot.cpp EuropeanParrot.cpp)
-add_library(${SRC_LIB_NAME} ${SOURCES})
+set(SOURCES Parrot.cpp EuropeanParrot.cpp ParrotBase.cpp)
+add_library(${SRC_LIB_NAME} ${SOURCES} "ParrotBase.cpp")
 target_sources(${SRC_LIB_NAME} PRIVATE ${SOURCES})
 target_include_directories(${SRC_LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
@@ -40,7 +40,7 @@ FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
 add_executable(${TEST_NAME})
-target_sources(${TEST_NAME} PRIVATE ${SOURCE_FILES})
+target_sources(${TEST_NAME} PRIVATE ${SOURCE_FILES} "ParrotBase.cpp")
 target_link_libraries(${TEST_NAME} ${SRC_LIB_NAME} gtest ApprovalTests::ApprovalTests)
 set_property(TARGET ${TEST_NAME} PROPERTY CXX_STANDARD 11)
 gtest_discover_tests(${TEST_NAME})
