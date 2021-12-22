@@ -54,3 +54,7 @@ NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, b
 {
 
 }
+
+double NorwegianBlueParrot::getSpeed() {
+    return Parrot::getSpeed();
+}

@@ -40,6 +40,8 @@ public:
 class NorwegianBlueParrot : public Parrot {
 public:
     NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed);
+
+	virtual double getSpeed() override;
 };
 
 #endif //PARROT_PARROT_H
