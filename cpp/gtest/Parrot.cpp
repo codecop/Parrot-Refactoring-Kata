@@ -15,30 +15,26 @@ double ParrotBase::getSpeed()
 	return 12.0;
 }
 
-double ParrotEuropean::getSpeed()
-{
-    return ParrotBase::getSpeed();
-}
-
 double ParrotAfrican::getLoadFactor()
 {
 	return 9.0;
 }
 
-ParrotAfrican::ParrotAfrican(int numberOfCoconuts) : numberOfCoconuts(numberOfCoconuts)
-{
-
-}
+ParrotAfrican::ParrotAfrican(int numberOfCoconuts) : numberOfCoconuts(numberOfCoconuts) {}
 
 double ParrotAfrican::getSpeed()
 {
-    return max(0.0, ParrotBase::getSpeed() - getLoadFactor() * numberOfCoconuts);
+    return max(0.0, baseSpeed - getLoadFactor() * numberOfCoconuts);
 }
 
 ParrotNorwegianBlue::ParrotNorwegianBlue(double voltage, bool isNailed) : voltage(voltage), isNailed(isNailed) {}
 
 double ParrotNorwegianBlue::getSpeed()
 {
-    return (isNailed) ? 0 : min(24.0, voltage * ParrotBase::getSpeed());
+    return (isNailed) ? 0 : min(24.0, voltage * baseSpeed);
 }
 
+double ParrotEuropean::getSpeed()
+{
+	return baseSpeed;
+}

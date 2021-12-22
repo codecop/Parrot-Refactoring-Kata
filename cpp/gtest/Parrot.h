@@ -9,6 +9,8 @@ public:
 
 class ParrotBase : public IParrot
 {
+protected:
+	const double baseSpeed = 12.0;
 public:
 	virtual double getSpeed() override;
 };
