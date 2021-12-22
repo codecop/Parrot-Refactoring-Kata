@@ -16,8 +16,8 @@ protected:
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
-protected:
     double voltage;
+protected:
     bool isNailed;
 
 };
@@ -57,6 +57,7 @@ public:
 
 private:
     double getBaseSpeed(double voltage);
+    double voltage;
 };
 
 #endif //PARROT_PARROT_H
