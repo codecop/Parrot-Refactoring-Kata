@@ -7,7 +7,7 @@ public:
 
 protected:
 
-    Parrot(double voltage);
+    Parrot();
 
 	double getBaseSpeed();
 
