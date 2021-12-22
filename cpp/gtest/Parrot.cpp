@@ -10,22 +10,6 @@ double IParrot::getSpeed()
 	throw std::invalid_argument("Should be unreachable");
 }
 
-Parrot::Parrot(ParrotType parrotType, double voltage, bool isNailed)
-: parrotType(parrotType), voltage(voltage), isNailed(isNailed) {}
-
-double Parrot::getSpeed() {
-    switch (parrotType) {
-        case NORWEGIAN_BLUE:
-            return (isNailed) ? 0 : getBaseSpeed(voltage);
-        default:
-            throw std::invalid_argument("Should be unreachable");
-    }
-}
-
-double Parrot::getBaseSpeed(double current_voltage) {
-    return min(24.0, current_voltage * ParrotBase::getSpeed());
-}
-
 double ParrotBase::getSpeed()
 {
 	return 12.0;

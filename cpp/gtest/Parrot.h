@@ -43,19 +43,4 @@ private:
 	double getBaseSpeed(double voltage);
 };
 
-
-class Parrot : public ParrotBase {
-public:
-    Parrot(ParrotType parrotType, double voltage, bool isNailed);
-
-	virtual double getSpeed();
-private:
-    ParrotType parrotType;
-    double voltage;
-    bool isNailed;
-
-	double getBaseSpeed(double voltage);
-};
-
-
 #endif //PARROT_PARROT_H
