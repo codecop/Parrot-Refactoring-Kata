@@ -2,7 +2,6 @@
 #include <algorithm>
 
 #include "EuropeanParrot.h"
-using namespace std;
 
 EuropeanParrot::EuropeanParrot()
 	: Parrot() {}
