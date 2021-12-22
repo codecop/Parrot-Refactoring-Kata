@@ -15,8 +15,8 @@ private:
     bool isNailed;
 
     double getBaseSpeed(double voltage);
-    double loadFactor = 9.0;
-    double baseSpeed = 12.0;
+    const double loadFactor = 9.0;
+    const double baseSpeed = 12.0;
 };
 
 
