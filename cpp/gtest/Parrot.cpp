@@ -5,6 +5,11 @@
 
 using namespace std;
 
+double IParrot::getSpeed()
+{
+	throw std::invalid_argument("Should be unreachable");
+}
+
 Parrot::Parrot(ParrotType parrotType, double voltage, bool isNailed)
 : parrotType(parrotType), voltage(voltage), isNailed(isNailed) {}
 

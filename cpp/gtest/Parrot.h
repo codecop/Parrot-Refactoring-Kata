@@ -6,7 +6,7 @@ enum ParrotType { NORWEGIAN_BLUE};
 class IParrot
 {
 public:
-	virtual double getSpeed() = 0;
+	virtual double getSpeed();
 };
 
 class ParrotBase : public IParrot
