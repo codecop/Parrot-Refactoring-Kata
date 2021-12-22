@@ -15,12 +15,12 @@ protected:
 	double getBaseSpeed();
 	double getLoadFactor();
 
+	double voltage;
+	bool isNailed;
+
+	double getBaseSpeed(double voltage);
 private:
     ParrotType parrotType;
-    double voltage;
-    bool isNailed;
-
-    double getBaseSpeed(double voltage);
 };
 
 class EuropeanParrot : public Parrot {
