@@ -5,9 +5,9 @@
 using namespace std;
 
 EuropeanParrot::EuropeanParrot()
-: Parrot() {}
+	: Parrot() {}
 
 
 double EuropeanParrot::getSpeed() {
-            return baseSpeed;
+	return baseSpeed;
 }
