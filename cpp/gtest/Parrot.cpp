@@ -10,8 +10,6 @@ Parrot::Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool
 
 double Parrot::getSpeed() {
     switch (parrotType) {
-        case EUROPEAN:
-            return ParrotBase::getSpeed();
         case AFRICAN:
             return max(0.0, ParrotBase::getSpeed() - getLoadFactor() * numberOfCoconuts);
         case NORWEGIAN_BLUE:
