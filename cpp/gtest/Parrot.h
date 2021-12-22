@@ -1,7 +1,7 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { NORWEGIAN_BLUE, DERIVED};
+enum ParrotType { DERIVED};
 
 class Parrot {
 public:
