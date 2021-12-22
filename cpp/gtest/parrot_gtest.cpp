@@ -4,6 +4,7 @@ using namespace std;
 
 #include "Parrot.h"
 #include "EuropeanParrot.h"
+#include "AfricanParrot.h"
 
 TEST(ParrotTest, SpeedOfEuropeanParrot) {
     auto *parrot = new Parrot(EUROPEAN, 0, 0, false);
@@ -35,6 +36,12 @@ TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
     delete parrot;
 }
 
+
+TEST(ParrotTest, NewSpeedOfAfricanParrot_With_One_Coconut) {
+	auto* parrot = new AfricanParrot(1);
+	EXPECT_NEAR(3.0, parrot->getSpeed(), 0.0);
+	delete parrot;
+}
 TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
     auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 1.5, true);
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
