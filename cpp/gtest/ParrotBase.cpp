@@ -5,7 +5,6 @@
 
 using namespace std;
 
-ParrotBase::ParrotBase(ParrotType parrotType)
-: parrotType(parrotType) {}
+ParrotBase::ParrotBase(){}
 
 

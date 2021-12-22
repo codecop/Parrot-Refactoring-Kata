@@ -5,10 +5,7 @@
 
 class ParrotBase {
 public:
-    ParrotBase(ParrotType parrotType);
-
-private:
-    ParrotType parrotType;
+    ParrotBase();
 
 protected:
     const double baseSpeed = 12.0;

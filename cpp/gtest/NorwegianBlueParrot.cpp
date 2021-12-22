@@ -2,7 +2,7 @@
 #include <algorithm>
 
 
-NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : ParrotBase(NORWEGIAN_BLUE), voltage(voltage), isNailed(isNailed)
+NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : ParrotBase(), voltage(voltage), isNailed(isNailed)
 {
 
 }
