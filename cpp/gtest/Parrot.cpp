@@ -37,6 +37,11 @@ double AfricanParrot::getLoadFactor() {
     return 9.0;
 }
 
+
+NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed)
+    : Parrot{ DERIVED, 0, voltage, isNailed }
+{}
+
 double NorwegianBlueParrot::getSpeed()
 {
     return (isNailed) ? 0 : getBaseSpeed(voltage);

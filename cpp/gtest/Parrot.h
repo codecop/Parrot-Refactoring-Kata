@@ -52,7 +52,7 @@ class NorwegianBlueParrot
     : public Parrot
 {
 public:
-    using Parrot::Parrot;
+    NorwegianBlueParrot(double voltage, bool isNailed);
 
     double getSpeed() override;
 };
