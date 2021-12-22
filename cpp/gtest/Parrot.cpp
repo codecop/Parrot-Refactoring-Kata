@@ -32,3 +32,4 @@ double Parrot::getLoadFactor() {
 double Parrot::getBaseSpeed(double current_voltage) {
     return min(24.0, current_voltage * getBaseSpeed());
 }
+
