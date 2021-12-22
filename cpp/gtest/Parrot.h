@@ -24,5 +24,11 @@ private:
 
 };
 
+class EuropeanParrot : public Parrot
+{
+public:
+    EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+};
+
 
 #endif //PARROT_PARROT_H
