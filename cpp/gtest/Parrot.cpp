@@ -11,9 +11,9 @@ Parrot::Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool
 double Parrot::getSpeed() {
     switch (parrotType) {
         case EUROPEAN:
-            return getBaseSpeed();
+            return ParrotBase::getSpeed();
         case AFRICAN:
-            return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+            return max(0.0, ParrotBase::getSpeed() - getLoadFactor() * numberOfCoconuts);
         case NORWEGIAN_BLUE:
             return (isNailed) ? 0 : getBaseSpeed(voltage);
         default:
@@ -21,14 +21,15 @@ double Parrot::getSpeed() {
     }
 }
 
-double Parrot::getBaseSpeed() {
-    return 12.0;
-}
-
 double Parrot::getLoadFactor() {
     return 9.0;
 }
 
 double Parrot::getBaseSpeed(double current_voltage) {
-    return min(24.0, current_voltage * getBaseSpeed());
+    return min(24.0, current_voltage * ParrotBase::getSpeed());
+}
+
+double ParrotBase::getSpeed()
+{
+	return 12.0;
 }
