@@ -8,6 +8,8 @@ public:
     AfricanParrot(int numberOfCoconuts) ;
 
     virtual double getSpeed() override;
+private:
+	const double loadFactor = 9.0;
 };
 
 

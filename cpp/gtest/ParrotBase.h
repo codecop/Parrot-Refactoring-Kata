@@ -16,7 +16,6 @@ private:
     double getBaseSpeed(double voltage);
 protected:
     const double baseSpeed = 12.0;
-	const double loadFactor = 9.0;
 	int numberOfCoconuts;
 };
 
