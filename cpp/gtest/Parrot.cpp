@@ -14,16 +14,12 @@ double Parrot::getSpeed() {
         case EUROPEAN:
             return baseSpeed;
         case AFRICAN:
-            return max(0.0, baseSpeed - getLoadFactor() * numberOfCoconuts);
+            return max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
         case NORWEGIAN_BLUE:
             return (isNailed) ? 0 : getBaseSpeed(voltage);
         default:
             throw std::invalid_argument("Should be unreachable");
     }
-}
-
-double Parrot::getLoadFactor() {
-    return 9.0;
 }
 
 double Parrot::getBaseSpeed(double current_voltage) {
