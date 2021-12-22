@@ -10,6 +10,9 @@ public:
 
 protected:
     double getBaseSpeed();
+
+private:
+    static constexpr double DefaultBaseSpeed = 12.0;
 };
 
 class EuropeanParrot
