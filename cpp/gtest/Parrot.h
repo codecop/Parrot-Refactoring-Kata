@@ -23,7 +23,7 @@ public:
 
 class AfricanParrot : public Parrot {
 public:
-    AfricanParrot(int numberOfCoconuts, double voltage);
+    AfricanParrot(int numberOfCoconuts);
 
     virtual double getSpeed() override;
 private:
