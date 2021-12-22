@@ -1,9 +1,10 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE};
+enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };
 
-class Parrot {
+class Parrot
+{
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
