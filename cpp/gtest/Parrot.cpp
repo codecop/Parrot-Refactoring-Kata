@@ -19,7 +19,7 @@ AfricanParrot::AfricanParrot(const int numberOfCoconuts)
 
 double AfricanParrot::getSpeed() const
 {
-    const double coconutSlowDown = getLoadFactor() * numberOfCoconuts;
+    const double coconutSlowDown = getLoadFactor() * static_cast<double>(numberOfCoconuts);
     return std::max(0.0, getBaseSpeed() - coconutSlowDown);
 }
 
