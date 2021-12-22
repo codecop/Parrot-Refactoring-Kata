@@ -85,3 +85,9 @@ TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed_high_voltage) {
     EXPECT_NEAR(24.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
+
+TEST(ParrotTest, NewSpeedNorwegianBlueParrot_not_nailed_high_voltage) {
+	auto* parrot = new NorwegianBlueParrot(4, false);
+	EXPECT_NEAR(24.0, parrot->getSpeed(), 0.0);
+	delete parrot;
+}
