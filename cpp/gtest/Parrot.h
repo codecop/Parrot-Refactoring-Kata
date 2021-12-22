@@ -30,6 +30,7 @@ public:
     EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed);
 
     virtual ParrotType GetParrotType() override;
+    virtual double getSpeed() override;
 };
 
 class AfricanParrot : public Parrot
@@ -38,6 +39,7 @@ public:
     AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed);
 
     virtual ParrotType GetParrotType() override;
+    virtual double getSpeed() override;
 };
 
 class NorwegianBlueParrot : public Parrot
@@ -46,6 +48,7 @@ public:
     NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed);
 
     virtual ParrotType GetParrotType() override;
+    virtual double getSpeed() override;
 };
 
 #endif //PARROT_PARROT_H

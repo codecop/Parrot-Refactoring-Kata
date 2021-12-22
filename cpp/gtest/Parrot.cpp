@@ -61,6 +61,11 @@ ParrotType EuropeanParrot::GetParrotType()
     return ParrotType::EUROPEAN;
 }
 
+double EuropeanParrot::getSpeed()
+{
+    return getBaseSpeed();
+}
+
 AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::AFRICAN, numberOfCoconuts, voltage, isNailed) {}
 
@@ -69,10 +74,20 @@ ParrotType AfricanParrot::GetParrotType()
     return ParrotType::AFRICAN;
 }
 
+double AfricanParrot::getSpeed()
+{
+    return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+}
+
 NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::NORWEGIAN_BLUE, numberOfCoconuts, voltage, isNailed) {}
 
 ParrotType NorwegianBlueParrot::GetParrotType()
 {
     return ParrotType::NORWEGIAN_BLUE;
+}
+
+double NorwegianBlueParrot::getSpeed()
+{
+    return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
