@@ -12,6 +12,7 @@ export class Parrot {
 
   private BASE_SPEED = 12;
   protected LOAD_FACTOR = 9;
+  private MIN_SPEED = 0;
 
   constructor(
     parrotType: ParrotTypes,
@@ -31,11 +32,11 @@ export class Parrot {
         return this.BASE_SPEED;
       case ParrotTypes.AFRICAN:
         return Math.max(
-          0,
+          this.MIN_SPEED,
           this.BASE_SPEED - this.LOAD_FACTOR * this.numberOfCoconuts
         );
       case ParrotTypes.NORWEGIAN_BLUE:
-        return this.isNailed ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
+        return this.isNailed ? this.MIN_SPEED : this.getBaseSpeedWithVoltage(this.voltage);
     }
   }
 
