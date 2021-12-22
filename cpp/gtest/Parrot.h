@@ -12,7 +12,6 @@ protected:
 	double getBaseSpeed();
 
 	double voltage;
-	bool isNailed;
 
 };
 
@@ -39,6 +38,7 @@ public:
 
 	virtual double getSpeed() override;
 private:
+	bool isNailed;
 	double getBaseSpeed(double voltage);
 };
 

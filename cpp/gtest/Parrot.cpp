@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Parrot::Parrot(double voltage, bool isNailed) : voltage(voltage), isNailed(isNailed) {}
+Parrot::Parrot(double voltage, bool isNailed) : voltage(voltage) {}
 
 
 double Parrot::getBaseSpeed() {
@@ -36,7 +36,8 @@ double AfricanParrot::getLoadFactor() {
 }
 
 
-NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : Parrot(voltage, isNailed)
+NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) 
+    : Parrot(voltage, isNailed), isNailed(isNailed)
 {
 
 }
