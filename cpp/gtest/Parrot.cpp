@@ -39,3 +39,9 @@ EuropeanParrot::EuropeanParrot(int numberOfCoconuts, double voltage, bool isNail
 {
 
 }
+
+AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
+    : Parrot(ParrotType::AFRICAN, numberOfCoconuts, voltage, isNailed)
+{
+
+}
