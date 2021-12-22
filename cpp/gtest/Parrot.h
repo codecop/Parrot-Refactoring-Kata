@@ -1,5 +1,5 @@
-#ifndef PARROTBASE_PARROT_H
-#define PARROTBASE_PARROT_H
+#ifndef PARROT_PARROT_H
+#define PARROT_PARROT_H
 
 
 class Parrot {
