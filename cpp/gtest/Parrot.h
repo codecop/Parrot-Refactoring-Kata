@@ -11,11 +11,11 @@ public:
     virtual double getSpeed();
 
 protected:
-    int numberOfCoconuts;
     double getBaseSpeed();
 
 private:
     ParrotType parrotType;
+    int numberOfCoconuts;
     double voltage;
     bool isNailed;
 
@@ -42,6 +42,8 @@ public:
     double getSpeed() override;
 
 private:
+    int numberOfCoconuts;
+
     double getLoadFactor();
 };
 
