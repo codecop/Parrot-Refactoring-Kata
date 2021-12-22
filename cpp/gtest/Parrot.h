@@ -1,7 +1,7 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-class Parrot {
+class SpeedStrategy {
 public:
 	virtual double getSpeed() = 0;
 
@@ -10,14 +10,14 @@ protected:
 
 };
 
-class EuropeanParrot : public Parrot {
+class EuropeanParrot : public SpeedStrategy {
 public:
     EuropeanParrot();
 
     virtual double getSpeed() override;
 };
 
-class AfricanParrot : public Parrot {
+class AfricanParrot : public SpeedStrategy {
 public:
     AfricanParrot(int numberOfCoconuts);
 
@@ -27,7 +27,7 @@ private:
 	double getLoadFactor();
 };
 
-class NorwegianBlueParrot : public Parrot {
+class NorwegianBlueParrot : public SpeedStrategy {
 public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
