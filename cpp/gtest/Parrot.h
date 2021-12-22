@@ -10,9 +10,9 @@ protected:
 
 };
 
-class EuropeanParrot : public SpeedStrategy {
+class EuropeanParrotStrategy : public SpeedStrategy {
 public:
-    EuropeanParrot();
+    EuropeanParrotStrategy();
 
     virtual double getSpeed() override;
 };

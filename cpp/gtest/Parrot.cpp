@@ -10,11 +10,11 @@ double SpeedStrategy::getBaseSpeed() {
     return 12.0;
 }
 
-EuropeanParrot::EuropeanParrot()
+EuropeanParrotStrategy::EuropeanParrotStrategy()
 {
 
 }
-double EuropeanParrot::getSpeed() {
+double EuropeanParrotStrategy::getSpeed() {
     return getBaseSpeed();
 }
 
