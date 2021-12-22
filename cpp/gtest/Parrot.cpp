@@ -28,11 +28,6 @@ Parrot* Parrot::ParrotFactory(ParrotType parrotType, int numberOfCoconuts, doubl
     return new Parrot (parrotType, numberOfCoconuts, voltage, isNailed);
 }
 
-ParrotType Parrot::GetParrotType()
-{
-    return parrotType;
-}
-
 double Parrot::getBaseSpeed()
 {
     return 12.0;
