@@ -47,7 +47,7 @@ public:
     double getSpeed() override;
 
 private:
-    double getBaseSpeed(double voltage);
+    double getBaseSpeed(double voltage) const;
     double voltage;
     bool isNailed;
 };

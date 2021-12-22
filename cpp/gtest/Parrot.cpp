@@ -41,7 +41,7 @@ double NorwegianBlueParrot::getSpeed()
     return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
 
-double NorwegianBlueParrot::getBaseSpeed(const double current_voltage) {
+double NorwegianBlueParrot::getBaseSpeed(const double current_voltage) const {
     static constexpr double MaximumBaseSpeed = 24.0;
     return min(MaximumBaseSpeed, current_voltage * Parrot::getBaseSpeed());
 }
