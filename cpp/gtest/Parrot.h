@@ -1,11 +1,6 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-class Parrot {
-public:
-	Parrot(SpeedStrategy speedStrategy);
-};
-
 class SpeedStrategy {
 public:
 	virtual double getSpeed() = 0;
@@ -43,5 +38,12 @@ private:
 
 	double getBaseSpeed(double voltage);
 };
+
+
+class Parrot {
+public:
+	Parrot(SpeedStrategy speedStrategy);
+};
+
 
 #endif //PARROT_PARROT_H
