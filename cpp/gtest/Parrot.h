@@ -7,7 +7,7 @@ public:
 
 protected:
 
-    Parrot(int numberOfCoconuts, double voltage, bool isNailed);
+    Parrot(double voltage, bool isNailed);
 
 	double getBaseSpeed();
 

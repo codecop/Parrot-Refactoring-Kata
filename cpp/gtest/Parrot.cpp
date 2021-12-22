@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Parrot::Parrot(int numberOfCoconuts, double voltage, bool isNailed) : voltage(voltage), isNailed(isNailed) {}
+Parrot::Parrot(double voltage, bool isNailed) : voltage(voltage), isNailed(isNailed) {}
 
 
 double Parrot::getBaseSpeed() {
@@ -18,7 +18,7 @@ double Parrot::getBaseSpeed(double current_voltage) {
 }
 
 EuropeanParrot::EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed)
-    : Parrot(numberOfCoconuts, voltage, isNailed)
+    : Parrot(voltage, isNailed)
 {
 
 }
@@ -27,7 +27,7 @@ double EuropeanParrot::getSpeed() {
 }
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
-    : Parrot(numberOfCoconuts, voltage, isNailed), numberOfCoconuts(numberOfCoconuts)
+    : Parrot(voltage, isNailed), numberOfCoconuts(numberOfCoconuts)
 {
 
 }
@@ -42,7 +42,7 @@ double AfricanParrot::getLoadFactor() {
 
 
 NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed)
-    : Parrot(numberOfCoconuts, voltage, isNailed)
+    : Parrot(voltage, isNailed)
 {
 
 }
