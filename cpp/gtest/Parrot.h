@@ -15,6 +15,12 @@ public:
 	virtual double getSpeed();
 };
 
+class ParrotEuropean : public ParrotBase
+{
+public:
+	virtual double getSpeed() override;
+};
+
 class Parrot : public ParrotBase {
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);

@@ -33,3 +33,8 @@ double ParrotBase::getSpeed()
 {
 	return 12.0;
 }
+
+double ParrotEuropean::getSpeed()
+{
+    return ParrotBase::getSpeed();
+}
