@@ -31,7 +31,8 @@ export class Parrot {
       case ParrotTypes.EUROPEAN:
         return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
-        const africanParrot = new AfricanParrot();
+        const africanParrot = new AfricanParrot(this.numberOfCoconuts);
+        // return africanParrot.getSpeed();
         return Math.max(
           this.MIN_SPEED,
           this.BASE_SPEED - this.LOAD_FACTOR * this.numberOfCoconuts
@@ -59,8 +60,8 @@ class EuropeanParrot extends Parrot {
 }
 
 class AfricanParrot extends Parrot {
-  constructor() {
-    super(ParrotTypes.AFRICAN, 0, 0, false);
+  constructor(numberOfCoconuts: number) {
+    super(ParrotTypes.AFRICAN, numberOfCoconuts, 0, false);
   }
 
   public getSpeed(): number {
