@@ -34,7 +34,7 @@ double AfricanParrot::getLoadFactor() {
 
 
 NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed)
-    : Parrot{ DERIVED, 0, voltage, isNailed }
+    : Parrot{}
     , voltage{ voltage }
     , isNailed{ isNailed }
 {}
