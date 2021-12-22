@@ -42,7 +42,7 @@ export class Parrot {
   }
 }
 
-class EuropeanParrot extends Parrot {
+export class EuropeanParrot extends Parrot {
   constructor() {
     super(ParrotTypes.EUROPEAN, 0, 0, false);
   }
