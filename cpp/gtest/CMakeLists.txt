@@ -10,7 +10,7 @@ project(Parrot VERSION 1.0
 enable_testing()
 
 set(SRC_LIB_NAME .)
-set(SOURCES Parrot.cpp EuropeanParrot.cpp ParrotBase.cpp)
+set(SOURCES Parrot.cpp EuropeanParrot.cpp ParrotBase.cpp AfricanParrot.cpp)
 add_library(${SRC_LIB_NAME} ${SOURCES} "ParrotBase.cpp")
 target_sources(${SRC_LIB_NAME} PRIVATE ${SOURCES})
 target_include_directories(${SRC_LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
