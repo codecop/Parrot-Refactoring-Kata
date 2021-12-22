@@ -23,7 +23,7 @@ double Parrot::getSpeed()
     }
 }
 
-static Parrot ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
+static Parrot* Parrot::ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
 {
     return Parrot (parrotType, numberOfCoconuts, voltage, isNailed);
 }
