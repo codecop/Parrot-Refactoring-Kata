@@ -16,10 +16,7 @@ class EuropeanParrot
     : public Parrot
 {
 public:
-    EuropeanParrot()
-        : Parrot{}
-    {}
-
+    EuropeanParrot() = default;
     double getSpeed() override;
 };
 
