@@ -7,8 +7,6 @@ public:
 
 protected:
 
-	enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };
-
     Parrot(int numberOfCoconuts, double voltage, bool isNailed);
 
 	int numberOfCoconuts;
