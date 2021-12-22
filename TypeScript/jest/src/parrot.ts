@@ -32,11 +32,7 @@ export class Parrot {
         return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
         const africanParrot = new AfricanParrot(this.numberOfCoconuts);
-        // return africanParrot.getSpeed();
-        return Math.max(
-          this.MIN_SPEED,
-          this.BASE_SPEED - this.LOAD_FACTOR * this.numberOfCoconuts
-        );
+        return africanParrot.getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
         return this.isNailed
           ? this.MIN_SPEED
