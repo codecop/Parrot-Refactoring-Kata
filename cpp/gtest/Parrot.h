@@ -2,7 +2,8 @@
 #define PARROT_PARROT_H
 
 class Parrot {
-
+public:
+	Parrot(SpeedStrategy speedStrategy);
 };
 
 class SpeedStrategy {
