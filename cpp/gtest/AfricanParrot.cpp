@@ -11,5 +11,5 @@ AfricanParrot::AfricanParrot(int numberOfCoconuts)
 
 
 double AfricanParrot::getSpeed() {
-	return max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
+	return std::max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
 }
