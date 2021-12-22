@@ -6,7 +6,7 @@
 using namespace std;
 
 
-double Parrot::getBaseSpeed() {
+double SpeedStrategy::getBaseSpeed() {
     return 12.0;
 }
 
@@ -45,5 +45,5 @@ double NorwegianBlueParrot::getSpeed() {
 
 double NorwegianBlueParrot::getBaseSpeed(double current_voltage) {
 
-	return min(24.0, current_voltage * Parrot::getBaseSpeed());
+	return min(24.0, current_voltage * SpeedStrategy::getBaseSpeed());
 }
