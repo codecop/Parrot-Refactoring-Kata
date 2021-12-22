@@ -3,7 +3,6 @@
 
 #include "Parrot.h"
 #include "AfricanParrot.h"
-using namespace std;
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
 : Parrot(), numberOfCoconuts(numberOfCoconuts) {}
