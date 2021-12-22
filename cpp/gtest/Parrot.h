@@ -17,6 +17,7 @@ private:
     double getBaseSpeed(double voltage);
     double getLoadFactor();
     double getBaseSpeed();
+
 };
 
 
