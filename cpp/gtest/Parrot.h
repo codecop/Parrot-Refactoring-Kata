@@ -8,7 +8,7 @@ class Parrot
 public:
     static Parrot* ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
-    double getSpeed();
+    virtual double getSpeed();
     virtual ParrotType GetParrotType() = 0;
 protected:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
