@@ -42,6 +42,14 @@ TEST(ParrotTest, NewSpeedOfAfricanParrot_With_One_Coconut) {
 	EXPECT_NEAR(3.0, parrot->getSpeed(), 0.0);
 	delete parrot;
 }
+
+
+TEST(ParrotTest, NewSpeedOfAfricanParrot_With_Two_Coconuts) {
+	auto* parrot = new AfricanParrot(2);
+	EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
+	delete parrot;
+}
+
 TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
     auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 1.5, true);
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
