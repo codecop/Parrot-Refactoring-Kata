@@ -7,3 +7,9 @@ using namespace std;
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
 : ParrotBase(AFRICAN, numberOfCoconuts,0,false) {}
+
+
+
+double AfricanParrot::getSpeed() {
+	return max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
+}

@@ -6,6 +6,8 @@
 class AfricanParrot : public ParrotBase {
 public:
     AfricanParrot(int numberOfCoconuts) ;
+
+    virtual double getSpeed() override;
 };
 
 
