@@ -1,9 +1,9 @@
 #ifndef AFRICANPARROT_PARROT_H
 #define AFRICANPARROT_PARROT_H
 
-#include "ParrotBase.h"
+#include "Parrot.h"
 
-class AfricanParrot : public ParrotBase {
+class AfricanParrot : public Parrot {
 public:
     AfricanParrot(int numberOfCoconuts) ;
 

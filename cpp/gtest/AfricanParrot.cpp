@@ -1,12 +1,12 @@
 #include <stdexcept>
 #include <algorithm>
 
-#include "ParrotBase.h"
+#include "Parrot.h"
 #include "AfricanParrot.h"
 using namespace std;
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
-: ParrotBase(), numberOfCoconuts(numberOfCoconuts) {}
+: Parrot(), numberOfCoconuts(numberOfCoconuts) {}
 
 
 

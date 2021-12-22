@@ -1,10 +1,10 @@
 #include <stdexcept>
 #include <algorithm>
 
-#include "ParrotBase.h"
+#include "Parrot.h"
 
 using namespace std;
 
-ParrotBase::ParrotBase(){}
+Parrot::Parrot(){}
 
 

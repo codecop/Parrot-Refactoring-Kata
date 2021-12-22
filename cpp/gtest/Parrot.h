@@ -2,9 +2,9 @@
 #define PARROTBASE_PARROT_H
 
 
-class ParrotBase {
+class Parrot {
 public:
-    ParrotBase();
+    Parrot();
     virtual double getSpeed() = 0;
 protected:
     const double baseSpeed = 12.0;

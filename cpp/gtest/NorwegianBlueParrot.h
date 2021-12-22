@@ -2,9 +2,9 @@
 #define NORWEGIANBLUEPARROT_PARROT_H
 
 
-#include "ParrotBase.h"
+#include "Parrot.h"
 
-class NorwegianBlueParrot : public ParrotBase {
+class NorwegianBlueParrot : public Parrot {
 public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
