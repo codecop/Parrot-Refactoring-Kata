@@ -5,6 +5,7 @@ enum ParrotType { DERIVED};
 
 class Parrot {
 public:
+    Parrot() = default;
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
     virtual ~Parrot() = default;
 
@@ -14,10 +15,10 @@ protected:
     double getBaseSpeed();
 
 private:
-    ParrotType parrotType;
-    int numberOfCoconuts;
-    double voltage;
-    bool isNailed;
+    ParrotType parrotType{ DERIVED };
+    int numberOfCoconuts{ 0 };
+    double voltage{ 0. };
+    bool isNailed{ false };
 
 };
 
