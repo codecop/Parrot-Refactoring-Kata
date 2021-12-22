@@ -11,8 +11,6 @@ ParrotBase::ParrotBase(ParrotType parrotType, int numberOfCoconuts, double volta
 
 double ParrotBase::getSpeed() {
     switch (parrotType) {
-        case AFRICAN:
-            return max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
         case NORWEGIAN_BLUE:
             return (isNailed) ? 0 : getBaseSpeed(voltage);
         default:
