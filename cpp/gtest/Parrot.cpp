@@ -9,7 +9,6 @@ double Parrot::getBaseSpeed() const {
     return DefaultBaseSpeed;
 }
 
-
 double EuropeanParrot::getSpeed() const
 {
     return getBaseSpeed();
@@ -28,7 +27,6 @@ double AfricanParrot::getSpeed() const
 double AfricanParrot::getLoadFactor() const {
     return DefaultLoadFactor;
 }
-
 
 NorwegianBlueParrot::NorwegianBlueParrot(const double voltage, const bool isNailed)
     : Parrot{}

@@ -32,10 +32,10 @@ public:
     double getSpeed() const override;
 
 private:
+    double getLoadFactor() const;
+
     static constexpr double DefaultLoadFactor = 9.0;
     int numberOfCoconuts;
-
-    double getLoadFactor() const;
 };
 
 class NorwegianBlueParrot
@@ -48,6 +48,7 @@ public:
 
 private:
     double getBaseSpeed(double voltage) const;
+
     double voltage;
     bool isNailed;
 };
