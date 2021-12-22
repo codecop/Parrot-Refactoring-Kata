@@ -6,7 +6,7 @@ public:
     Parrot() = default;
     virtual ~Parrot() = default;
 
-    virtual double getSpeed() = 0;
+    virtual double getSpeed() const = 0;
 
 protected:
     double getBaseSpeed() const;
@@ -20,7 +20,7 @@ class EuropeanParrot
 {
 public:
     EuropeanParrot() = default;
-    double getSpeed() override;
+    double getSpeed() const override;
 };
 
 class AfricanParrot
@@ -29,7 +29,7 @@ class AfricanParrot
 public:
     explicit AfricanParrot(int numberOfCoconuts);
 
-    double getSpeed() override;
+    double getSpeed() const override;
 
 private:
     static constexpr double DefaultLoadFactor = 9.0;
@@ -44,7 +44,7 @@ class NorwegianBlueParrot
 public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
-    double getSpeed() override;
+    double getSpeed() const override;
 
 private:
     double getBaseSpeed(double voltage) const;

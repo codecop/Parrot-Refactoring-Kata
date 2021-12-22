@@ -10,7 +10,7 @@ double Parrot::getBaseSpeed() const {
 }
 
 
-double EuropeanParrot::getSpeed()
+double EuropeanParrot::getSpeed() const
 {
     return getBaseSpeed();
 }
@@ -20,7 +20,7 @@ AfricanParrot::AfricanParrot(const int numberOfCoconuts)
     , numberOfCoconuts{ numberOfCoconuts }
 {}
 
-double AfricanParrot::getSpeed()
+double AfricanParrot::getSpeed() const
 {
     return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
 }
@@ -36,7 +36,7 @@ NorwegianBlueParrot::NorwegianBlueParrot(const double voltage, const bool isNail
     , isNailed{ isNailed }
 {}
 
-double NorwegianBlueParrot::getSpeed()
+double NorwegianBlueParrot::getSpeed() const
 {
     return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
