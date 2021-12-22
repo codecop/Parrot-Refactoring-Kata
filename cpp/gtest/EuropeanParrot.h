@@ -5,7 +5,7 @@
 
 class EuropeanParrot : public Parrot {
 public:
-    EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+    EuropeanParrot();
 
     virtual double getSpeed() override;
 };

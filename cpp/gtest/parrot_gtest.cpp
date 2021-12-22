@@ -12,7 +12,7 @@ TEST(ParrotTest, SpeedOfEuropeanParrot) {
 }
 
 TEST(ParrotTest, NewSpeedOfEuropeanParrot) {
-	auto* parrot = new EuropeanParrot(0, 0, false);
+	auto* parrot = new EuropeanParrot();
 	EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
 	delete parrot;
 }
