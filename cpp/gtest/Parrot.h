@@ -33,12 +33,11 @@ public:
 
 class Parrot : public ParrotBase {
 public:
-    Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
+    Parrot(ParrotType parrotType, double voltage, bool isNailed);
 
 	virtual double getSpeed();
 private:
     ParrotType parrotType;
-	int numberOfCoconuts;
     double voltage;
     bool isNailed;
 
