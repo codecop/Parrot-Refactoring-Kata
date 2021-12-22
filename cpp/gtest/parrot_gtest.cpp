@@ -24,7 +24,7 @@ TEST(ParrotTest, SpeedOfAfricanParrot_With_Two_Coconuts) {
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
-    auto *parrot = new Parrot(AFRICAN, 0, 0, false);
+    auto parrot = Parrot::ParrotFactory(AFRICAN, 0, 0, false);
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
