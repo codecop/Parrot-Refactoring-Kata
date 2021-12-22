@@ -8,10 +8,10 @@ NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : Parrot
 }
 
 double NorwegianBlueParrot::getSpeed() {
-	return (isNailed) ? 0 : getBaseSpeed2(voltage);
+	return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
 
 
-double NorwegianBlueParrot::getBaseSpeed2(double current_voltage) {
+double NorwegianBlueParrot::getBaseSpeed(double current_voltage) {
 	return std::min(24.0, current_voltage * baseSpeed);
 }
