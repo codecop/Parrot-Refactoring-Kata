@@ -34,5 +34,12 @@ public:
     double getSpeed() override;
 };
 
+class AfricanParrot
+    : public Parrot
+{
+public:
+    using Parrot::Parrot;
+};
+
 
 #endif //PARROT_PARROT_H
