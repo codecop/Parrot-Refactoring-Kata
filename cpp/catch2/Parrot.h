@@ -3,7 +3,13 @@
 
 enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE};
 
-class Parrot {
+class IParrot
+{
+public:
+    virtual double getSpeed() = 0;
+};
+
+class Parrot : IParrot {
 public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
