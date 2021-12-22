@@ -25,7 +25,7 @@ double AfricanParrot::getSpeed()
     return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
 }
 
-double AfricanParrot::getLoadFactor() {
+double AfricanParrot::getLoadFactor() const {
     return DefaultLoadFactor;
 }
 
