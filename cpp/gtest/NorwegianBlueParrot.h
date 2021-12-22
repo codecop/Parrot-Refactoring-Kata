@@ -6,7 +6,7 @@
 
 class NorwegianBlueParrot : public ParrotBase {
 public:
-    NorwegianBlueParrot(double voltage, bool isNailed): ParrotBase(NORWEGIAN_BLUE,voltage,isNailed) {};
+    NorwegianBlueParrot(double voltage, bool isNailed);
 };
 
 
