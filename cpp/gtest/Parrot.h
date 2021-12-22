@@ -13,7 +13,6 @@ public:
 protected:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
-    ParrotType parrotType;
     int numberOfCoconuts;
     double voltage;
     bool isNailed;
@@ -21,7 +20,6 @@ protected:
     double getBaseSpeed(double voltage);
     double getLoadFactor();
     double getBaseSpeed();
-
 };
 
 class EuropeanParrot : public Parrot
