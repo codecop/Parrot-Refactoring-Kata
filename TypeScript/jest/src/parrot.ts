@@ -11,8 +11,7 @@ export class Parrot {
   private isNailed: boolean;
 
   private BASE_SPEED = 12;
-  private LOAD_FACTOR = 9;
-
+  protected LOAD_FACTOR = 9;
 
   constructor(
     parrotType: ParrotTypes,
