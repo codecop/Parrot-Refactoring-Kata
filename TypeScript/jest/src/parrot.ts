@@ -5,7 +5,6 @@ export enum ParrotTypes {
 }
 
 export class Parrot {
-  private parrotType: ParrotTypes;
   protected numberOfCoconuts: number;
   protected voltage: number;
   protected isNailed: boolean;
@@ -15,12 +14,10 @@ export class Parrot {
   protected MIN_SPEED = 0;
 
   constructor(
-    parrotType: ParrotTypes,
     numberOfCoconuts: number,
     voltage: number,
     isNailed: boolean
   ) {
-    this.parrotType = parrotType;
     this.numberOfCoconuts = numberOfCoconuts;
     this.voltage = voltage;
     this.isNailed = isNailed;
@@ -29,7 +26,7 @@ export class Parrot {
 
 export class EuropeanParrot extends Parrot {
   constructor() {
-    super(ParrotTypes.EUROPEAN, 0, 0, false);
+    super(0, 0, false);
   }
 
   public getSpeed(): number {
@@ -39,7 +36,7 @@ export class EuropeanParrot extends Parrot {
 
 export class AfricanParrot extends Parrot {
   constructor(numberOfCoconuts: number) {
-    super(ParrotTypes.AFRICAN, numberOfCoconuts, 0, false);
+    super(numberOfCoconuts, 0, false);
   }
 
   public getSpeed(): number {
@@ -52,7 +49,7 @@ export class AfricanParrot extends Parrot {
 
 export class NorwegianBlueParrot extends Parrot {
   constructor(voltage: number, isNailed: boolean) {
-    super(ParrotTypes.NORWEGIAN_BLUE, 0, voltage, isNailed);
+    super(0, voltage, isNailed);
   }
 
   public getSpeed(): number {
