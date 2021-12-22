@@ -3,8 +3,6 @@
 
 #include "Parrot.h"
 
-using namespace std;
-
 double Parrot::getBaseSpeed() const {
     return DefaultBaseSpeed;
 }
@@ -22,7 +20,7 @@ AfricanParrot::AfricanParrot(const int numberOfCoconuts)
 double AfricanParrot::getSpeed() const
 {
     const double coconutSlowDown = getLoadFactor() * numberOfCoconuts;
-    return max(0.0, getBaseSpeed() - coconutSlowDown);
+    return std::max(0.0, getBaseSpeed() - coconutSlowDown);
 }
 
 double AfricanParrot::getLoadFactor() const {
@@ -42,6 +40,6 @@ double NorwegianBlueParrot::getSpeed() const
 
 double NorwegianBlueParrot::getBaseSpeed(const double currentVoltage) const {
     static constexpr double MaximumBaseSpeed = 24.0;
-    return min(MaximumBaseSpeed, currentVoltage * Parrot::getBaseSpeed());
+    return std::min(MaximumBaseSpeed, currentVoltage * Parrot::getBaseSpeed());
 }
 
