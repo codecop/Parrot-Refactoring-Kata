@@ -8,21 +8,6 @@ using namespace std;
 Parrot::Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
 : parrotType(parrotType), numberOfCoconuts(numberOfCoconuts), voltage(voltage), isNailed(isNailed) {}
 
-double Parrot::getSpeed()
-{
-    switch (GetParrotType())
-    {
-        case EUROPEAN:
-            return getBaseSpeed();
-        case AFRICAN:
-            return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
-        case NORWEGIAN_BLUE:
-            return (isNailed) ? 0 : getBaseSpeed(voltage);
-        default:
-            throw std::invalid_argument("Should be unreachable");
-    }
-}
-
 Parrot* Parrot::ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed)
 {
     switch (parrotType)
