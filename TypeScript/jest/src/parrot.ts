@@ -7,7 +7,7 @@ export enum ParrotTypes {
 export class Parrot {
   private parrotType: ParrotTypes;
   protected numberOfCoconuts: number;
-  private voltage: number;
+  protected voltage: number;
   protected isNailed: boolean;
 
   protected BASE_SPEED = 12;
