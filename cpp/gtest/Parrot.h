@@ -1,7 +1,7 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE};
+enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE, DERIVED};
 
 class Parrot {
 public:
@@ -27,7 +27,9 @@ class EuropeanParrot
     : public Parrot
 {
 public:
-    using Parrot::Parrot;
+    EuropeanParrot()
+        : Parrot{ DERIVED, 0, 0., false }
+    {}
 
     double getSpeed() override;
 };
