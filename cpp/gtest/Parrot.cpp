@@ -5,8 +5,6 @@
 
 using namespace std;
 
-Parrot::Parrot() {}
-
 
 double Parrot::getBaseSpeed() {
     return 12.0;

@@ -6,11 +6,7 @@ public:
 	virtual double getSpeed() = 0;
 
 protected:
-
-    Parrot();
-
 	double getBaseSpeed();
-
 
 };
 
