@@ -37,7 +37,7 @@ class AfricanParrot
     : public Parrot
 {
 public:
-    using Parrot::Parrot;
+    AfricanParrot(int numberOfCoconuts);
 
     double getSpeed() override;
 

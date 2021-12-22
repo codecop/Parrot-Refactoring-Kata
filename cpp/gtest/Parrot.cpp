@@ -31,6 +31,11 @@ double EuropeanParrot::getSpeed()
     return getBaseSpeed();
 }
 
+
+AfricanParrot::AfricanParrot(int numberOfCoconuts)
+    : Parrot{DERIVED, numberOfCoconuts, 0., false}
+{}
+
 double AfricanParrot::getSpeed()
 {
     return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
