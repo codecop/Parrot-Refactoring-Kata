@@ -7,34 +7,11 @@ using namespace std;
 #include "AfricanParrot.h"
 #include "NorwegianBlueParrot.h"
 
-TEST(ParrotTest, SpeedOfEuropeanParrot) {
-    auto *parrot = new Parrot(EUROPEAN, 0, 0, false);
-    EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
 
 TEST(ParrotTest, NewSpeedOfEuropeanParrot) {
 	auto* parrot = new EuropeanParrot();
 	EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
 	delete parrot;
-}
-
-TEST(ParrotTest, SpeedOfAfricanParrot_With_One_Coconut) {
-    auto *parrot = new Parrot(AFRICAN, 1, 0, false);
-    EXPECT_NEAR(3.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
-
-TEST(ParrotTest, SpeedOfAfricanParrot_With_Two_Coconuts) {
-    auto *parrot = new Parrot(AFRICAN, 2, 0, false);
-    EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
-
-TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
-    auto *parrot = new Parrot(AFRICAN, 0, 0, false);
-    EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
-    delete parrot;
 }
 
 
@@ -56,23 +33,12 @@ TEST(ParrotTest, NewSpeedOfAfricanParrot_With_No_Coconuts) {
 	EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
 	delete parrot;
 }
-TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
-    auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 1.5, true);
-    EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
-
 TEST(ParrotTest, NewSpeedNorwegianBlueParrot_nailed) {
 	auto* parrot = new NorwegianBlueParrot(1.5, true);
 	EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
 	delete parrot;
 }
 
-TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed) {
-    auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 1.5, false);
-    EXPECT_NEAR(18.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
 
 TEST(ParrotTest, NewSpeedNorwegianBlueParrot_not_nailed) {
 	auto* parrot = new NorwegianBlueParrot(1.5, false);
@@ -80,11 +46,6 @@ TEST(ParrotTest, NewSpeedNorwegianBlueParrot_not_nailed) {
 	delete parrot;
 }
 
-TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed_high_voltage) {
-    auto *parrot = new Parrot(NORWEGIAN_BLUE, 0, 4, false);
-    EXPECT_NEAR(24.0, parrot->getSpeed(), 0.0);
-    delete parrot;
-}
 
 TEST(ParrotTest, NewSpeedNorwegianBlueParrot_not_nailed_high_voltage) {
 	auto* parrot = new NorwegianBlueParrot(4, false);
