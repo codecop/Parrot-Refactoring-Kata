@@ -9,7 +9,7 @@ public:
     static Parrot* ParrotFactory(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
     double getSpeed();
-    ParrotType GetParrotType();
+    virtual ParrotType GetParrotType();
 protected:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
