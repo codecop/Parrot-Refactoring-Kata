@@ -24,10 +24,7 @@ public:
 class ParrotAfrican : public ParrotBase
 {
 	int numberOfCoconuts;
-	double getLoadFactor()
-	{
-		return 9.0;
-	}
+	double getLoadFactor();
 
 public:
 	ParrotAfrican(int numberOfCoconuts);
