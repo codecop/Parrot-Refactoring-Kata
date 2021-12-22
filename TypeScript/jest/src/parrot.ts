@@ -37,9 +37,7 @@ export class Parrot {
           this.voltage,
           this.isNailed
         );
-        return this.isNailed
-          ? this.MIN_SPEED
-          : this.getBaseSpeedWithVoltage(this.voltage);
+        return norwegianBlue.getSpeed();
     }
   }
 
