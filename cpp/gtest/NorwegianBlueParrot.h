@@ -11,8 +11,6 @@ public:
 	virtual double getSpeed();
 
 private:
-	double getBaseSpeed(double voltage);
-
 	double voltage;
 	bool isNailed;
 };
