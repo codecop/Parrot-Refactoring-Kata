@@ -50,3 +50,6 @@ double Parrot::getBaseSpeed(double current_voltage)
 
 EuropeanParrot::EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::EUROPEAN, numberOfCoconuts, voltage, isNailed){}
+
+AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
+    : Parrot(ParrotType::AFRICAN, numberOfCoconuts, voltage, isNailed) {}
