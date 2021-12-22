@@ -36,7 +36,7 @@ private:
 
 class NorwegianBlueParrot : public Parrot {
 public:
-    NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed);
+    NorwegianBlueParrot(double voltage, bool isNailed);
 
 	virtual double getSpeed() override;
 };

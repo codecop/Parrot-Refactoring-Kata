@@ -41,8 +41,7 @@ double AfricanParrot::getLoadFactor() {
 }
 
 
-NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed)
-    : Parrot(voltage, isNailed)
+NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) : Parrot(voltage, isNailed)
 {
 
 }

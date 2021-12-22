@@ -30,19 +30,19 @@ TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_nailed) {
-    auto *parrot = new NorwegianBlueParrot(0, 1.5, true);
+    auto *parrot = new NorwegianBlueParrot(1.5, true);
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed) {
-    auto *parrot = new NorwegianBlueParrot(0, 1.5, false);
+    auto *parrot = new NorwegianBlueParrot(1.5, false);
     EXPECT_NEAR(18.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
 
 TEST(ParrotTest, SpeedNorwegianBlueParrot_not_nailed_high_voltage) {
-    auto *parrot = new NorwegianBlueParrot(0, 4, false);
+    auto *parrot = new NorwegianBlueParrot(4, false);
     EXPECT_NEAR(24.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
