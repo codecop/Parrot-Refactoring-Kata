@@ -13,7 +13,6 @@ public:
 protected:
     int numberOfCoconuts;
     double getBaseSpeed();
-    double getLoadFactor();
 
 private:
     ParrotType parrotType;
@@ -41,6 +40,9 @@ public:
     using Parrot::Parrot;
 
     double getSpeed() override;
+
+private:
+    double getLoadFactor();
 };
 
 

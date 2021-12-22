@@ -22,10 +22,6 @@ double Parrot::getBaseSpeed() {
     return 12.0;
 }
 
-double Parrot::getLoadFactor() {
-    return 9.0;
-}
-
 double Parrot::getBaseSpeed(double current_voltage) {
     return min(24.0, current_voltage * getBaseSpeed());
 }
@@ -39,4 +35,8 @@ double EuropeanParrot::getSpeed()
 double AfricanParrot::getSpeed()
 {
     return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+}
+
+double AfricanParrot::getLoadFactor() {
+    return 9.0;
 }
