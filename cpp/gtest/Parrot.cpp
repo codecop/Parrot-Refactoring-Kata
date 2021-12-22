@@ -39,10 +39,6 @@ ParrotNorwegianBlue::ParrotNorwegianBlue(double voltage, bool isNailed) : voltag
 
 double ParrotNorwegianBlue::getSpeed()
 {
-    return (isNailed) ? 0 : getBaseSpeed(voltage);
-}
-
-double ParrotNorwegianBlue::getBaseSpeed(double current_voltage) {
-	return min(24.0, current_voltage * ParrotBase::getSpeed());
+    return (isNailed) ? 0 : min(24.0, voltage * ParrotBase::getSpeed());
 }
 
