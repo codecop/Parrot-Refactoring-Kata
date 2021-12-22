@@ -12,8 +12,7 @@ double Parrot::getBaseSpeed() {
     return 12.0;
 }
 
-EuropeanParrot::EuropeanParrot(double voltage) 
-    : Parrot()
+EuropeanParrot::EuropeanParrot() : Parrot()
 {
 
 }
