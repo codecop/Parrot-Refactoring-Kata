@@ -12,10 +12,11 @@ private:
     ParrotType parrotType;
 	double voltage;
 	bool isNailed;
+    double getBaseSpeed(double voltage);
 
 protected:
     const double baseSpeed = 12.0;
-	double getBaseSpeed(double voltage);
+
 };
 
 
