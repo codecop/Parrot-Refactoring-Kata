@@ -27,7 +27,7 @@ class AfricanParrot
     : public Parrot
 {
 public:
-    AfricanParrot(int numberOfCoconuts);
+    explicit AfricanParrot(int numberOfCoconuts);
 
     double getSpeed() override;
 
