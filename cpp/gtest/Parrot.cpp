@@ -23,6 +23,11 @@ double Parrot::getSpeed()
     }
 }
 
+ParrotType Parrot::GetParrotType()
+{
+    return parrotType;
+}
+
 double Parrot::getBaseSpeed()
 {
     return 12.0;

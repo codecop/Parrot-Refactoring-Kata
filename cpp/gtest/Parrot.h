@@ -9,6 +9,7 @@ public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
 
     double getSpeed();
+    ParrotType GetParrotType();
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
