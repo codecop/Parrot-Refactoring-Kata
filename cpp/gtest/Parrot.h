@@ -4,13 +4,15 @@
 class IParrot
 {
 public:
-	virtual double getSpeed();
+	virtual double getSpeed() = 0;
 };
 
 class ParrotBase : public IParrot
 {
 protected:
 	const double baseSpeed = 12.0;
+public:
+	virtual double getSpeed() override;
 };
 
 class ParrotEuropean : public ParrotBase

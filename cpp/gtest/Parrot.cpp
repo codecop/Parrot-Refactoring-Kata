@@ -5,7 +5,7 @@
 
 using namespace std;
 
-double IParrot::getSpeed()
+double ParrotBase::getSpeed()
 {
 	throw std::invalid_argument("Should be unreachable");
 }
