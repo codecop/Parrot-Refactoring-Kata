@@ -8,7 +8,7 @@ class NorwegianBlueParrot : public ParrotBase {
 public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
-	virtual double getSpeed() override;
+	virtual double getSpeed();
 
 private:
 	double getBaseSpeed(double voltage);

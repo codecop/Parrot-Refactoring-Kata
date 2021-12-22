@@ -7,7 +7,7 @@ class AfricanParrot : public ParrotBase {
 public:
     AfricanParrot(int numberOfCoconuts) ;
 
-    virtual double getSpeed() override;
+    virtual double getSpeed() ;
 private:
 	const double loadFactor = 9.0;
 	int numberOfCoconuts;
