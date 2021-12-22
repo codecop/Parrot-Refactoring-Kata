@@ -1,4 +1,4 @@
-Parrot in C++
+Parrot in C+++
 =============
 
 Translation(s) of [Parrot Refactoring Kata](https://github.com/emilybache/Parrot-Refactoring-Kata)
