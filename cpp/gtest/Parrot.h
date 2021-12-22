@@ -28,18 +28,24 @@ class EuropeanParrot : public Parrot
 {
 public:
     EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+
+    virtual ParrotType GetParrotType() override;
 };
 
 class AfricanParrot : public Parrot
 {
 public:
     AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+
+    virtual ParrotType GetParrotType() override;
 };
 
 class NorwegianBlueParrot : public Parrot
 {
 public:
     NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed);
+
+    virtual ParrotType GetParrotType() override;
 };
 
 #endif //PARROT_PARROT_H

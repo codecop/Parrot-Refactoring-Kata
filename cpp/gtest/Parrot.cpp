@@ -51,8 +51,23 @@ double Parrot::getBaseSpeed(double current_voltage)
 EuropeanParrot::EuropeanParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::EUROPEAN, numberOfCoconuts, voltage, isNailed){}
 
+ParrotType EuropeanParrot::GetParrotType()
+{
+    return ParrotType::EUROPEAN;
+}
+
 AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::AFRICAN, numberOfCoconuts, voltage, isNailed) {}
 
+ParrotType AfricanParrot::GetParrotType()
+{
+    return ParrotType::AFRICAN;
+}
+
 NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::NORWEGIAN_BLUE, numberOfCoconuts, voltage, isNailed) {}
+
+ParrotType NorwegianBlueParrot::GetParrotType()
+{
+    return ParrotType::NORWEGIAN_BLUE;
+}
