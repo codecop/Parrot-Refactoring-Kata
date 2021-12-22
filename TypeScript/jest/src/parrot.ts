@@ -6,7 +6,7 @@ export enum ParrotTypes {
 
 export class Parrot {
   private parrotType: ParrotTypes;
-  private numberOfCoconuts: number;
+  protected numberOfCoconuts: number;
   private voltage: number;
   private isNailed: boolean;
 
