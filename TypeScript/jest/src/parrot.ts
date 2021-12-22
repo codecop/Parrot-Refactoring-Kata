@@ -12,7 +12,7 @@ export class Parrot {
 
   protected BASE_SPEED = 12;
   protected LOAD_FACTOR = 9;
-  private MIN_SPEED = 0;
+  protected MIN_SPEED = 0;
 
   constructor(
     parrotType: ParrotTypes,
