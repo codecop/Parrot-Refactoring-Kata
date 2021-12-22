@@ -8,7 +8,7 @@ public:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
     virtual ~Parrot() = default;
 
-    virtual double getSpeed();
+    virtual double getSpeed() = 0;
 
 protected:
     double getBaseSpeed();
