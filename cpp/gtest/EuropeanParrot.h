@@ -7,7 +7,7 @@ class EuropeanParrot : public Parrot {
 public:
 	EuropeanParrot();
 
-	virtual double getSpeed();
+	double getSpeed();
 };
 
 
