@@ -10,7 +10,7 @@ Parrot::Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool
 
 double Parrot::getSpeed()
 {
-    switch (parrotType)
+    switch (GetParrotType())
     {
         case EUROPEAN:
             return getBaseSpeed();
