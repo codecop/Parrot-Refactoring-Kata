@@ -9,6 +9,7 @@ protected:
 	enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };
 
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
+	double getBaseSpeed();
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
@@ -17,7 +18,6 @@ private:
 
     double getBaseSpeed(double voltage);
     double getLoadFactor();
-    double getBaseSpeed();
 };
 
 class EuropeanParrot : public Parrot {
