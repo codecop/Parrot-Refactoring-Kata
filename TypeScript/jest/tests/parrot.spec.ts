@@ -18,7 +18,7 @@ describe('Parrot', () => {
     });
 
     it('gets speed of African Parrot with no coconuts', () => {
-        const parrot = new Parrot(ParrotTypes.AFRICAN, 0, 0, false);
+        const parrot = new AfricanParrot(0); 
         expect(parrot.getSpeed()).toBe(12);
     });
 
