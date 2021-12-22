@@ -1,13 +1,13 @@
 #ifndef PARROT_PARROT_H
 #define PARROT_PARROT_H
 
-enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE};
+enum ParrotType { EUROPEAN, AFRICAN, NORWEGIAN_BLUE };
 
 class Parrot {
 public:
+	double getSpeed();
+protected:
     Parrot(ParrotType parrotType, int numberOfCoconuts, double voltage, bool isNailed);
-
-    double getSpeed();
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
