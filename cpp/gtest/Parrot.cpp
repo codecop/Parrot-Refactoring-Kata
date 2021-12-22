@@ -19,7 +19,7 @@ double EuropeanParrot::getSpeed()
 }
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
-    : Parrot{DERIVED, numberOfCoconuts, 0., false}
+    : Parrot{}
     , numberOfCoconuts{ numberOfCoconuts }
 {}
 
