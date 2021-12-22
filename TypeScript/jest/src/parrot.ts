@@ -33,7 +33,7 @@ export class Parrot {
       case ParrotTypes.AFRICAN:
         return new AfricanParrot(this.numberOfCoconuts).getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
-        const norwegianBlue = new NorwegianBlueParrot(this.voltage);
+        const norwegianBlue = new NorwegianBlueParrot(this.voltage, this.isNailed);
         return this.isNailed
           ? this.MIN_SPEED
           : this.getBaseSpeedWithVoltage(this.voltage);
@@ -69,8 +69,8 @@ class AfricanParrot extends Parrot {
 }
 
 class NorwegianBlueParrot extends Parrot {
-  constructor(voltage: number) {
-    super(ParrotTypes.NORWEGIAN_BLUE, 0, voltage, false);
+  constructor(voltage: number, isNailed: boolean) {
+    super(ParrotTypes.NORWEGIAN_BLUE, 0, voltage, isNailed);
   }
 
   protected getBaseSpeedWithVoltage(voltage: number): number {
