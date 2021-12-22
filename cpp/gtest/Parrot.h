@@ -9,7 +9,7 @@ public:
     virtual double getSpeed() = 0;
 
 protected:
-    double getBaseSpeed();
+    double getBaseSpeed() const;
 
 private:
     static constexpr double DefaultBaseSpeed = 12.0;

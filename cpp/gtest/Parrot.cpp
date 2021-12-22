@@ -5,7 +5,7 @@
 
 using namespace std;
 
-double Parrot::getBaseSpeed() {
+double Parrot::getBaseSpeed() const {
     return DefaultBaseSpeed;
 }
 
