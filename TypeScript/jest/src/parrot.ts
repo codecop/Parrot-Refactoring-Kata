@@ -1,38 +1,50 @@
 export enum ParrotTypes {
-    EUROPEAN,
-    AFRICAN,
-    NORWEGIAN_BLUE,
+  EUROPEAN,
+  AFRICAN,
+  NORWEGIAN_BLUE,
 }
 
 export class Parrot {
-    constructor(private parrotType: ParrotTypes,
-                private numberOfCoconuts: number,
-                private voltage: number,
-                private isNailed: boolean) {
-    }
+  private parrotType: ParrotTypes;
+  private numberOfCoconuts: number;
+  private voltage: number;
+  private isNailed: boolean;
 
-    public getSpeed(): number {
-        switch (this.parrotType) {
-            case ParrotTypes.EUROPEAN:
-                return this.getBaseSpeed();
-            case ParrotTypes.AFRICAN:
-                return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
-            case ParrotTypes.NORWEGIAN_BLUE:
-                return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
-        }
-    }
+  constructor(
+    parrotType: ParrotTypes,
+    numberOfCoconuts: number,
+    voltage: number,
+    isNailed: boolean
+  ) {
+    this.parrotType = parrotType;
+    this.numberOfCoconuts = numberOfCoconuts;
+    this.voltage = voltage;
+    this.isNailed = isNailed;
+  }
 
-    private getBaseSpeed(): number {
-        return 12;
+  public getSpeed(): number {
+    switch (this.parrotType) {
+      case ParrotTypes.EUROPEAN:
+        return this.getBaseSpeed();
+      case ParrotTypes.AFRICAN:
+        return Math.max(
+          0,
+          this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts
+        );
+      case ParrotTypes.NORWEGIAN_BLUE:
+        return this.isNailed ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
     }
+  }
 
-    private getLoadFactor(): number {
-        return 9;
-    }
+  private getBaseSpeed(): number {
+    return 12;
+  }
 
-    private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * this.getBaseSpeed());
-    }
+  private getLoadFactor(): number {
+    return 9;
+  }
 
+  private getBaseSpeedWithVoltage(voltage: number): number {
+    return Math.min(24, voltage * this.getBaseSpeed());
+  }
 }
-
