@@ -7,7 +7,6 @@ class ParrotBase {
 public:
     ParrotBase(ParrotType parrotType, double voltage, bool isNailed);
 
-    virtual double getSpeed();
 private:
     ParrotType parrotType;
 	double voltage;
