@@ -33,6 +33,7 @@ export class Parrot {
       case ParrotTypes.AFRICAN:
         return new AfricanParrot(this.numberOfCoconuts).getSpeed();
       case ParrotTypes.NORWEGIAN_BLUE:
+        const norwegianBlue = new NorwegianBlueParrot();
         return this.isNailed
           ? this.MIN_SPEED
           : this.getBaseSpeedWithVoltage(this.voltage);
