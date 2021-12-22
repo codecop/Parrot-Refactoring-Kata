@@ -72,4 +72,8 @@ class NorwegianBlueParrot extends Parrot {
   constructor() {
     super(ParrotTypes.NORWEGIAN_BLUE, 0, 0, false);
   }
+
+  protected getBaseSpeedWithVoltage(voltage: number): number {
+    return Math.min(24, voltage * this.BASE_SPEED);
+  }
 }
