@@ -14,7 +14,6 @@ protected:
 	double voltage;
 	bool isNailed;
 
-	double getBaseSpeed(double voltage);
 };
 
 class EuropeanParrot : public Parrot {
@@ -39,6 +38,8 @@ public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
 	virtual double getSpeed() override;
+private:
+	double getBaseSpeed(double voltage);
 };
 
 #endif //PARROT_PARROT_H
