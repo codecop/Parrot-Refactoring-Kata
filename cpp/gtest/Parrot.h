@@ -20,7 +20,6 @@ protected:
     double voltage;
     bool isNailed;
 
-    double getBaseSpeed(double voltage);
 };
 
 class EuropeanParrot
@@ -55,6 +54,9 @@ public:
     NorwegianBlueParrot(double voltage, bool isNailed);
 
     double getSpeed() override;
+
+private:
+    double getBaseSpeed(double voltage);
 };
 
 #endif //PARROT_PARROT_H

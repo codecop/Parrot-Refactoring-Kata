@@ -12,16 +12,11 @@ double Parrot::getBaseSpeed() {
     return 12.0;
 }
 
-double Parrot::getBaseSpeed(double current_voltage) {
-    return min(24.0, current_voltage * getBaseSpeed());
-}
-
 
 double EuropeanParrot::getSpeed()
 {
     return getBaseSpeed();
 }
-
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts)
     : Parrot{DERIVED, numberOfCoconuts, 0., false}
@@ -46,3 +41,8 @@ double NorwegianBlueParrot::getSpeed()
 {
     return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
+
+double NorwegianBlueParrot::getBaseSpeed(double current_voltage) {
+    return min(24.0, current_voltage * Parrot::getBaseSpeed());
+}
+
