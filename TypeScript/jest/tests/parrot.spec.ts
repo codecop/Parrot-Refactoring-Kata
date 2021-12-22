@@ -23,7 +23,7 @@ describe('Parrot', () => {
     });
 
     it('gets speed of Norwegian Blue Parrot nailed', () => {
-        const parrot = new Parrot(ParrotTypes.NORWEGIAN_BLUE, 0, 1.5, true);
+        const parrot = new NorwegianBlueParrot(1.5, true);
         expect(parrot.getSpeed()).toBe(0);
     });
 
