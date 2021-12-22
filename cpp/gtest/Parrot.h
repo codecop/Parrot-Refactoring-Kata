@@ -16,7 +16,7 @@ protected:
 
 class EuropeanParrot : public Parrot {
 public:
-    EuropeanParrot(double voltage, bool isNailed);
+    EuropeanParrot(double voltage);
 
     virtual double getSpeed() override;
 };

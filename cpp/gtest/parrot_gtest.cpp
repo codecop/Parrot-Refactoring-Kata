@@ -6,7 +6,7 @@ using namespace std;
 
 
 TEST(ParrotTest, SpeedOfEuropeanParrot) {
-    auto *parrot = new EuropeanParrot(0, false);
+    auto *parrot = new EuropeanParrot(0);
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
