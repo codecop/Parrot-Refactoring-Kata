@@ -18,17 +18,17 @@ double EuropeanParrotStrategy::getSpeed() {
     return getBaseSpeed();
 }
 
-AfricanParrot::AfricanParrot(int numberOfCoconuts) 
+AfricanParrotStrategy::AfricanParrotStrategy(int numberOfCoconuts) 
     : numberOfCoconuts(numberOfCoconuts)
 {
 
 }
 
-double AfricanParrot::getSpeed() {
+double AfricanParrotStrategy::getSpeed() {
     return max(0.0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
 }
 
-double AfricanParrot::getLoadFactor() {
+double AfricanParrotStrategy::getLoadFactor() {
 	return 9.0;
 }
 

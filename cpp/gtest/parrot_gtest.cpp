@@ -12,19 +12,19 @@ TEST(ParrotTest, SpeedOfEuropeanParrot) {
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_One_Coconut) {
-    auto *parrot = new AfricanParrot(1);
+    auto *parrot = new AfricanParrotStrategy(1);
     EXPECT_NEAR(3.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_Two_Coconuts) {
-    auto *parrot = new AfricanParrot(2);
+    auto *parrot = new AfricanParrotStrategy(2);
     EXPECT_NEAR(0.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }
 
 TEST(ParrotTest, SpeedOfAfricanParrot_With_No_Coconuts) {
-    auto *parrot = new AfricanParrot(0);
+    auto *parrot = new AfricanParrotStrategy(0);
     EXPECT_NEAR(12.0, parrot->getSpeed(), 0.0);
     delete parrot;
 }

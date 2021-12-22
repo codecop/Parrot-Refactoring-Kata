@@ -17,9 +17,9 @@ public:
     virtual double getSpeed() override;
 };
 
-class AfricanParrot : public SpeedStrategy {
+class AfricanParrotStrategy : public SpeedStrategy {
 public:
-    AfricanParrot(int numberOfCoconuts);
+    AfricanParrotStrategy(int numberOfCoconuts);
 
     virtual double getSpeed() override;
 private:
