@@ -40,6 +40,7 @@ double NorwegianBlueParrot::getSpeed() const
 
 double NorwegianBlueParrot::getBaseSpeed(const double currentVoltage) const {
     static constexpr double MaximumBaseSpeed = 24.0;
-    return std::min(MaximumBaseSpeed, currentVoltage * Parrot::getBaseSpeed());
+    const double voltageBasedSpeed = currentVoltage * Parrot::getBaseSpeed();
+    return std::min(MaximumBaseSpeed, voltageBasedSpeed);
 }
 
