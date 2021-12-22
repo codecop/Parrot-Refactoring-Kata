@@ -31,6 +31,19 @@ public:
 	virtual double getSpeed() override;
 };
 
+class ParrotNorwegianBlue : public ParrotBase {
+public:
+	ParrotNorwegianBlue(double voltage, bool isNailed);
+
+	virtual double getSpeed();
+private:
+	double voltage;
+	bool isNailed;
+
+	double getBaseSpeed(double voltage);
+};
+
+
 class Parrot : public ParrotBase {
 public:
     Parrot(ParrotType parrotType, double voltage, bool isNailed);
