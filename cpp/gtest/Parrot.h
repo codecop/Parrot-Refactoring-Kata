@@ -27,7 +27,7 @@ class EuropeanParrot
 {
 public:
     EuropeanParrot()
-        : Parrot{ DERIVED, 0, 0., false }
+        : Parrot{}
     {}
 
     double getSpeed() override;
