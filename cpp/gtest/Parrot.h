@@ -16,6 +16,7 @@ protected:
 private:
     ParrotType parrotType;
     int numberOfCoconuts;
+protected:
     double voltage;
     bool isNailed;
 
@@ -52,6 +53,8 @@ class NorwegianBlueParrot
 {
 public:
     using Parrot::Parrot;
+
+    double getSpeed() override;
 };
 
 #endif //PARROT_PARROT_H
