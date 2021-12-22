@@ -21,8 +21,7 @@ double EuropeanParrot::getSpeed() {
     return getBaseSpeed();
 }
 
-AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed)
-    : Parrot(voltage), numberOfCoconuts(numberOfCoconuts)
+AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage) : Parrot(voltage), numberOfCoconuts(numberOfCoconuts)
 {
 
 }
