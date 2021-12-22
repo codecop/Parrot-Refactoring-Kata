@@ -10,16 +10,11 @@ double ParrotBase::getSpeed()
 	throw std::invalid_argument("Should be unreachable");
 }
 
-double ParrotAfrican::getLoadFactor()
-{
-	return 9.0;
-}
-
 ParrotAfrican::ParrotAfrican(int numberOfCoconuts) : numberOfCoconuts(numberOfCoconuts) {}
 
 double ParrotAfrican::getSpeed()
 {
-    return max(0.0, baseSpeed - getLoadFactor() * numberOfCoconuts);
+    return max(0.0, baseSpeed - loadFactor * numberOfCoconuts);
 }
 
 ParrotNorwegianBlue::ParrotNorwegianBlue(double voltage, bool isNailed) : voltage(voltage), isNailed(isNailed) {}
