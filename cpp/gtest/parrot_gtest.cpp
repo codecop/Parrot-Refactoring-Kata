@@ -2,7 +2,6 @@
 
 using namespace std;
 
-#include "Parrot.h"
 #include "EuropeanParrot.h"
 #include "AfricanParrot.h"
 #include "NorwegianBlueParrot.h"

@@ -1,7 +1,6 @@
 #include <stdexcept>
 #include <algorithm>
 
-#include "Parrot.h"
 #include "EuropeanParrot.h"
 using namespace std;
 

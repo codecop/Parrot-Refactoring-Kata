@@ -1,12 +1,11 @@
 #ifndef PARROTBASE_PARROT_H
 #define PARROTBASE_PARROT_H
 
-#include "Parrot.h"
 
 class ParrotBase {
 public:
     ParrotBase();
-
+    virtual double getSpeed() = 0;
 protected:
     const double baseSpeed = 12.0;
 
