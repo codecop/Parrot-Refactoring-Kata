@@ -30,6 +30,8 @@ public:
 class AfricanParrot : public Parrot {
 public:
     AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed);
+
+    virtual double getSpeed() override;
 };
 
 class NorwegianBlueParrot : public Parrot {

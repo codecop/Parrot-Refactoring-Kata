@@ -47,6 +47,10 @@ AfricanParrot::AfricanParrot(int numberOfCoconuts, double voltage, bool isNailed
 
 }
 
+double AfricanParrot::getSpeed() {
+    return Parrot::getSpeed();
+}
+
 NorwegianBlueParrot::NorwegianBlueParrot(int numberOfCoconuts, double voltage, bool isNailed)
     : Parrot(ParrotType::NORWEGIAN_BLUE, numberOfCoconuts, voltage, isNailed)
 {
