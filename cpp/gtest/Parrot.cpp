@@ -21,7 +21,7 @@ double EuropeanParrot::getSpeed() {
 }
 
 AfricanParrot::AfricanParrot(int numberOfCoconuts) 
-    : Parrot(), numberOfCoconuts(numberOfCoconuts)
+    : numberOfCoconuts(numberOfCoconuts)
 {
 
 }
