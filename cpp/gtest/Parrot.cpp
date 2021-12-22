@@ -10,11 +10,6 @@ double IParrot::getSpeed()
 	throw std::invalid_argument("Should be unreachable");
 }
 
-double ParrotBase::getSpeed()
-{
-	return 12.0;
-}
-
 double ParrotAfrican::getLoadFactor()
 {
 	return 9.0;
