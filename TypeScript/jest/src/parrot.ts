@@ -8,7 +8,7 @@ export class Parrot {
   private parrotType: ParrotTypes;
   protected numberOfCoconuts: number;
   private voltage: number;
-  private isNailed: boolean;
+  protected isNailed: boolean;
 
   protected BASE_SPEED = 12;
   protected LOAD_FACTOR = 9;
