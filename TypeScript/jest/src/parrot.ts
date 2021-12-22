@@ -10,7 +10,7 @@ export class Parrot {
   private voltage: number;
   private isNailed: boolean;
 
-  private BASE_SPEED = 12;
+  protected BASE_SPEED = 12;
   protected LOAD_FACTOR = 9;
   private MIN_SPEED = 0;
 
@@ -29,7 +29,7 @@ export class Parrot {
   public getSpeed(): number {
     switch (this.parrotType) {
       case ParrotTypes.EUROPEAN:
-        return this.BASE_SPEED;
+        return new EuropeanParrot().getSpeed();
       case ParrotTypes.AFRICAN:
         return Math.max(
           this.MIN_SPEED,
@@ -43,4 +43,14 @@ export class Parrot {
   private getBaseSpeedWithVoltage(voltage: number): number {
     return Math.min(24, voltage * this.BASE_SPEED);
   }
+}
+
+class EuropeanParrot extends Parrot {
+    constructor() {
+        super(ParrotTypes.EUROPEAN, 0, 0, false);
+    }
+
+    public getSpeed(): number {
+        return this.BASE_SPEED;
+    }
 }
