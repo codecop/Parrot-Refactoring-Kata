@@ -33,17 +33,17 @@ double AfricanParrot::getLoadFactor() {
 }
 
 
-NorwegianBlueParrot::NorwegianBlueParrot(double voltage, bool isNailed) 
+NorwegianBlueParrotStrategy::NorwegianBlueParrotStrategy(double voltage, bool isNailed) 
     : isNailed(isNailed), voltage(voltage)
 {
 
 }
 
-double NorwegianBlueParrot::getSpeed() {
+double NorwegianBlueParrotStrategy::getSpeed() {
     return (isNailed) ? 0 : getBaseSpeed(voltage);
 }
 
-double NorwegianBlueParrot::getBaseSpeed(double current_voltage) {
+double NorwegianBlueParrotStrategy::getBaseSpeed(double current_voltage) {
 
 	return min(24.0, current_voltage * SpeedStrategy::getBaseSpeed());
 }

@@ -27,9 +27,9 @@ private:
 	double getLoadFactor();
 };
 
-class NorwegianBlueParrot : public SpeedStrategy {
+class NorwegianBlueParrotStrategy : public SpeedStrategy {
 public:
-    NorwegianBlueParrot(double voltage, bool isNailed);
+    NorwegianBlueParrotStrategy(double voltage, bool isNailed);
 
 	virtual double getSpeed() override;
 private:
