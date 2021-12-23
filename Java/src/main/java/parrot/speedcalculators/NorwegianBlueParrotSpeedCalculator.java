@@ -7,6 +7,7 @@ package parrot.speedcalculators;
 public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator {
 
     private boolean isNailed;
+    private double voltage;
 
     public NorwegianBlueParrotSpeedCalculator(boolean isNailed) {
         this.isNailed = isNailed;
