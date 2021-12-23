@@ -24,7 +24,7 @@ public class Parrot {
             case NORWEGIAN_BLUE:
                 return (isNailed) ? 0 : getBaseSpeed(voltage);
             default:
-                throw new RuntimeException("Should be unreachable");
+                throw new UnknownParrotSpeciesException();
         }
     }
 
