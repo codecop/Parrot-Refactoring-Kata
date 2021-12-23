@@ -2,7 +2,6 @@ import Foundation
 
 class Parrot {
     let numberOfCoconuts: Int
-
     let isNailed: Bool
     let loadFactor: Double = 9.0
     let baseSpeed: Double = 12.0
