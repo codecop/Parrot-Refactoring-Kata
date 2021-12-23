@@ -2,14 +2,13 @@ import Foundation
 
 class Parrot {
     let numberOfCoconuts: Int
-    let voltage: Double
+
     let isNailed: Bool
     let loadFactor: Double = 9.0
     let baseSpeed: Double = 12.0
     
-    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+    init(numberOfCoconuts: Int, isNailed: Bool) {
         self.numberOfCoconuts = numberOfCoconuts
-        self.voltage = voltage
         self.isNailed = isNailed
     }
 
@@ -28,6 +27,14 @@ class AfricanParrot: Parrot {
 }
 
 class NorwegianBlueParrot: Parrot {
+
+    let voltage: Double
+
+    init(numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
+        self.voltage = voltage
+        super.init(numberOfCoconuts: numberOfCoconuts, isNailed: isNailed)
+    }
+
     var speed: Double {
         return (isNailed) ? 0 : baseSpeed(voltage: voltage)
     }
