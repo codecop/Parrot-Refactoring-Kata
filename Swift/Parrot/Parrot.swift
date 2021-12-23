@@ -3,7 +3,6 @@ import Foundation
 class Parrot {
     let numberOfCoconuts: Int
     let isNailed: Bool
-    let loadFactor: Double = 9.0
     let baseSpeed: Double = 12.0
     
     init(numberOfCoconuts: Int, isNailed: Bool) {
@@ -21,7 +20,9 @@ class EuropeanParrot: Parrot {
 
 class AfricanParrot: Parrot {
     var speed: Double {
-        return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
+        let loadFactor: Double = 9.0
+        let speedByFactor = loadFactor * Double(numberOfCoconuts)
+        return max(0, baseSpeed - speedByFactor)
     }
 }
 
