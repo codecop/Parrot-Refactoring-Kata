@@ -5,9 +5,13 @@ import kotlin.math.max
 class AfricanParrot(
     private val numberOfCoconuts: Int,
     voltage: Double
-): Parrot(
+) : Parrot(
     voltage = voltage
 ) {
+
+    private val loadFactor: Double
+        get() = 9.0
+
     override val speed: Double
         get() = max(0.0, baseSpeed - loadFactor * numberOfCoconuts)
 }

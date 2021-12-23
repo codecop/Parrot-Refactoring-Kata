@@ -8,9 +8,6 @@ abstract class Parrot(
 
     abstract val speed: Double
 
-    protected val loadFactor: Double
-        get() = 9.0
-
     protected val baseSpeed: Double
         get() = 12.0
 
