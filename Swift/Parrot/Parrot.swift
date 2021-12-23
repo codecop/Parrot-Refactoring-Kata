@@ -30,6 +30,7 @@ class NorwegianBlueParrot: Parrot {
 
     let voltage: Double
     let isNailed: Bool
+    let maximumSpeed: Double = 24.0
 
     init(voltage: Double, isNailed: Bool) {
         self.voltage = voltage
