@@ -14,39 +14,23 @@ class Parrot {
         self.voltage = voltage
         self.isNailed = isNailed
     }
-    
-    var speed: Double {
-        switch parrotType {
-        case .european:
-            return baseSpeed
 
-        case .african:
-            return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts));
-            
-        case .norwegianBlue:
-            return (isNailed) ? 0 : baseSpeed(voltage: voltage)
-        }
-    }
-
-    private func baseSpeed(voltage: Double) -> Double {
-        return min(24.0, voltage * baseSpeed)
-    }
 }
 
 class EuropeanParrot: Parrot {
-    override var speed: Double {
+    var speed: Double {
         return baseSpeed
     }
 }
 
 class AfricanParrot: Parrot {
-    override var speed: Double {
+    var speed: Double {
         return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
     }
 }
 
 class NorwegianBlueParrot: Parrot {
-    override var speed: Double {
+    var speed: Double {
         return (isNailed) ? 0 : baseSpeed(voltage: voltage)
     }
     
