@@ -9,7 +9,7 @@ public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator 
     private boolean isNailed;
     private double voltage;
 
-    public NorwegianBlueParrotSpeedCalculator(boolean isNailed) {
+    public NorwegianBlueParrotSpeedCalculator(boolean isNailed, double voltage) {
         this.isNailed = isNailed;
     }
 
