@@ -4,6 +4,6 @@ package parrot;
  * @author Günther Bernsteiner (gb)
  * @since 23.12.2021
  */
-public class AmericanParrot extends Parrot {
+public class AfricanParrot extends Parrot {
     private int numberOfCoconuts;
 }
