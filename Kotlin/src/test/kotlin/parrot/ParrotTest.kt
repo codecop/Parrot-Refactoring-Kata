@@ -8,7 +8,7 @@ class ParrotTest {
 
     @Test
     fun getSpeedOfEuropeanParrot() {
-        val parrot = EuropeanParrot(0, 0.0, false)
+        val parrot = EuropeanParrot(0.0)
         assertEquals(12.0, parrot.speed, 0.0)
     }
 

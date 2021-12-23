@@ -1,9 +1,7 @@
 package parrot
 
 class EuropeanParrot(
-    numberOfCoconuts: Int,
-    voltage: Double,
-    isNailed: Boolean
+    voltage: Double
 ) : Parrot(
     voltage = voltage
 ) {
