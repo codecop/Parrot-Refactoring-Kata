@@ -1,14 +1,12 @@
 import Foundation
 
-// one protocol for every parrot to conform
-// three types of parrot
-
-
 class Parrot {
     private let parrotType: ParrotTypeEnum
     private let numberOfCoconuts: Int
     private let voltage: Double
     private let isNailed: Bool
+    private let loadFactor: Double = 9.0
+    private let baseSpeed: Double = 12.0
     
     init(_ parrotType: ParrotTypeEnum, numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
         self.parrotType = parrotType
@@ -32,14 +30,6 @@ class Parrot {
 
     private func baseSpeed(voltage: Double) -> Double {
         return min(24.0, voltage * baseSpeed)
-    }
-    
-    private var loadFactor: Double {
-        return 9.0
-    }
-
-    private var baseSpeed: Double {
-        return 12.0
     }
 }
 
