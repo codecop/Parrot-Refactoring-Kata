@@ -12,7 +12,7 @@ public class Parrot {
     public static final double MINIMUM_SPEED = 24.0;
     private final ParrotTypeEnum type;
     private final int numberOfCoconuts;
-    private double voltage;
+    private final double voltage;
     private boolean isNailed;
 
     public double getSpeed() {
