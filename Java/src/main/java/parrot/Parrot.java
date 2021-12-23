@@ -12,7 +12,7 @@ public abstract class Parrot {
 //        }
 //    }
 
-    abstract public double getSpeed();
+    public abstract double getSpeed();
 
     protected double getBaseSpeed() {
         return 12.0;
