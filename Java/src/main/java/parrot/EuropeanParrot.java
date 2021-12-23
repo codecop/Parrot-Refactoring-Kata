@@ -8,6 +8,6 @@ public class EuropeanParrot extends Parrot implements Speedable{
 
     @Override
     public double getSpeed() {
-        return super.getSpeed();
+        return BASE_SPEED;
     }
 }
