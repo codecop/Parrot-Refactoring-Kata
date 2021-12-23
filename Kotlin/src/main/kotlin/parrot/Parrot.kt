@@ -17,10 +17,10 @@ open class Parrot(
             ParrotTypeEnum.NORWEGIAN_BLUE -> if (isNailed) 0.0 else getBaseSpeed(voltage)
         }
 
-    private val loadFactor: Double
+    protected val loadFactor: Double
         get() = 9.0
 
-    private val baseSpeed: Double
+    protected val baseSpeed: Double
         get() = 12.0
 
     private fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
