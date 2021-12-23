@@ -1,4 +1,4 @@
 package parrot;
 
-public class EuropeanParrot {
+public class EuropeanParrot extends Parrot {
 }
