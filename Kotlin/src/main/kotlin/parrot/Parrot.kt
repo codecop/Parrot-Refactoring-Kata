@@ -14,7 +14,10 @@ abstract class Parrot(
     protected val baseSpeed: Double
         get() = 12.0
 
-    protected fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
+    private val minBaseSpeed: Double
+        get() = 24.0
+
+    protected fun getBaseSpeed(voltage: Double): Double = min(minBaseSpeed, voltage * baseSpeed)
 }
 
 
