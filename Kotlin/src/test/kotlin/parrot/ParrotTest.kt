@@ -44,7 +44,7 @@ class ParrotTest {
 
     @Test
     fun getSpeedNorwegianBlueParrot_not_nailed_high_voltage() {
-        val parrot = Parrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 4.0, false)
+        val parrot = NorwegianBlueParrot(0, 4.0, false)
         assertEquals(24.0, parrot.speed, 0.0)
     }
 }
