@@ -11,43 +11,43 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = new Parrot(0, false, new EuropeanParrotSpeedCalculator());
+        Parrot parrot = new Parrot(false, new EuropeanParrotSpeedCalculator());
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = new Parrot(0, false, new AfricanParrotSpeedCalculator(1));
+        Parrot parrot = new Parrot(false, new AfricanParrotSpeedCalculator(1));
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_Two_Coconuts() {
-        Parrot parrot = new Parrot(0, false, new AfricanParrotSpeedCalculator(2));
+        Parrot parrot = new Parrot(false, new AfricanParrotSpeedCalculator(2));
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = new Parrot(0, false, new AfricanParrotSpeedCalculator(0));
+        Parrot parrot = new Parrot(false, new AfricanParrotSpeedCalculator(0));
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_nailed() {
-        Parrot parrot = new Parrot(1.5, true, new NorwegianBlueParrotSpeedCalculator(true, 1.5));
+        Parrot parrot = new Parrot(true, new NorwegianBlueParrotSpeedCalculator(true, 1.5));
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_not_nailed() {
-        Parrot parrot = new Parrot(1.5, false, new NorwegianBlueParrotSpeedCalculator(false, 1.5));
+        Parrot parrot = new Parrot(false, new NorwegianBlueParrotSpeedCalculator(false, 1.5));
         assertEquals(18.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_not_nailed_high_voltage() {
-        Parrot parrot = new Parrot(4, false, new NorwegianBlueParrotSpeedCalculator(false, 4));
+        Parrot parrot = new Parrot(false, new NorwegianBlueParrotSpeedCalculator(false, 4));
         assertEquals(24.0, parrot.getSpeed(), 0.0);
     }
 }

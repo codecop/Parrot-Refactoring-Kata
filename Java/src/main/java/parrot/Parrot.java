@@ -7,7 +7,7 @@ public class Parrot {
     private boolean isNailed;
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
-    public Parrot(double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
+    public Parrot(boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
         this.isNailed = isNailed;
         this.parrotSpeedCalulator = parrotSpeedCalulator;
     }
