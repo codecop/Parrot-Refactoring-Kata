@@ -17,6 +17,6 @@ public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator 
 
     @Override
     public double getSpeed() {
-        return 0;
+        return Math.min(NORWEGIAN_BLUE_MIN_SPEED, voltage * BASE_SPEED);
     }
 }
