@@ -1,4 +1,8 @@
 package parrot;
 
-public class EuropeanParrot {
+public class EuropeanParrot implements Speedable{
+    @Override
+    public double getSpeed() {
+        return 0;
+    }
 }
