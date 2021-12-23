@@ -46,5 +46,11 @@ class AfricanParrot: Parrot {
 }
 
 class NorwegianBlueParrot: Parrot {
-
+    override var speed: Double {
+        return (isNailed) ? 0 : baseSpeed(voltage: voltage)
+    }
+    
+    private func baseSpeed(voltage: Double) -> Double {
+        return min(24.0, voltage * baseSpeed)
+    }
 }
