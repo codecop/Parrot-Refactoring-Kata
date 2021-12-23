@@ -7,10 +7,10 @@ import lombok.Builder;
 @Builder
 public class Parrot implements Speedable {
 
-    private final ParrotType parrotType;
-    private final int numberOfCoconuts;
-    private final double voltage;
-    private final boolean isNailed;
+    private ParrotType parrotType;
+    private int numberOfCoconuts;
+    private double voltage;
+    private boolean isNailed;
 
     @Override
     public double getSpeed() {
