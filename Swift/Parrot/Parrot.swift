@@ -34,7 +34,9 @@ class Parrot {
 }
 
 class EuropeanParrot: Parrot {
-
+    override var speed: Double {
+        return baseSpeed
+    }
 }
 
 class AfricanParrot: Parrot {
