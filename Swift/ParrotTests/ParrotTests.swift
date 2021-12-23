@@ -34,22 +34,22 @@ class ParrotTests: XCTestCase {
 
 
     func testSpeedOfNorwegianBlueParrot_nailed() {
-        let parrot = NorwegianBlueParrot(voltage: 0.0, isNailed: true)
+        let parrot = try! NorwegianBlueParrot(voltage: 0.0, isNailed: true)
         XCTAssertEqual(parrot.speed, 0.0)
     }
     
     func testSpeedOfNorwegianBlueParrot_not_nailed() {
-        let parrot = NorwegianBlueParrot(voltage: 1.5, isNailed: false)
+        let parrot = try! NorwegianBlueParrot(voltage: 1.5, isNailed: false)
         XCTAssertEqual(parrot.speed, 18.0)
     }
 
     func testSpeedOfNorwegianBlueParrot_not_nailed_high_voltage() {
-        let parrot = NorwegianBlueParrot(voltage: 4.0, isNailed: false)
+        let parrot = try! NorwegianBlueParrot(voltage: 4.0, isNailed: false)
         XCTAssertEqual(parrot.speed, 24.0)
     }
 
     func testSpeedOfNorwegianBlueParrot_not_nailed_super_high_voltage() {
-        let parrot = NorwegianBlueParrot(voltage: 24.0, isNailed: false)
+        let parrot = try! NorwegianBlueParrot(voltage: 24.0, isNailed: false)
         XCTAssertEqual(parrot.speed, 24.0)
     }
 }

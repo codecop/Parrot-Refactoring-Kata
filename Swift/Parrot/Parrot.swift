@@ -11,7 +11,7 @@ class EuropeanParrot: Parrot {
 }
 
 enum RuntimeError: Error {
-    case negativeCoconuts
+    case negativeCoconuts, negativeVoltage
 }
 
 class AfricanParrot: Parrot {
@@ -36,7 +36,8 @@ class NorwegianBlueParrot: Parrot {
     let isNailed: Bool
     let maximumSpeed: Double = 24.0
 
-    init(voltage: Double, isNailed: Bool) {
+    init(voltage: Double, isNailed: Bool) throws {
+        guard voltage >= 0 else { throw RuntimeError.negativeVoltage }
         self.voltage = voltage
         self.isNailed = isNailed
     }
