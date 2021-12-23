@@ -8,6 +8,7 @@ public class Parrot {
     private int numberOfCoconuts;
     private double voltage;
     private boolean isNailed;
+    private ParrotSpeedCalulator parrotSpeedCalulator;
 
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
         this.type = type;
