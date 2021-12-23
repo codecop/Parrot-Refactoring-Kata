@@ -6,6 +6,7 @@ package parrot.speedcalculators;
 //    }
 public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator {
 
+    static private double NORWEGIAN_BLUE_MIN_SPEED = 24.0;
     private boolean isNailed;
     private double voltage;
 
