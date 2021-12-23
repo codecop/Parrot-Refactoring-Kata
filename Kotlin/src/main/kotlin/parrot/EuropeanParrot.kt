@@ -1,8 +1,6 @@
 package parrot
 
-class EuropeanParrot(
-    voltage: Double
-) : Parrot() {
+class EuropeanParrot : Parrot() {
 
     override val speed: Double
         get() = baseSpeed
