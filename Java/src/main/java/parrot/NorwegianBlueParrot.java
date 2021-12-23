@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class NorwegianBlueParrot implements Parrot {
+
+    private static final double MINIMUM_SPEED = 24.0;
+
     private double voltage;
     private boolean isNailed;
 
