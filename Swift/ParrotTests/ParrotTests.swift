@@ -20,7 +20,13 @@ class ParrotTests: XCTestCase {
         let parrot = AfricanParrot(numberOfCoconuts: 0, isNailed: false)
         XCTAssertEqual(parrot.speed, 12.0)
     }
-    
+
+    func testSpeedOfAfricanParrot_with_5_coconuts() {
+        let parrot = AfricanParrot(numberOfCoconuts: 5, isNailed: false)
+        XCTAssertEqual(parrot.speed, 0.0)
+    }
+
+
     func testSpeedOfNorwegianBlueParrot_nailed() {
         let parrot = NorwegianBlueParrot(numberOfCoconuts: 0, voltage: 0.0, isNailed: true)
         XCTAssertEqual(parrot.speed, 0.0)
