@@ -17,7 +17,7 @@ public class Parrot implements Speedable {
             case EUROPEAN:
                 return BASE_SPEED;
             case AFRICAN:
-                return Math.max(STANDING_IN_PLACE, BASE_SPEED - Speedable.LOAD_FACTOR * numberOfCoconuts);
+                return Math.max(STANDING_IN_PLACE, BASE_SPEED - LOAD_FACTOR * numberOfCoconuts);
             case NORWEGIAN_BLUE:
                 return (isNailed) ? Speedable.STANDING_IN_PLACE : getBaseSpeed(voltage);
             default:
