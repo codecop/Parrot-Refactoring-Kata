@@ -4,6 +4,7 @@ public class Parrot {
 
     public static final double LOAD_FACTOR = 9.0;
     public static final double BASE_SPEED = 12.0;
+    public static final double MINIMUM_SPEED = 24.0;
     private ParrotTypeEnum type;
     private int numberOfCoconuts;
     private double voltage;
@@ -30,7 +31,6 @@ public class Parrot {
     }
 
     private double getBaseSpeed(double voltage) {
-        double MINIMUM_SPEED = 24.0;
         return Math.min(MINIMUM_SPEED, voltage * getBaseSpeed());
     }
 
