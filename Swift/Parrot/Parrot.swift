@@ -19,7 +19,7 @@ class AfricanParrot: Parrot {
     let numberOfCoconuts: Int
 
     init(numberOfCoconuts: Int) throws {
-        guard numberOfCoconuts > 0 else { throw RuntimeError.negativeCoconuts }
+        guard numberOfCoconuts => 0 else { throw RuntimeError.negativeCoconuts }
         self.numberOfCoconuts = numberOfCoconuts
     }
 
