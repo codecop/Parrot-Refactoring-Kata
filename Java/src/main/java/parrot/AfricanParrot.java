@@ -1,5 +1,8 @@
 package parrot;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class AfricanParrot extends Parrot implements Speedable{
 
     private final int numberOfCoconuts;
