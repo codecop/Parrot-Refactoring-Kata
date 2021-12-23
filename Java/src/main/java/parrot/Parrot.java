@@ -39,11 +39,11 @@ public class Parrot {
         }
     }
 
-    protected double getBaseSpeed(double voltage) {
+     private double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * getBaseSpeed());
     }
 
-    protected double getLoadFactor() {
+    private double getLoadFactor() {
         return 9.0;
     }
 
