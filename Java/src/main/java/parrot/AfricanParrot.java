@@ -6,7 +6,7 @@ package parrot;
  */
 public class AfricanParrot extends Parrot {
 
-    private int numberOfCoconuts;
+    private final int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
          this.numberOfCoconuts = numberOfCoconuts;
