@@ -14,10 +14,6 @@ public class Parrot {
         return parrotSpeedCalulator.getSpeed();
     }
 
-    private double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage * getBaseSpeed());
-    }
-
     private double getLoadFactor() {
         return 9.0;
     }
