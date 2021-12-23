@@ -23,7 +23,7 @@ public class Parrot {
             case AFRICAN:
                 return Math.max(STANDING_IN_PLACE, BASE_SPEED - LOAD_FACTOR * numberOfCoconuts);
             case NORWEGIAN_BLUE:
-                return (isNailed) ? 0 : getBaseSpeed(voltage);
+                return (isNailed) ? STANDING_IN_PLACE : getBaseSpeed(voltage);
             default:
                 throw new UnknownParrotSpeciesException();
         }
