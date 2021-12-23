@@ -1,5 +1,6 @@
 package parrot
 
 class NorwegianBlueParrot(
-    numberOfCoconuts: Int
+    numberOfCoconuts: Int,
+    voltage: Double
 )
