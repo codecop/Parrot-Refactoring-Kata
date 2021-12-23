@@ -1,5 +1,9 @@
 import Foundation
 
+// one protocol for every parrot to conform
+// three types of parrot
+
+
 class Parrot {
     private let parrotType: ParrotTypeEnum
     private let numberOfCoconuts: Int
@@ -17,6 +21,7 @@ class Parrot {
         switch parrotType {
         case .european:
             return baseSpeed
+
         case .african:
             return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts));
             
@@ -26,7 +31,7 @@ class Parrot {
     }
 
     private func baseSpeed(voltage: Double) -> Double {
-        return min(24.0, voltage*baseSpeed)
+        return min(24.0, voltage * baseSpeed)
     }
     
     private var loadFactor: Double {
