@@ -11,6 +11,6 @@ public class AfricanParrot extends Parrot implements Speedable{
 
     @Override
     public double getSpeed() {
-        return super.getSpeed();
+        return Math.max(STANDING_IN_PLACE, BASE_SPEED - LOAD_FACTOR * numberOfCoconuts);
     }
 }
