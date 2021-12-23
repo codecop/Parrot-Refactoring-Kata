@@ -1,6 +1,6 @@
 package parrot;
 
-public enum ParrotTypeEnum {
+public enum ParrotType {
 
     EUROPEAN,
     AFRICAN,
