@@ -21,6 +21,13 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+//    public static Parrot getInstance(ParrotTypeEnum type) {
+//        switch (type) {
+//            case AFRICAN:
+//                return new AfricanParrot()
+//        }
+//    }
+
     public double getSpeed() {
         switch (type) {
             case EUROPEAN:
