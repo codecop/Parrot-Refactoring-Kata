@@ -5,7 +5,7 @@ public class AfricanParrotSpeedCalculator implements ParrotSpeedCalulator {
 
     public static double LOAD_FACTOR = 9.0;
 
-    public AfricanParrotSpeedCalculator() {
+    public AfricanParrotSpeedCalculator(int numberOfCoconuts) {
     }
 
     @Override
