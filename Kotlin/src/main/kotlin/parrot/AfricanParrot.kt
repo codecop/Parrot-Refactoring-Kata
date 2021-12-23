@@ -12,6 +12,9 @@ class AfricanParrot(
     private val loadFactor: Double
         get() = 9.0
 
+    private val minSpeed: Double
+        get() = 0.0
+
     override val speed: Double
-        get() = max(0.0, baseSpeed - loadFactor * numberOfCoconuts)
+        get() = max(minSpeed, baseSpeed - loadFactor * numberOfCoconuts)
 }
