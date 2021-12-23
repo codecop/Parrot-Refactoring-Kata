@@ -5,7 +5,6 @@ class NorwegianBlueParrot(
     voltage: Double,
     isNailed: Boolean
 ): Parrot(
-    numberOfCoconuts = numberOfCoconuts,
     voltage = voltage,
     isNailed = isNailed
 ) {

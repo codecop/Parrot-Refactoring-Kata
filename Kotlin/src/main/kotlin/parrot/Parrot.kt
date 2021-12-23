@@ -3,7 +3,6 @@ package parrot
 import kotlin.math.min
 
 abstract class Parrot(
-    protected val numberOfCoconuts: Int,
     protected val voltage: Double,
     protected val isNailed: Boolean
 ) {

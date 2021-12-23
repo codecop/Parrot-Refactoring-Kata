@@ -3,11 +3,10 @@ package parrot
 import kotlin.math.max
 
 class AfricanParrot(
-    numberOfCoconuts: Int,
+    private val numberOfCoconuts: Int,
     voltage: Double,
     isNailed: Boolean
 ): Parrot(
-    numberOfCoconuts = numberOfCoconuts,
     voltage = voltage,
     isNailed = isNailed
 ) {
