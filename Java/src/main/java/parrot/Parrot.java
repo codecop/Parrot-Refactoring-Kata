@@ -5,9 +5,6 @@ package parrot;
  */
 public abstract class Parrot {
 
-    public Parrot() {
-    }
-
 //    public static Parrot getInstance(ParrotTypeEnum type) {
 //        switch (type) {
 //            case AFRICAN:
