@@ -12,6 +12,6 @@ public class AfricanParrotSpeedCalculator implements ParrotSpeedCalulator {
 
     @Override
     public double getSpeed() {
-        return 0;
+        return Math.max(0, BASE_SPEED - LOAD_FACTOR * numberOfCoconuts);
     }
 }
