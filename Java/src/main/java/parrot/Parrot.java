@@ -13,7 +13,7 @@ public class Parrot {
     private final ParrotTypeEnum type;
     private final int numberOfCoconuts;
     private final double voltage;
-    private boolean isNailed;
+    private final boolean isNailed;
 
     public double getSpeed() {
         switch (type) {
