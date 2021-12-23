@@ -25,3 +25,4 @@ open class Parrot(
 
     private fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
 }
+
