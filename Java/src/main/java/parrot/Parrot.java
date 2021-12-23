@@ -28,7 +28,7 @@ public class Parrot implements Speedable {
         }
     }
 
-    private double getBaseSpeed(double voltage) {
+    protected double getBaseSpeed(double voltage) {
         return Math.min(MINIMUM_SPEED, voltage * BASE_SPEED);
     }
 
