@@ -28,7 +28,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 0, 0, false, null);
+        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 0, 0, false, new AfricanParrotSpeedCalculator(0));
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
