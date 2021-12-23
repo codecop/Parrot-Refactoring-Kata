@@ -4,7 +4,6 @@ import parrot.speedcalculators.ParrotSpeedCalulator;
 
 public class Parrot {
 
-    private boolean isNailed;
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
     public Parrot(boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
