@@ -1,6 +1,7 @@
 package parrot;
 
 import org.junit.Test;
+import parrot.speedcalculators.AfricanParrotSpeedCalculator;
 import parrot.speedcalculators.EuropeanParrotSpeedCalculator;
 
 import static org.junit.Assert.assertEquals;
@@ -15,7 +16,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 1, 0, false, null);
+        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 1, 0, false, new AfricanParrotSpeedCalculator());
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
