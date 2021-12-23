@@ -30,7 +30,8 @@ public class Parrot {
     }
 
     private double getBaseSpeed(double voltage) {
-        return Math.min(24.0, voltage * getBaseSpeed());
+        double MINIMUM_SPEED = 24.0;
+        return Math.min(MINIMUM_SPEED, voltage * getBaseSpeed());
     }
 
     private double getLoadFactor() {
