@@ -1,5 +1,7 @@
 package parrot;
 
+import parrot.speedcalculators.ParrotSpeedCalulator;
+
 public class Parrot {
 
     private ParrotTypeEnum type;
@@ -7,7 +9,7 @@ public class Parrot {
     private double voltage;
     private boolean isNailed;
 
-    public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
+    public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
         this.type = type;
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
