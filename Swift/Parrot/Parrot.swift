@@ -10,16 +10,8 @@ class EuropeanParrot: Parrot {
     }
 }
 
-struct RuntimeError: Error {
-    let message: String
-
-    init(_ message: String) {
-        self.message = message
-    }
-
-    public var localizedDescription: String {
-        return message
-    }
+enum RuntimeError: Error {
+    case negativeCoconuts
 }
 
 class AfricanParrot: Parrot {
@@ -27,9 +19,7 @@ class AfricanParrot: Parrot {
     let numberOfCoconuts: Int
 
     init(numberOfCoconuts: Int) throws {
-        if numberOfCoconuts < 0 {
-            throw RuntimeError("")
-        }
+        guard numberOfCoconuts > 0 els { throw RuntimeError.negativeCoconuts }
         self.numberOfCoconuts = numberOfCoconuts
     }
 

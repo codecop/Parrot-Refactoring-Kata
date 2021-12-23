@@ -27,8 +27,9 @@ class ParrotTests: XCTestCase {
     }
 
     func testSpeedOfAfricanParrot_with_minus_5_coconuts() {
-        let parrot = try? AfricanParrot(numberOfCoconuts: -5)
-        XCTAssertNil(parrot)
+        XCTAssertThrowsError(try AfricanParrot(numberOfCoconuts: -5), "Negative coconuts should throw an error") { (errorThrown) in
+            XCTAssertEqual(errorThrown as? RuntimeError, RuntimeError.negativeCoconuts)
+        }
     }
 
 
