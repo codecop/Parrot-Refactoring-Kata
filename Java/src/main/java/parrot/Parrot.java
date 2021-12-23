@@ -34,8 +34,4 @@ public class Parrot {
         return Math.min(MINIMUM_SPEED, voltage * BASE_SPEED);
     }
 
-    private double getLoadFactor() {
-        return LOAD_FACTOR;
-    }
-
 }
