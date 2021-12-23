@@ -6,7 +6,7 @@ public class Parrot {
 
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
-    public Parrot(boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
+    public Parrot(ParrotSpeedCalulator parrotSpeedCalulator) {
         this.parrotSpeedCalulator = parrotSpeedCalulator;
     }
 
