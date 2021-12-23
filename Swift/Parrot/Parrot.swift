@@ -26,7 +26,10 @@ class AfricanParrot: Parrot {
 
     let numberOfCoconuts: Int
 
-    init(numberOfCoconuts: Int) {
+    init(numberOfCoconuts: Int) throws {
+        if numberOfCoconuts < 0 {
+            throw RuntimeError("")
+        }
         self.numberOfCoconuts = numberOfCoconuts
     }
 
