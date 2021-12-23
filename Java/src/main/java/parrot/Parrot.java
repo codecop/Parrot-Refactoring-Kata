@@ -4,7 +4,6 @@ import parrot.speedcalculators.ParrotSpeedCalulator;
 
 public class Parrot {
 
-    private double voltage;
     private boolean isNailed;
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
