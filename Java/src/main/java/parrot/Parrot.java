@@ -1,5 +1,8 @@
 package parrot;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Parrot {
 
     public static final double LOAD_FACTOR = 9.0;
@@ -9,13 +12,6 @@ public class Parrot {
     private int numberOfCoconuts;
     private double voltage;
     private boolean isNailed;
-
-    public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
-        this.type = type;
-        this.numberOfCoconuts = numberOfCoconuts;
-        this.voltage = voltage;
-        this.isNailed = isNailed;
-    }
 
     public double getSpeed() {
         switch (type) {
