@@ -19,6 +19,9 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+    public Parrot() {
+    }
+
 //    public static Parrot getInstance(ParrotTypeEnum type) {
 //        switch (type) {
 //            case AFRICAN:
