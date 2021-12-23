@@ -17,7 +17,6 @@ class Parrot {
         switch parrotType {
         case .european:
             return baseSpeed
-            
         case .african:
             return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts));
             
