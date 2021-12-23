@@ -1,5 +1,8 @@
 package parrot;
 
+/**
+ *
+ */
 public class Parrot {
 
     private ParrotTypeEnum type;
