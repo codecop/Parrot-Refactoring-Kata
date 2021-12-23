@@ -10,10 +10,6 @@ public class Parrot {
     private double voltage;
     private boolean isNailed;
 
-    public Parrot() {
-        // empty
-    }
-
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = type;
         this.numberOfCoconuts = numberOfCoconuts;
@@ -49,7 +45,7 @@ public class Parrot {
         return 9.0;
     }
 
-    private double getBaseSpeed() {
+    protected double getBaseSpeed() {
         return 12.0;
     }
 
