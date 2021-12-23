@@ -1,4 +1,5 @@
 package parrot
 
-class NorwegianBlueParrot {
-}
+class NorwegianBlueParrot(
+    numberOfCoconuts: Int
+)
