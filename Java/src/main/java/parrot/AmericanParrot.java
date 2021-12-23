@@ -5,4 +5,5 @@ package parrot;
  * @since 23.12.2021
  */
 public class AmericanParrot extends Parrot {
+    private int numberOfCoconuts;
 }
