@@ -52,4 +52,10 @@ class ParrotTests: XCTestCase {
         let parrot = try! NorwegianBlueParrot(voltage: 24.0, isNailed: false)
         XCTAssertEqual(parrot.speed, 24.0)
     }
+
+    func testSpeedOfNorwegianBlueParrot_not_nailed_negativer_high_voltage() {
+        XCTAssertThrowsError(try NorwegianBlueParrot(voltage: -24.0, isNailed: false), "Negative voltage should throw an error") { (errorThrown) in
+            XCTAssertEqual(errorThrown as? RuntimeError, RuntimeError.negativeVoltage)
+        }
+    }
 }
