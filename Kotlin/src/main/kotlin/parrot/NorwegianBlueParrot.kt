@@ -2,5 +2,6 @@ package parrot
 
 class NorwegianBlueParrot(
     numberOfCoconuts: Int,
-    voltage: Double
+    voltage: Double,
+    isNailed: Boolean
 )
