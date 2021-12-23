@@ -7,7 +7,6 @@ import lombok.Builder;
 @Builder
 public class Parrot implements Speedable {
 
-    public static final double LOAD_FACTOR = 9.0;
     public static final double BASE_SPEED = 12.0;
     public static final double MINIMUM_SPEED = 24.0;
     public static final int STANDING_IN_PLACE = 0;
