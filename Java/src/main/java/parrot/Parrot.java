@@ -20,7 +20,7 @@ public class Parrot implements Speedable {
             case AFRICAN:
                 return Math.max(Speedable.STANDING_IN_PLACE, Speedable.BASE_SPEED - Speedable.LOAD_FACTOR * numberOfCoconuts);
             case NORWEGIAN_BLUE:
-                return (isNailed) ? STANDING_IN_PLACE : getBaseSpeed(voltage);
+                return (isNailed) ? Speedable.STANDING_IN_PLACE : getBaseSpeed(voltage);
             default:
                 throw new UnknownParrotSpeciesException();
         }
