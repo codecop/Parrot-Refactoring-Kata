@@ -12,6 +12,7 @@ public class Parrot implements Speedable {
     private final double voltage;
     private final boolean isNailed;
 
+    @Override
     public double getSpeed() {
         switch (parrotType) {
             case EUROPEAN:
