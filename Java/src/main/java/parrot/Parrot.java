@@ -13,10 +13,4 @@ public class Parrot {
     public double getSpeed() {
         return parrotSpeedCalulator.getSpeed();
     }
-
-
-    private double getBaseSpeed() {
-        return 12.0;
-    }
-
 }
