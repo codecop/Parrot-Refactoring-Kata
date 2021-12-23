@@ -7,23 +7,29 @@ class ParrotTests: XCTestCase {
     }
     
     func testSpeedOfAfricanParrot_with_one_coconut() {
-        let parrot = AfricanParrot(numberOfCoconuts: 1)
+        let parrot = try! AfricanParrot(numberOfCoconuts: 1)
         XCTAssertEqual(parrot.speed, 3.0)
     }
     
     func testSpeedOfAfricanParrot_with_two_coconuts() {
-        let parrot = AfricanParrot(numberOfCoconuts: 2)
+        let parrot = try! AfricanParrot(numberOfCoconuts: 2)
         XCTAssertEqual(parrot.speed, 0.0)
     }
     
     func testSpeedOfAfricanParrot_with_no_coconuts () {
-        let parrot = AfricanParrot(numberOfCoconuts: 0)
+        let parrot = try! AfricanParrot(numberOfCoconuts: 0)
         XCTAssertEqual(parrot.speed, 12.0)
     }
 
     func testSpeedOfAfricanParrot_with_5_coconuts() {
-        let parrot = AfricanParrot(numberOfCoconuts: 5)
+        let parrot = try! AfricanParrot(numberOfCoconuts: 5)
         XCTAssertEqual(parrot.speed, 0.0)
+    }
+
+    func testSpeedOfAfricanParrot_with_minus_5_coconuts() {
+        XCTAssertThrowsError(try AfricanParrot(numberOfCoconuts: -5), "Negative coconuts should throw an error") { (errorThrown) in
+            XCTAssertEqual(errorThrown as? RuntimeError, RuntimeError.negativeCoconuts)
+        }
     }
 
 
