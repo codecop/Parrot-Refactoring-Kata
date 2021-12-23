@@ -5,7 +5,7 @@ import lombok.Builder;
 
 @AllArgsConstructor
 @Builder
-public class Parrot {
+public class Parrot implements Speedable {
 
     public static final double LOAD_FACTOR = 9.0;
     public static final double BASE_SPEED = 12.0;
