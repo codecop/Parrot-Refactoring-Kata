@@ -9,4 +9,8 @@ class EuropeanParrot(
     numberOfCoconuts = numberOfCoconuts,
     voltage = voltage,
     isNailed = isNailed
-)
+) {
+
+    override val speed: Double
+        get() = baseSpeed
+}
