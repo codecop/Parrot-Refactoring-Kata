@@ -42,3 +42,15 @@ class Parrot {
         return 12.0
     }
 }
+
+class EuropeanParrot: Parrot {
+
+}
+
+class AfricanParrot: Parrot {
+
+}
+
+class NorwegianBlueParrot: Parrot {
+
+}
