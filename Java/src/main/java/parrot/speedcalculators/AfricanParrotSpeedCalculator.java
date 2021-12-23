@@ -7,6 +7,7 @@ public class AfricanParrotSpeedCalculator implements ParrotSpeedCalulator {
     private int numberOfCoconuts;
 
     public AfricanParrotSpeedCalculator(int numberOfCoconuts) {
+        this.numberOfCoconuts = numberOfCoconuts;
     }
 
     @Override
