@@ -10,7 +10,7 @@ public class Parrot {
     public static final double LOAD_FACTOR = 9.0;
     public static final double BASE_SPEED = 12.0;
     public static final double MINIMUM_SPEED = 24.0;
-    private ParrotTypeEnum type;
+    private final ParrotTypeEnum type;
     private int numberOfCoconuts;
     private double voltage;
     private boolean isNailed;
