@@ -14,9 +14,6 @@ public class Parrot {
         return parrotSpeedCalulator.getSpeed();
     }
 
-    private double getLoadFactor() {
-        return 9.0;
-    }
 
     private double getBaseSpeed() {
         return 12.0;
