@@ -8,37 +8,37 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = new Parrot(ParrotType.EUROPEAN, 0, 0, false);
+        Speedable parrot = new Parrot(ParrotType.EUROPEAN, 0, 0, false);
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = new Parrot(ParrotType.AFRICAN, 1, 0, false);
+        Speedable parrot = new Parrot(ParrotType.AFRICAN, 1, 0, false);
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_Two_Coconuts() {
-        Parrot parrot = new Parrot(ParrotType.AFRICAN, 2, 0, false);
+        Speedable parrot = new Parrot(ParrotType.AFRICAN, 2, 0, false);
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = new Parrot(ParrotType.AFRICAN, 0, 0, false);
+        Speedable parrot = new Parrot(ParrotType.AFRICAN, 0, 0, false);
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_nailed() {
-        Parrot parrot = new Parrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5, true);
+        Speedable parrot = new Parrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5, true);
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 
     @Test
     public void getSpeedNorwegianBlueParrot_not_nailed() {
-        Parrot parrot = new Parrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5, false);
+        Speedable parrot = new Parrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5, false);
         assertEquals(18.0, parrot.getSpeed(), 0.0);
     }
 
