@@ -1,5 +1,8 @@
 package parrot;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class EuropeanParrot extends Parrot implements Speedable{
 
     public EuropeanParrot(ParrotType parrotType, int numberOfCoconuts, double voltage, boolean isNailed) {
