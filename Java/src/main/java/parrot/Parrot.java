@@ -4,7 +4,7 @@ import parrot.speedcalculators.ParrotSpeedCalulator;
 
 public class Parrot {
 
-    private ParrotSpeedCalulator parrotSpeedCalulator;
+    private final ParrotSpeedCalulator parrotSpeedCalulator;
 
     public Parrot(ParrotSpeedCalulator parrotSpeedCalulator) {
         this.parrotSpeedCalulator = parrotSpeedCalulator;
