@@ -4,7 +4,7 @@ package parrot;
  * @author Günther Bernsteiner (gb)
  * @since 23.12.2021
  */
-public class AfricanParrot extends Parrot {public static final double LOAD_FACTOR = 9.0;
+public class AfricanParrot extends Parrot {private static final double LOAD_FACTOR = 9.0;
 
     private final int numberOfCoconuts;
 
