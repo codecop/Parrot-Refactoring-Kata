@@ -15,6 +15,6 @@ public class NorwegianBlueParrot extends Parrot implements Speedable {
 
     @Override
     public double getSpeed() {
-        return super.getSpeed();
+        return (isNailed) ? STANDING_IN_PLACE : getBaseSpeed(voltage);
     }
 }
