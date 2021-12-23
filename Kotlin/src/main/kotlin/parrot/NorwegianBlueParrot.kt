@@ -12,12 +12,11 @@ class NorwegianBlueParrot(
     private val nailedSpeed: Double
         get() = 0.0
 
-    override val speed: Double
-        get() = if (isNailed) nailedSpeed else getBaseSpeed(voltage)
-
-
     private val minBaseSpeed: Double
         get() = 24.0
 
-    protected fun getBaseSpeed(voltage: Double): Double = min(minBaseSpeed, voltage * baseSpeed)
+    override val speed: Double
+        get() = if (isNailed) nailedSpeed else getBaseSpeed(voltage)
+
+    private fun getBaseSpeed(voltage: Double): Double = min(minBaseSpeed, voltage * baseSpeed)
 }
