@@ -2,37 +2,37 @@ import XCTest
 
 class ParrotTests: XCTestCase {
     func testSpeedOfEuropeanParrot() {
-        let parrot = EuropeanParrot(.european, numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
+        let parrot = EuropeanParrot(numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 12.0)
     }
     
     func testSpeedOfAfricanParrot_with_one_coconut() {
-        let parrot = AfricanParrot(.african, numberOfCoconuts: 1, voltage: 0.0, isNailed: false);
+        let parrot = AfricanParrot(numberOfCoconuts: 1, voltage: 0.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 3.0)
     }
     
     func testSpeedOfAfricanParrot_with_two_coconuts() {
-        let parrot = AfricanParrot(.african, numberOfCoconuts: 2, voltage: 0.0, isNailed: false);
+        let parrot = AfricanParrot(numberOfCoconuts: 2, voltage: 0.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 0.0)
     }
     
     func testSpeedOfAfricanParrot_with_no_coconuts () {
-        let parrot = AfricanParrot(.african, numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
+        let parrot = AfricanParrot(numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 12.0)
     }
     
     func testSpeedOfNorwegianBlueParrot_nailed() {
-        let parrot = NorwegianBlueParrot(.norwegianBlue, numberOfCoconuts: 0, voltage: 0.0, isNailed: true);
+        let parrot = NorwegianBlueParrot(numberOfCoconuts: 0, voltage: 0.0, isNailed: true);
         XCTAssertEqual(parrot.speed, 0.0)
     }
     
     func testSpeedOfNorwegianBlueParrot_not_nailed() {
-        let parrot = NorwegianBlueParrot(.norwegianBlue, numberOfCoconuts: 0, voltage: 1.5, isNailed: false);
+        let parrot = NorwegianBlueParrot(numberOfCoconuts: 0, voltage: 1.5, isNailed: false);
         XCTAssertEqual(parrot.speed, 18.0)
     }
 
     func testSpeedOfNorwegianBlueParrot_not_nailed_high_voltage() {
-        let parrot = NorwegianBlueParrot(.norwegianBlue, numberOfCoconuts: 0, voltage: 4.0, isNailed: false);
+        let parrot = NorwegianBlueParrot(numberOfCoconuts: 0, voltage: 4.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 24.0)
     }
 }
