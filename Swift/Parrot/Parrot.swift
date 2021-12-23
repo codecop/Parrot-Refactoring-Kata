@@ -42,6 +42,7 @@ class NorwegianBlueParrot: Parrot {
     }
     
     private func baseSpeed(voltage: Double) -> Double {
-        return min(maximumSpeed, voltage * baseSpeed)
+        let speedByVoltage = voltage * baseSpeed
+        return min(maximumSpeed, speedByVoltage)
     }
 }
