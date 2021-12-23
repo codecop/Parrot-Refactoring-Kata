@@ -20,7 +20,7 @@ class ParrotTest {
 
     @Test
     fun getSpeedOfAfricanParrot_With_Two_Coconuts() {
-        val parrot = Parrot(ParrotTypeEnum.AFRICAN, 2, 0.0, false)
+        val parrot = AfricanParrot(2, 0.0, false)
         assertEquals(0.0, parrot.speed, 0.0)
     }
 
