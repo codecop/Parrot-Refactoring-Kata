@@ -1,4 +1,5 @@
 package parrot
 
-class AfricanParrot {
-}
+class AfricanParrot(
+    numberOfCoconuts: Int
+)
