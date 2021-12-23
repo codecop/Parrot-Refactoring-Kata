@@ -17,10 +17,10 @@ public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator 
 
     @Override
     public double getSpeed() {
-        return calculateUnnailedSpeed();
+        return isNailed ? 0 : getUnnailedSpeed();
     }
 
-    private double calculateUnnailedSpeed() {
+    private double getUnnailedSpeed() {
         return Math.min(NORWEGIAN_BLUE_MIN_SPEED, voltage * BASE_SPEED);
     }
 }
