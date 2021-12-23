@@ -5,7 +5,7 @@ import kotlin.math.min
 
 open class Parrot(
     private val type: ParrotTypeEnum,
-    private val numberOfCoconuts: Int,
+    protected val numberOfCoconuts: Int,
     private val voltage: Double,
     private val isNailed: Boolean
 ) {
