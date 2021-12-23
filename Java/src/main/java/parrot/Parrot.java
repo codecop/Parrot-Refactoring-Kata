@@ -18,7 +18,7 @@ public class Parrot implements Speedable {
     public double getSpeed() {
         switch (parrotType) {
             case EUROPEAN:
-                return BASE_SPEED;
+                return Speedable.BASE_SPEED;
             case AFRICAN:
                 return Math.max(STANDING_IN_PLACE, Speedable.BASE_SPEED - Speedable.LOAD_FACTOR * numberOfCoconuts);
             case NORWEGIAN_BLUE:
