@@ -3,7 +3,7 @@ package parrot;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class AfricanParrot implements Speedable{
+public class AfricanParrot implements Speedable {
 
     private final int numberOfCoconuts;
 
