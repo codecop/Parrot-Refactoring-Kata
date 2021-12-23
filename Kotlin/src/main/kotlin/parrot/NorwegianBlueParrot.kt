@@ -3,11 +3,9 @@ package parrot
 import kotlin.math.min
 
 class NorwegianBlueParrot(
-    voltage: Double,
+    private val voltage: Double,
     private val isNailed: Boolean
-) : Parrot(
-    voltage = voltage
-) {
+) : Parrot() {
 
     private val nailedSpeed: Double
         get() = 0.0

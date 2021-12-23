@@ -5,9 +5,7 @@ import kotlin.math.max
 class AfricanParrot(
     private val numberOfCoconuts: Int,
     voltage: Double
-) : Parrot(
-    voltage = voltage
-) {
+) : Parrot() {
 
     private val loadFactor: Double
         get() = 9.0

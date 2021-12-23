@@ -1,8 +1,6 @@
 package parrot
 
-abstract class Parrot(
-    protected val voltage: Double
-) {
+abstract class Parrot {
 
     abstract val speed: Double
 
