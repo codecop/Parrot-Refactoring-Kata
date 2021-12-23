@@ -1,5 +1,7 @@
 package parrot
 
+import kotlin.math.min
+
 class NorwegianBlueParrot(
     voltage: Double,
     private val isNailed: Boolean
@@ -13,4 +15,9 @@ class NorwegianBlueParrot(
     override val speed: Double
         get() = if (isNailed) nailedSpeed else getBaseSpeed(voltage)
 
+
+    private val minBaseSpeed: Double
+        get() = 24.0
+
+    protected fun getBaseSpeed(voltage: Double): Double = min(minBaseSpeed, voltage * baseSpeed)
 }
