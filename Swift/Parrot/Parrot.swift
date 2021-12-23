@@ -40,7 +40,9 @@ class EuropeanParrot: Parrot {
 }
 
 class AfricanParrot: Parrot {
-
+    override var speed: Double {
+        return max(0, baseSpeed - loadFactor * Double(numberOfCoconuts))
+    }
 }
 
 class NorwegianBlueParrot: Parrot {
