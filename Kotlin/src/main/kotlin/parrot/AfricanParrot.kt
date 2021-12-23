@@ -4,8 +4,7 @@ import kotlin.math.max
 
 class AfricanParrot(
     private val numberOfCoconuts: Int,
-    voltage: Double,
-    isNailed: Boolean
+    voltage: Double
 ): Parrot(
     voltage = voltage
 ) {
