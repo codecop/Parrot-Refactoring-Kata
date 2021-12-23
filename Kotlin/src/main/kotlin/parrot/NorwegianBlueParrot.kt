@@ -3,10 +3,9 @@ package parrot
 class NorwegianBlueParrot(
     numberOfCoconuts: Int,
     voltage: Double,
-    isNailed: Boolean
+    private val isNailed: Boolean
 ): Parrot(
-    voltage = voltage,
-    isNailed = isNailed
+    voltage = voltage
 ) {
 
     override val speed: Double

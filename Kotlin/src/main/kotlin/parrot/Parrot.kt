@@ -3,8 +3,7 @@ package parrot
 import kotlin.math.min
 
 abstract class Parrot(
-    protected val voltage: Double,
-    protected val isNailed: Boolean
+    protected val voltage: Double
 ) {
 
     abstract val speed: Double

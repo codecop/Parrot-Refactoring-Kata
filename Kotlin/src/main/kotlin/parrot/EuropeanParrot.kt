@@ -5,8 +5,7 @@ class EuropeanParrot(
     voltage: Double,
     isNailed: Boolean
 ) : Parrot(
-    voltage = voltage,
-    isNailed = isNailed
+    voltage = voltage
 ) {
 
     override val speed: Double
