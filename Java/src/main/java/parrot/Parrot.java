@@ -9,7 +9,7 @@ public class Parrot {
     private boolean isNailed;
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
-    public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
+    public Parrot(int numberOfCoconuts, double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
         this.isNailed = isNailed;
