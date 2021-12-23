@@ -2,7 +2,7 @@ import XCTest
 
 class ParrotTests: XCTestCase {
     func testSpeedOfEuropeanParrot() {
-        let parrot = Parrot(.european, numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
+        let parrot = EuropeanParrot(.european, numberOfCoconuts: 0, voltage: 0.0, isNailed: false);
         XCTAssertEqual(parrot.speed, 12.0)
     }
     
