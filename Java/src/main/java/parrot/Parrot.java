@@ -7,7 +7,6 @@ import lombok.Builder;
 @Builder
 public class Parrot implements Speedable {
 
-    public static final int STANDING_IN_PLACE = 0;
     private final ParrotType parrotType;
     private final int numberOfCoconuts;
     private final double voltage;
