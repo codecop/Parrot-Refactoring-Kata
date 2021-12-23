@@ -17,6 +17,14 @@ class EuropeanParrot: Parrot {
 }
 
 class AfricanParrot: Parrot {
+
+    let numberOfCoconutss: Int
+
+    override init(numberOfCoconuts: Int) {
+        self.numberOfCoconutss = numberOfCoconuts
+        super.init(numberOfCoconuts: numberOfCoconuts)
+    }
+
     var speed: Double {
         let loadFactor: Double = 9.0
         let speedByFactor = loadFactor * Double(numberOfCoconuts)
