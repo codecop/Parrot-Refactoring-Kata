@@ -7,11 +7,9 @@ class NorwegianBlueParrot(
     private val isNailed: Boolean
 ) : Parrot() {
 
-    private val nailedSpeed: Double
-        get() = 0.0
+    private val nailedSpeed: Double = 0.0
 
-    private val minBaseSpeed: Double
-        get() = 24.0
+    private val minBaseSpeed: Double = 24.0
 
     override val speed: Double
         get() = if (isNailed) nailedSpeed else getBaseSpeed(voltage)
