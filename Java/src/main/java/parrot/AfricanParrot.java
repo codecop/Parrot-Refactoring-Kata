@@ -6,4 +6,8 @@ package parrot;
  */
 public class AfricanParrot extends Parrot {
     private int numberOfCoconuts;
+
+    public double getSpeed() {
+        return 0.0;
+    }
 }
