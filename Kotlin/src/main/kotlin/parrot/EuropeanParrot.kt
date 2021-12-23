@@ -1,3 +1,5 @@
 package parrot
 
-class EuropeanParrot()
+class EuropeanParrot(
+    numberOfCoconuts: Int
+)
