@@ -2,11 +2,11 @@ import Foundation
 
 class Parrot {
     private let parrotType: ParrotTypeEnum
-    private let numberOfCoconuts: Int
-    private let voltage: Double
-    private let isNailed: Bool
-    private let loadFactor: Double = 9.0
-    private let baseSpeed: Double = 12.0
+    let numberOfCoconuts: Int
+    let voltage: Double
+    let isNailed: Bool
+    let loadFactor: Double = 9.0
+    let baseSpeed: Double = 12.0
     
     init(_ parrotType: ParrotTypeEnum, numberOfCoconuts: Int, voltage: Double, isNailed: Bool) {
         self.parrotType = parrotType
