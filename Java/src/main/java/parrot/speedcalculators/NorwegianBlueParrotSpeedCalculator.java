@@ -1,4 +1,8 @@
 package parrot.speedcalculators;
 
-public class NorwegianBlueParrotSpeedCalculator {
+public class NorwegianBlueParrotSpeedCalculator implements ParrotSpeedCalulator {
+    @Override
+    public double getSpeed() {
+        return 0;
+    }
 }
