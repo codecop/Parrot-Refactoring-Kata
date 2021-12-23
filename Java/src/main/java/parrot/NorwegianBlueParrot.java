@@ -3,7 +3,7 @@ package parrot;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class NorwegianBlueParrot implements Speedable {
+public class NorwegianBlueParrot implements Parrot {
     private double voltage;
     private boolean isNailed;
 
