@@ -38,8 +38,4 @@ public class Parrot {
         return LOAD_FACTOR;
     }
 
-    private double getBaseSpeed() {
-        return BASE_SPEED;
-    }
-
 }
