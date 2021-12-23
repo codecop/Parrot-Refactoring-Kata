@@ -2,6 +2,7 @@ package parrot;
 
 public class Parrot {
 
+    public static final double LOAD_FACTOR = 9.0;
     private ParrotTypeEnum type;
     private int numberOfCoconuts;
     private double voltage;
@@ -32,7 +33,7 @@ public class Parrot {
     }
 
     private double getLoadFactor() {
-        return 9.0;
+        return LOAD_FACTOR;
     }
 
     private double getBaseSpeed() {
