@@ -3,7 +3,7 @@ package parrot.speedcalculators;
 public class AfricanParrotSpeedCalculator implements ParrotSpeedCalulator {
 
     public static double LOAD_FACTOR = 9.0;
-    private int numberOfCoconuts;
+    private final int numberOfCoconuts;
 
     public AfricanParrotSpeedCalculator(int numberOfCoconuts) {
         this.numberOfCoconuts = numberOfCoconuts;
