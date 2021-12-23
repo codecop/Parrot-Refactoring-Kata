@@ -10,7 +10,6 @@ public class Parrot {
     private ParrotSpeedCalulator parrotSpeedCalulator;
 
     public Parrot(int numberOfCoconuts, double voltage, boolean isNailed, ParrotSpeedCalulator parrotSpeedCalulator) {
-        this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
         this.isNailed = isNailed;
         this.parrotSpeedCalulator = parrotSpeedCalulator;
