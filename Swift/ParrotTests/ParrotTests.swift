@@ -2,27 +2,27 @@ import XCTest
 
 class ParrotTests: XCTestCase {
     func testSpeedOfEuropeanParrot() {
-        let parrot = EuropeanParrot(numberOfCoconuts: 0, isNailed: false)
+        let parrot = EuropeanParrot(numberOfCoconuts: 0)
         XCTAssertEqual(parrot.speed, 12.0)
     }
     
     func testSpeedOfAfricanParrot_with_one_coconut() {
-        let parrot = AfricanParrot(numberOfCoconuts: 1, isNailed: false)
+        let parrot = AfricanParrot(numberOfCoconuts: 1)
         XCTAssertEqual(parrot.speed, 3.0)
     }
     
     func testSpeedOfAfricanParrot_with_two_coconuts() {
-        let parrot = AfricanParrot(numberOfCoconuts: 2, isNailed: false)
+        let parrot = AfricanParrot(numberOfCoconuts: 2)
         XCTAssertEqual(parrot.speed, 0.0)
     }
     
     func testSpeedOfAfricanParrot_with_no_coconuts () {
-        let parrot = AfricanParrot(numberOfCoconuts: 0, isNailed: false)
+        let parrot = AfricanParrot(numberOfCoconuts: 0)
         XCTAssertEqual(parrot.speed, 12.0)
     }
 
     func testSpeedOfAfricanParrot_with_5_coconuts() {
-        let parrot = AfricanParrot(numberOfCoconuts: 5, isNailed: false)
+        let parrot = AfricanParrot(numberOfCoconuts: 5)
         XCTAssertEqual(parrot.speed, 0.0)
     }
 
