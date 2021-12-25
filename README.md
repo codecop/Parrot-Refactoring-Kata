@@ -8,6 +8,7 @@ See [slides](https://www.slideshare.net/pkofler/coding-dojo-baby-steps-push-chal
 
 ## Supported Languages
 
+* Bash
 * C
 * Clojure
 * cpp (gtest and catch2)
