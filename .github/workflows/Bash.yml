@@ -22,8 +22,11 @@ jobs:
       run: |
         wget -nv https://github.com/SamirTalwar/smoke/releases/download/v2.3.0/smoke-v2.3.0-Linux-x86_64
         chmod 755 smoke-v2.3.0-Linux-x86_64
-        alias smoke=./smoke-v2.3.0-Linux-x86_64
+        mv smoke-v2.3.0-Linux-x86_64 smoke
+        ls -la .
 
     - name: Test
       working-directory: Bash
-      run: ./run_tests.sh
+      run: |
+        export PATH=$PATH:$(pwd)
+        ./run_tests.sh
