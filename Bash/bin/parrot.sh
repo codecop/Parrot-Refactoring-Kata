@@ -1,7 +1,7 @@
 #!/bin/bash
 
 getBaseSpeed() {
-    echo 11
+    echo 12
 }
 
 getLoadFactor() {
