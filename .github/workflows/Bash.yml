@@ -20,9 +20,9 @@ jobs:
     - name: Set up dependencies
       working-directory: Bash
       run: |
-        wget https://github.com/SamirTalwar/smoke/releases/download/v2.3.0/smoke-v2.3.0-Linux-x86_64
+        wget -nv https://github.com/SamirTalwar/smoke/releases/download/v2.3.0/smoke-v2.3.0-Linux-x86_64
         chmod 755 smoke-v2.3.0-Linux-x86_64
-        alias smoke=smoke-v2.3.0-Linux-x86_64
+        alias smoke=./smoke-v2.3.0-Linux-x86_64
 
     - name: Test
       working-directory: Bash
