@@ -15,12 +15,7 @@ public class Parrot {
     }
 
     public double getSpeed() {
-        switch (type) {
-            case NORWEGIAN_BLUE:
-                return getNorwegianBlueParrotSpeed();
-            default:
-                throw new RuntimeException("Should be unreachable");
-        }
+        throw new RuntimeException("Should be unreachable");
     }
 
     private double getNorwegianBlueParrotSpeed() {
