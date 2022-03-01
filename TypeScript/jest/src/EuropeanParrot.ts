@@ -1,8 +1,8 @@
-import { BASE_SPEED, Parrot, ParrotTypes } from './parrot';
+import { BASE_SPEED, Parrot} from './parrot';
 
 export class EuropeanParrot extends Parrot {
     constructor() {
-        super(ParrotTypes.EUROPEAN);
+        super();
     }
 
     public getSpeed(): number {

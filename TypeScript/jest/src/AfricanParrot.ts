@@ -1,10 +1,10 @@
-import { BASE_SPEED, Parrot, ParrotTypes } from './parrot';
+import { BASE_SPEED, Parrot} from './parrot';
 
 const LOAD_FACTOR = 9;
 
 export class AfricanParrot extends Parrot {
     constructor(private numberOfCoconuts: number) {
-        super(ParrotTypes.AFRICAN);
+        super();
     }
 
     public getSpeed(): number {
