@@ -1,8 +1,13 @@
 import NorwegianBlueParrot from '../src/norwegianBlueParrot';
 
 describe('NorwegianBlueParrot', () => {
-    it('should have correct speed if it is nailed', () => {
+    it('should have no speed if it is nailed', () => {
         const parrot = new NorwegianBlueParrot(  1.5, true);
+        expect(parrot.getSpeed()).toBe(0);
+    });
+
+    it('should have no speed if it is nailed, even with high voltage', () => {
+        const parrot = new NorwegianBlueParrot(  4, true);
         expect(parrot.getSpeed()).toBe(0);
     });
 
