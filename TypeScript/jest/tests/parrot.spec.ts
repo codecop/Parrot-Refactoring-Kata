@@ -1,4 +1,3 @@
-import {Parrot } from '../src/parrot'
 import { ParrotFactory } from '../src/parrotFactory';
 
 describe('Parrot', () => {
