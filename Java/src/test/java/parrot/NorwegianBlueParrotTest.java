@@ -10,7 +10,7 @@ public class NorwegianBlueParrotTest {
 
     @Test
     public void shouldReturnSpeedNailed(){
-        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 0, true);
+        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(0, 0, true);
 
         double norwegianBlueParrotSpeed = norwegianBlueParrot.getSpeed();
 
@@ -19,7 +19,7 @@ public class NorwegianBlueParrotTest {
 
     @Test
     public void shouldReturnSpeedNotNailed(){
-        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 1.5, false);
+        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(0, 1.5, false);
 
         double norwegianBlueParrotSpeed = norwegianBlueParrot.getSpeed();
 
@@ -28,7 +28,7 @@ public class NorwegianBlueParrotTest {
 
     @Test
     public void shouldReturnSpeedNotNailedHighVoltage(){
-        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 4, false);
+        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot( 0, 4, false);
 
         double norwegianBlueParrotSpeed = norwegianBlueParrot.getSpeed();
 
