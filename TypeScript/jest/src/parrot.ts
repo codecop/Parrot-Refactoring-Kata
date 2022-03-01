@@ -8,7 +8,7 @@ export class Parrot {
     private parrotType: ParrotTypes;
     protected readonly numberOfCoconuts: number;
     private voltage: number;
-    private isNailed: boolean;
+    protected readonly isNailed: boolean;
 
     constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         this.parrotType = parrotType;
@@ -37,7 +37,7 @@ export class Parrot {
         return 9;
     }
 
-    private getBaseSpeedWithVoltage(voltage: number): number {
+    protected getBaseSpeedWithVoltage(voltage: number): number {
         return Math.min(24, voltage * this.getBaseSpeed());
     }
 }
