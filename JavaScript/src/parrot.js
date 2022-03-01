@@ -59,6 +59,7 @@ class AfricanParrot extends Parrot {
     constructor(numberOfCoconuts) {
         super(PARROT_TYPES.AFRICAN, numberOfCoconuts, undefined, undefined);
         this.loadFactor = 9;
+        this.minimalSpeed = 0;
     }
 
     getSpeed() {
