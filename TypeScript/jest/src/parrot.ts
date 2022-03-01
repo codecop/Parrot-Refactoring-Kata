@@ -17,17 +17,7 @@ export abstract class Parrot {
         this.isNailed = isNailed;
     }
 
-    public getSpeed(): number {
-        switch (this.parrotType) {
-            case ParrotTypes.EUROPEAN:
-                return this.getBaseSpeed();
-            case ParrotTypes.AFRICAN:
-                return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
-            case ParrotTypes.NORWEGIAN_BLUE:
-                return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
-        }
-        throw new Error("Should be unreachable");
-    }
+    public abstract getSpeed(): number
 
     protected getBaseSpeed(): number {
         return 12;
