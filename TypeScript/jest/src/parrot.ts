@@ -4,7 +4,7 @@ export enum ParrotTypes {
     NORWEGIAN_BLUE,
 }
 
-export const BASE_SPEED = 12;
+const BASE_SPEED = 12;
 
 const LOAD_FACTOR = 9;
 
