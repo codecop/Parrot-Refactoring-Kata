@@ -11,6 +11,7 @@ export class Parrot {
                 private isNailed: boolean) {
     }
 
+
     public getSpeed(): number {
         switch (this.parrotType) {
             case ParrotTypes.EUROPEAN:
