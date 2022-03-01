@@ -55,13 +55,14 @@ class EuropeanParrot extends Parrot {
 }
 
 class AfricanParrot extends Parrot {
+
     constructor(numberOfCoconuts) {
         super(PARROT_TYPES.AFRICAN, numberOfCoconuts, undefined, undefined);
+        this.loadFactor = 9;
     }
 
     getLoadFactor() {
-        const loadFactor = 9;
-        return loadFactor;
+        return this.loadFactor;
     }
 
     getSpeed() {
