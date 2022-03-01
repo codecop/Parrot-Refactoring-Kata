@@ -1,8 +1,9 @@
 import {AbstractParrot} from "./AbstractParrot";
-import ISleepableParrot from "./ISleepableParrot";
+import INotMovableParrot from "./INotMovableParrot";
 
-export default class NorwegianBlueParrot extends AbstractParrot implements ISleepableParrot{
+export default class NorwegianBlueParrot extends AbstractParrot implements INotMovableParrot{
     private minSpeedWithVoltage: number = 24;
+
     minSpeed: number = 0;
 
     isNailed: boolean;

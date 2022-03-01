@@ -1,7 +1,7 @@
 import {AbstractParrot} from "./AbstractParrot";
-import ISleepableParrot from "./ISleepableParrot";
+import INotMovableParrot from "./INotMovableParrot";
 
-export default class AfricanParrot extends AbstractParrot implements ISleepableParrot {
+export default class AfricanParrot extends AbstractParrot implements INotMovableParrot {
     private loadFactor: number = 9;
 
     minSpeed: number = 0;
