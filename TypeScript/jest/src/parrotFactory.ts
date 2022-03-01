@@ -13,7 +13,7 @@ export class ParrotFactory {
         return new AfricanParrot(numberOfCoconuts);
     }
 
-    public createNailedNorwegianParrot(voltage: number): Parrot {
+    public createNailedNorwegianParrot(): Parrot {
         return new NailedNorwegianBlueParrot();
     }
 

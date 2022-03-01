@@ -33,7 +33,7 @@ describe('Parrot', () => {
 
         describe('nailed', () => {
             it('gets speed of Norwegian Blue Parrot nailed', () => {
-                const parrot = parrotFactory.createNailedNorwegianParrot(1.5);
+                const parrot = parrotFactory.createNailedNorwegianParrot();
                 expect(parrot.getSpeed()).toBe(0);
             });
         });
