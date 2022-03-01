@@ -7,7 +7,7 @@ public class EuropeanParrotTest {
 
     @Test
     public void shouldReturnSpeed(){
-        EuropeanParrot europeanParrot = new EuropeanParrot(0, 0, false);
+        EuropeanParrot europeanParrot = new EuropeanParrot();
 
         double europeanParrotSpeed = europeanParrot.getSpeed();
 
