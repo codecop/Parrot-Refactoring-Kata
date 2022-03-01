@@ -1,4 +1,4 @@
-abstract class AbstractParrot {
+export abstract class AbstractParrot {
     private readonly numberOfCoconuts: number;
     private readonly voltage: number;
     private readonly isNailed: boolean;
@@ -8,4 +8,6 @@ abstract class AbstractParrot {
         this.voltage = voltage;
         this.isNailed = isNailed;
     }
+
+    abstract getSpeed(): number;
 }
