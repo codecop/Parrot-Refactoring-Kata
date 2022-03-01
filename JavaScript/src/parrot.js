@@ -63,7 +63,7 @@ class AfricanParrot extends Parrot {
     }
 
     getSpeed() {
-        return Math.max(0, this.getBaseSpeed() - this.loadFactor * this.numberOfCoconuts);
+        return Math.max(this.minimalSpeed, this.getBaseSpeed() - this.loadFactor * this.numberOfCoconuts);
     }
 }
 
