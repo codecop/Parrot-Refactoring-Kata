@@ -3,8 +3,8 @@ from european_parrot import EuropeanParrot
 from african_parrot import AfricanParrot
 from norwegian_parrot import NorwegianParrot
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
-    parrot = NorwegianParrot(4, False)
-    assert parrot.speed() == 24.0
+    norwegian_parrot = NorwegianParrot(4, False)
+    assert norwegian_parrot.speed() == 24.0
 
 def test_speedNorwegianBlueParrot_not_nailed():
     parrot = NorwegianParrot(1.5, False)
