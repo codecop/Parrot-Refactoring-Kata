@@ -1,8 +1,9 @@
 import { Parrot} from './parrot';
+import { IParrot } from './IParrot';
 
 const LOAD_FACTOR = 9;
 
-export class AfricanParrot extends Parrot {
+export class AfricanParrot extends Parrot implements IParrot {
     constructor(private numberOfCoconuts: number) {
         super();
     }

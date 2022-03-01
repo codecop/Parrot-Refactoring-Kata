@@ -10,7 +10,7 @@ export class ParrotFactory {
         return new EuropeanParrot();
     }
 
-    public createAfricanParrot(numberOfCoconuts: number): Parrot {
+    public createAfricanParrot(numberOfCoconuts: number): IParrot {
         return new AfricanParrot(numberOfCoconuts);
     }
 
