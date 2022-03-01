@@ -40,7 +40,8 @@ export class Parrot {
 
     getBaseSpeedWithVoltage(voltage) {
         const minimalSpeed = 24;
-        return Math.min(minimalSpeed, voltage * this.getBaseSpeed());
+        const actualSpeed = voltage * this.getBaseSpeed();
+        return Math.min(minimalSpeed, actualSpeed);
     }
 
     getLoadFactor() {
