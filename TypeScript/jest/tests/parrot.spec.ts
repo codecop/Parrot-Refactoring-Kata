@@ -5,9 +5,11 @@ describe('Parrot', () => {
 
     const parrotFactory = new ParrotFactory();
 
-    it('gets speed of European Parrot', () => {
-        const parrot = parrotFactory.createEuropeanParrot();
-        expect(parrot.getSpeed()).toBe(12);
+    describe('European', () => {
+        it('gets speed of European Parrot', () => {
+            const parrot = parrotFactory.createEuropeanParrot();
+            expect(parrot.getSpeed()).toBe(12);
+        });
     });
 
     it('gets speed of African Parrot with one coconut', () => {
