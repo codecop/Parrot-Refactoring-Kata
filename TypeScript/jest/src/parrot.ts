@@ -4,6 +4,7 @@ export enum ParrotTypes {
     NORWEGIAN_BLUE,
 }
 
+
 export class Parrot {
     constructor(private parrotType: ParrotTypes,
                 private numberOfCoconuts: number,
