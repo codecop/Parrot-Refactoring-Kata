@@ -1,8 +1,9 @@
 import {AbstractParrot} from "./AbstractParrot";
+import ISleepableParrot from "./ISleepableParrot";
 
-export default class NorwegianBlueParrot extends AbstractParrot {
+export default class NorwegianBlueParrot extends AbstractParrot implements ISleepableParrot{
     private minSpeedWithVoltage: number = 24;
-    private minSpeed: number = 0;
+    minSpeed: number = 0;
 
     constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         super(numberOfCoconuts, voltage, isNailed);
