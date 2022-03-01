@@ -21,9 +21,6 @@ export class Parrot {
 
     getSpeed() {
         switch (this.type) {
-            case PARROT_TYPES.EUROPEAN:
-                const europeanParrot = new EuropeanParrot();
-                return europeanParrot.getSpeed();
             case PARROT_TYPES.AFRICAN:
                 const africanParrot = new AfricanParrot(this.numberOfCoconuts);
                 return africanParrot.getSpeed();
