@@ -5,6 +5,7 @@ export const PARROT_TYPES = {
 };
 
 export class Parrot {
+
     constructor(type, numberOfCoconuts, voltage, isNailed) {
         this.type = type;
         this.numberOfCoconuts = numberOfCoconuts;
