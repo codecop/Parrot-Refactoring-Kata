@@ -22,7 +22,8 @@ export class Parrot {
                 const africanParrot = new AfricanParrot(this.numberOfCoconuts);
                 return africanParrot.getSpeed();
             case PARROT_TYPES.NORWEGIAN_BLUE:
-                return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
+                const norwegianBlueParrot = new NorwegianBlueParrot(this.voltage, this.isNailed);
+                return norwegianBlueParrot.getSpeed();
         }
         throw new Error("Should be unreachable");
     }
