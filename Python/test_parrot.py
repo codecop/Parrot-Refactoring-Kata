@@ -9,7 +9,7 @@ class TestSequence(unittest.TestCase):
     @parameterized.expand([
         [0, 12.0],
         [1, 3.0],
-        #[2, 0.0]
+        [2, 0.0]
     ])
     def test_sequence(self, coconut_number, expected_speed):
         african_parrot = AfricanParrot(coconut_number)
