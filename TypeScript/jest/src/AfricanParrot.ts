@@ -8,6 +8,7 @@ export class AfricanParrot extends Parrot {
     }
 
     public getSpeed(): number {
-        return Math.max(0, Parrot.BASE_SPEED - LOAD_FACTOR * this.numberOfCoconuts);
+        const weightSpeedPenalty = LOAD_FACTOR * this.numberOfCoconuts;
+        return Math.max(0, Parrot.BASE_SPEED - weightSpeedPenalty);
     }
 }
