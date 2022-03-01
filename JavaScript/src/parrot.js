@@ -49,3 +49,5 @@ class EuropeanParrot extends Parrot {
     }
 }
 
+class AfricanParrot extends Parrot {}
+
