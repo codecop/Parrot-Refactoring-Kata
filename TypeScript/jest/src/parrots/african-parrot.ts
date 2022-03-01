@@ -2,7 +2,7 @@ import AbstractParrot from '../abstract-parrot';
 
 export class AfricanParrot extends AbstractParrot {
 
-    private numberOfCoconuts: number;
+    private readonly numberOfCoconuts: number;
 
     constructor(numberOfCoconuts: number) {
         super();
@@ -10,7 +10,7 @@ export class AfricanParrot extends AbstractParrot {
     }
 
     getSpeed(): number {
-        return 0;
+        return  Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
     }
 
     private getLoadFactor(): number {
