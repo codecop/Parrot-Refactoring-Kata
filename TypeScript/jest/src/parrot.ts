@@ -9,10 +9,16 @@ const LOAD_FACTOR = 9;
 const MIN_SPEED_WITH_VOLTAGE = 24;
 
 export class Parrot {
-    constructor(private parrotType: ParrotTypes,
-                private numberOfCoconuts: number,
-                private voltage: number,
-                private isNailed: boolean) {
+    private readonly parrotType: ParrotTypes;
+    private readonly numberOfCoconuts: number;
+    private readonly voltage: number;
+    private readonly isNailed: boolean;
+
+    constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
+        this.parrotType = parrotType;
+        this.numberOfCoconuts = numberOfCoconuts;
+        this.voltage = voltage;
+        this.isNailed = isNailed;
     }
 
     public getSpeed(): number {
