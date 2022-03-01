@@ -14,7 +14,11 @@ export class AfricanParrot extends AbstractParrot {
     }
 
     getSpeed(): number {
-        return  Math.max(this.MIN_SPEED, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
+        return Math.max(this.MIN_SPEED, this.getSpeedUnderLoad());
+    }
+
+    private getSpeedUnderLoad() {
+        return this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts;
     }
 
     private getLoadFactor(): number {
