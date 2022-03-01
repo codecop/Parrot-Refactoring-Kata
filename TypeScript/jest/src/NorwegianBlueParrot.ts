@@ -7,19 +7,19 @@ export default class NorwegianBlueParrot extends AbstractParrot implements ISlee
 
     isNailed: boolean;
 
-    voltageNumber: number;
+    voltage: number;
 
     constructor(voltage: number, isNailed: boolean) {
         super();
         this.isNailed = isNailed;
-        this.voltageNumber = voltage;
+        this.voltage = voltage;
     }
 
     getSpeed(): number {
         if(this.isNailed) {
             return this.minSpeed;
         }
-        return this.getBaseSpeedWithVoltage(this.voltageNumber);
+        return this.getBaseSpeedWithVoltage(this.voltage);
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
