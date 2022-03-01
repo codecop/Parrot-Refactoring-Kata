@@ -50,7 +50,7 @@ class EuropeanParrot extends Parrot {
 }
 
 class AfricanParrot extends Parrot {
-    constructor(numberOfCoconuts, isNailed) {
+    constructor(numberOfCoconuts) {
         super(PARROT_TYPES.AFRICAN, numberOfCoconuts, undefined, undefined);
     }
 }
