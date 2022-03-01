@@ -43,7 +43,7 @@ class Parrot:
     def _base_speed(self):
         return 12.0
 
-class European_Parrot(IParrot):
+class EuropeanParrot(IParrot):
 
     def __init__(self):
         pass
