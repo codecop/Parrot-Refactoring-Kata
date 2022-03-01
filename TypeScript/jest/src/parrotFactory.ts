@@ -1,4 +1,4 @@
-import { EuropeanParrot } from './EuropeanParrot';
+import { EuropeanParrot } from './parrots/EuropeanParrot';
 import { AfricanParrot } from './parrots/AfricanParrot';
 import { NailedNorwegianBlueParrot } from './NailedNorwegianBlueParrot';
 import { FreeNorwegianBlueParrot } from './FreeNorwegianBlueParrot';
