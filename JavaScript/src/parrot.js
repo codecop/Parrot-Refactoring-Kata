@@ -67,7 +67,8 @@ class AfricanParrot extends Parrot {
     }
 
     getSpeedUnderLoad() {
-        return this.getBaseSpeed() - this.loadFactor * this.numberOfCoconuts;
+        const speedReductionByLoad = this.loadFactor * this.numberOfCoconuts;
+        return this.getBaseSpeed() - speedReductionByLoad;
     }
 }
 
