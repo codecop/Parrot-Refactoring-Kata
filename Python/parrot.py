@@ -10,6 +10,9 @@ class IParrot:
     @abstractmethod
     def speed(self): raise NotImplementedError
 
+    def _base_speed(self):
+        return 12.0
+
 class Parrot:
 
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
@@ -40,7 +43,7 @@ class Parrot:
     def _base_speed(self):
         return 12.0
 
-class European_Parrot(Parrot):
+class European_Parrot(IParrot):
 
     def __init__(self):
         pass
