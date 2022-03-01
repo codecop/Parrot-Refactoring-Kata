@@ -38,14 +38,16 @@ describe('Parrot', () => {
             });
         });
 
-        it('gets speed of Norwegian Blue Parrot not nailed', () => {
-            const parrot = parrotFactory.createFreeNorwegianParrot(1.5);
-            expect(parrot.getSpeed()).toBe(18);
-        });
+        describe('free', () => {
+            it('gets speed of Norwegian Blue Parrot not nailed', () => {
+                const parrot = parrotFactory.createFreeNorwegianParrot(1.5);
+                expect(parrot.getSpeed()).toBe(18);
+            });
 
-        it('gets speed of Norwegian Blue Parrot not nailed high voltage', () => {
-            const parrot = parrotFactory.createFreeNorwegianParrot(4);
-            expect(parrot.getSpeed()).toBe(24);
+            it('gets speed of Norwegian Blue Parrot not nailed high voltage', () => {
+                const parrot = parrotFactory.createFreeNorwegianParrot(4);
+                expect(parrot.getSpeed()).toBe(24);
+            });
         });
     });
 
