@@ -9,7 +9,7 @@ class ParrotType(Enum):  # If it is not available, just remove it.
 class IParrot:
     @abstractmethod
     def speed(self): raise NotImplementedError
-
+    @classmethod 
     def _base_speed(self):
         return 12.0
 
