@@ -12,16 +12,6 @@ class IParrot:
     def _base_speed(self):
         return BASE_SPEED
 
-class EuropeanParrot(IParrot):
-
-    def __init__(self):
-        pass
-
-    def speed(self):
-        return self._base_speed()
-
-
-
 class AfricanParrot(IParrot):
     
     def __init__(self, number_of_coconuts):
