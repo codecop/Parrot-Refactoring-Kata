@@ -15,6 +15,14 @@ class AfricanParrotTestSequence(unittest.TestCase):
         african_parrot = AfricanParrot(coconut_number)
         assert african_parrot.speed() == expected_speed
 
+class NorwegianParrotTestSequence(unittest.TestCase):
+    @parameterized.expand([
+        [4, False, 24.0],
+    ])
+    def test_sequence(self, voltage, is_nailed, expected_speed):
+        norwegian_parrot = NorwegianParrot(voltage, is_nailed)
+        assert norwegian_parrot.speed() == expected_speed
+
 
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
     norwegian_parrot = NorwegianParrot(4, False)
