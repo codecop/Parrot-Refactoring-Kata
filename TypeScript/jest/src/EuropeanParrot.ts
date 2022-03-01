@@ -6,6 +6,6 @@ export default class EuropeanParrot extends AbstractParrot {
     }
 
     getSpeed(): number {
-        return this.getBaseSpeed();
+        return this.baseSpeed;
     }
 }
