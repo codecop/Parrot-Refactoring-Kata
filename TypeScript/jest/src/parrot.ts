@@ -6,6 +6,8 @@ export enum ParrotTypes {
 
 export const BASE_SPEED = 12;
 
+const LOAD_FACTOR = 9;
+
 export class Parrot {
     constructor(private parrotType: ParrotTypes,
                 private numberOfCoconuts: number,
@@ -30,7 +32,7 @@ export class Parrot {
     }
 
     private getLoadFactor(): number {
-        return 9;
+        return LOAD_FACTOR;
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
