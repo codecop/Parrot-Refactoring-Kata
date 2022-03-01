@@ -1,4 +1,3 @@
-import {Parrot, ParrotTypes} from '../src/parrot'
 import EuropeanParrot from '../src/parrots/european-parrot';
 import {AfricanParrot} from '../src/parrots/african-parrot';
 import NorwegianBlueParrot from '../src/parrots/norwegian-blue-parrot';
