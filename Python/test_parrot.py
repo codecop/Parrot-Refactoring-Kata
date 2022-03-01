@@ -19,6 +19,7 @@ class NorwegianParrotTestSequence(unittest.TestCase):
     @parameterized.expand([
         [4, False, 24.0],
         [1.5, False, 18.0],
+        [1.5, True, 0.0],
     ])
     def test_sequence(self, voltage, is_nailed, expected_speed):
         norwegian_parrot = NorwegianParrot(voltage, is_nailed)
