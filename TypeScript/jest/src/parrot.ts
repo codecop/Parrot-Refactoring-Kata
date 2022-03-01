@@ -6,6 +6,7 @@ export enum ParrotTypes {
 
 const BASE_SPEED = 12;
 const LOAD_FACTOR = 9;
+const MIN_SPEED_WITH_VOLTAGE = 24;
 
 export class Parrot {
     constructor(private parrotType: ParrotTypes,
@@ -35,7 +36,7 @@ export class Parrot {
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * this.getBaseSpeed());
+        return Math.min(MIN_SPEED_WITH_VOLTAGE, voltage * this.getBaseSpeed());
     }
 
 }
