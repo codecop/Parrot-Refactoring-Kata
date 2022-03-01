@@ -4,4 +4,8 @@ export class ParrotFactory {
     public createEuropeanParrot() {
         return new Parrot(ParrotTypes.EUROPEAN, 0, 0, false);
     }
+
+    public createAfricanParrot(numberOfCoconuts: number) {
+        return new Parrot(ParrotTypes.AFRICAN, numberOfCoconuts, 0, false);
+    }
 }
