@@ -6,7 +6,7 @@ class AfricanParrot extends Parrot {
     }
 
     getSpeed(): number {
-        return super.getSpeed();
+        return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
     }
 }
 
