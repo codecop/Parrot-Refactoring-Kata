@@ -1,10 +1,8 @@
-import { Parrot } from './parrot';
 import { IParrot } from './IParrot';
 import { PARROT_BASE_SPEED } from './ParrotBaseSpeed';
 
-export class FreeNorwegianBlueParrot extends Parrot implements IParrot {
+export class FreeNorwegianBlueParrot implements IParrot {
     constructor(private voltage: number) {
-        super();
     }
 
     public getSpeed(): number {
