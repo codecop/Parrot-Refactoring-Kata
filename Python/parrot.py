@@ -1,10 +1,14 @@
 from enum import Enum  # Enum is introduced in Python 3.4.
-
+from abc import abstractmethod
 
 class ParrotType(Enum):  # If it is not available, just remove it.
     EUROPEAN = 1
     AFRICAN = 2
     NORWEGIAN_BLUE = 3 
+
+class IParrot:
+    @abstractmethod
+    def speed(self): raise NotImplementedError
 
 class Parrot:
 
