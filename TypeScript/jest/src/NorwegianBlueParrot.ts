@@ -6,6 +6,6 @@ export default class NorwegianBlueParrot extends AbstractParrot {
     }
 
     getSpeed(): number {
-        return 0;
+        return (this.isNailed) ? 0 : Math.min(24, this.voltage * this.baseSpeed);
     }
 }
