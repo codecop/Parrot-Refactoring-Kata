@@ -4,8 +4,6 @@ export const PARROT_TYPES = {
     NORWEGIAN_BLUE: 'NORWEGIAN_BLUE',
 };
 
-class EuropeanParrot extends Parrot {}
-
 export class Parrot {
 
     constructor(type, numberOfCoconuts, voltage, isNailed) {
@@ -39,3 +37,10 @@ export class Parrot {
         return 12;
     }
 }
+
+class EuropeanParrot extends Parrot {
+    constructor(type, numberOfCoconuts, voltage, isNailed) {
+        super(type, numberOfCoconuts, voltage, isNailed);
+    }
+}
+
