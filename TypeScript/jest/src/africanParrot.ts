@@ -8,6 +8,10 @@ class AfricanParrot extends Parrot {
     getSpeed(): number {
         return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
     }
+
+    private getLoadFactor(): number {
+        return 9;
+    }
 }
 
 export default AfricanParrot;
