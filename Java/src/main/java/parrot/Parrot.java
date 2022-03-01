@@ -1,6 +1,6 @@
 package parrot;
 
-public class Parrot {
+public abstract class Parrot {
 
     private ParrotTypeEnum type;
     private int numberOfCoconuts;
