@@ -1,5 +1,5 @@
 export abstract class AbstractParrot {
-    private readonly numberOfCoconuts: number;
+    numberOfCoconuts: number;
     private readonly voltage: number;
     private readonly isNailed: boolean;
 
