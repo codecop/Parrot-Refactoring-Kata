@@ -1,5 +1,6 @@
 import { Parrot, ParrotTypes } from './parrot';
 import { EuropeanParrot } from './EuropeanParrot';
+import { AfricanParrot } from './AfricanParrot';
 
 export class ParrotFactory {
     public createEuropeanParrot(): Parrot {
@@ -7,7 +8,7 @@ export class ParrotFactory {
     }
 
     public createAfricanParrot(numberOfCoconuts: number): Parrot {
-        return new Parrot(ParrotTypes.AFRICAN, numberOfCoconuts, 0, false);
+        return new AfricanParrot(numberOfCoconuts);
     }
 
     public createNorwegianParrot(voltage: number, isNailed: boolean): Parrot {
