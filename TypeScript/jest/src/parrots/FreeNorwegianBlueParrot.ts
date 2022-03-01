@@ -1,5 +1,5 @@
 import { IParrot } from '../IParrot';
-import { PARROT_BASE_SPEED } from '../ParrotBaseSpeed';
+import { PARROT_BASE_SPEED } from './ParrotBaseSpeed';
 
 export class FreeNorwegianBlueParrot implements IParrot {
     constructor(private voltage: number) {
