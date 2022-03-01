@@ -2,7 +2,7 @@ import {Parrot, ParrotTypes} from '../src/parrot';
 import NorwegianBlueParrot from '../src/norwegianBlueParrot';
 
 describe('NorwegianBlueParrot', () => {
-    it('should have correct speed if it\'s nailed', () => {
+    it('should have correct speed if it is nailed', () => {
         const parrot = new NorwegianBlueParrot( 0, 1.5, true);
         expect(parrot.getSpeed()).toBe(0);
     });

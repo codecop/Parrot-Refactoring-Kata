@@ -29,7 +29,7 @@ export class Parrot {
         throw new Error("Should be unreachable");
     }
 
-    private getBaseSpeed(): number {
+    protected getBaseSpeed(): number {
         return 12;
     }
 
