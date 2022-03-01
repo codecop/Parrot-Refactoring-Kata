@@ -1,8 +1,8 @@
 import {AbstractParrot} from "./AbstractParrot";
 
 export default class EuropeanParrot extends AbstractParrot {
-    constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
-        super(numberOfCoconuts, voltage, isNailed);
+    constructor(numberOfCoconuts: number, voltage: number) {
+        super(numberOfCoconuts, voltage);
     }
 
     getSpeed(): number {
