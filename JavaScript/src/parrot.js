@@ -60,5 +60,9 @@ class AfricanParrot extends Parrot {
     }
 }
 
-class NorwegianBlueParrot extends Parrot {}
+class NorwegianBlueParrot extends Parrot {
+    constructor(type, numberOfCoconuts, voltage, isNailed) {
+        super(type, numberOfCoconuts, voltage, isNailed);
+    }
+}
 
