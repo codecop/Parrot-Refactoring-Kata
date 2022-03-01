@@ -60,3 +60,5 @@ class AfricanParrot extends Parrot {
     }
 }
 
+class NorwegianBlueParrot extends Parrot {}
+
