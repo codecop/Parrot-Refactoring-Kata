@@ -2,6 +2,7 @@ import {AbstractParrot} from "./AbstractParrot";
 
 export default class NorwegianBlueParrot extends AbstractParrot {
     private minSpeedWithVoltage: number = 24;
+    private minSpeed: number = 0;
 
     constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         super(numberOfCoconuts, voltage, isNailed);
@@ -9,7 +10,7 @@ export default class NorwegianBlueParrot extends AbstractParrot {
 
     getSpeed(): number {
         if(this.isNailed) {
-            return 0
+            return this.minSpeed;
         }
         return this.getBaseSpeedWithVoltage(this.voltage);
     }
