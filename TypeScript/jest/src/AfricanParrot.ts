@@ -6,14 +6,14 @@ export default class AfricanParrot extends AbstractParrot implements ISleepableP
 
     minSpeed: number = 0;
 
-    countOfCoconuts: number;
+    numberOfCoconuts: number;
 
     constructor(numberOfCoconuts: number) {
         super();
-        this.countOfCoconuts = numberOfCoconuts;
+        this.numberOfCoconuts = numberOfCoconuts;
     }
 
     getSpeed(): number {
-        return Math.max(this.minSpeed, this.baseSpeed - this.loadFactor * this.countOfCoconuts);
+        return Math.max(this.minSpeed, this.baseSpeed - this.loadFactor * this.numberOfCoconuts);
     }
 }
