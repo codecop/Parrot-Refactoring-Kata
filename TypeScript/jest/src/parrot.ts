@@ -35,4 +35,5 @@ export class Parrot {
         return Math.min(24, voltage * this.getBaseSpeed());
     }
 
+
 }
