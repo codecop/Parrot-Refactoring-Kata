@@ -17,4 +17,13 @@ public class NorwegianBlueParrotTest {
         Assert.assertEquals(0.0, norwegianBlueParrotSpeed, 0.0);
     }
 
+    @Test
+    public void shouldReturnSpeedNotNailed(){
+        NorwegianBlueParrot norwegianBlueParrot = new NorwegianBlueParrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, 1.5, false);
+
+        double norwegianBlueParrotSpeed = norwegianBlueParrot.getSpeed();
+
+        Assert.assertEquals(18.0, norwegianBlueParrotSpeed, 0.0);
+    }
+
 }
