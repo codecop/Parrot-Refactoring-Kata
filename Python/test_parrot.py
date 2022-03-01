@@ -1,6 +1,7 @@
 
-from parrot import NorwegianParrot, AfricanParrot
+from parrot import NorwegianParrot
 from european_parrot import EuropeanParrot
+from african_parrot import AfricanParrot
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
     parrot = NorwegianParrot(4, False)
     assert parrot.speed() == 24.0
