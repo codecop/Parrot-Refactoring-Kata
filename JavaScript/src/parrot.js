@@ -43,7 +43,8 @@ export class Parrot {
     }
 
     getLoadFactor() {
-        return 9;
+        const loadFactor = 9;
+        return loadFactor;
     }
 
     getBaseSpeed() {
