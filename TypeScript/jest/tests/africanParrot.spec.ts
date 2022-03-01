@@ -8,7 +8,7 @@ describe('AfricanParrot', () => {
     ])(
         'should have correct speed with %d coconuts',
         ({numberOfCoconuts, expectedSpeed}) => {
-            const parrot = new AfricanParrot(numberOfCoconuts, 0, false);
+            const parrot = new AfricanParrot(numberOfCoconuts);
             expect(parrot.getSpeed()).toBe(expectedSpeed);
         }
     );

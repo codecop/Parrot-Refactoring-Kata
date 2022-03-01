@@ -1,8 +1,13 @@
 import {Parrot} from './parrot';
 
 class NorwegianBlueParrot extends Parrot {
-    constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
-        super(numberOfCoconuts, voltage, isNailed);
+    private readonly voltage: number;
+    private readonly isNailed: boolean;
+
+    constructor(voltage: number, isNailed: boolean) {
+        super();
+        this.voltage = voltage;
+        this.isNailed = isNailed;
     }
 
     getSpeed(): number {
