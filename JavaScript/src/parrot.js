@@ -39,8 +39,8 @@ export class Parrot {
 }
 
 class EuropeanParrot extends Parrot {
-    constructor(type, numberOfCoconuts, voltage, isNailed) {
-        super(type, numberOfCoconuts, voltage, isNailed);
+    constructor(numberOfCoconuts, voltage, isNailed) {
+        super(PARROT_TYPES.EUROPEAN, numberOfCoconuts, voltage, isNailed);
     }
 }
 
