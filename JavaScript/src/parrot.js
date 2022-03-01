@@ -40,7 +40,7 @@ export class Parrot {
 
 class EuropeanParrot extends Parrot {
     constructor(voltage, isNailed) {
-        super(PARROT_TYPES.EUROPEAN, undefined, voltage, isNailed);
+        super(PARROT_TYPES.EUROPEAN, undefined, undefined, isNailed);
     }
 }
 
