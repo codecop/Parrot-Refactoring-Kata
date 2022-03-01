@@ -15,4 +15,13 @@ public class AfricanParrotTest {
         Assert.assertEquals(3.0, africanParrotSpeed, 0.0);
     }
 
+    @Test
+    public void shouldReturnSpeedWithTwoCoconut(){
+        AfricanParrot africanParrot = new AfricanParrot(ParrotTypeEnum.AFRICAN, 2, 0, false);
+
+        double africanParrotSpeed = africanParrot.getSpeed();
+
+        Assert.assertEquals(0.0, africanParrotSpeed, 0.0);
+    }
+
 }
