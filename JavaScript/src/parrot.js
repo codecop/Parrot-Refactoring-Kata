@@ -38,13 +38,6 @@ export class Parrot {
         throw new UnknownParrotError(this.type);
     }
 
-    getBaseSpeedWithVoltage(voltage) {
-        const minimalSpeedTreshold = 24;
-        const actualSpeed = voltage * this.getBaseSpeed();
-        const baseSpeed = Math.min(minimalSpeedTreshold, actualSpeed);
-        return baseSpeed;
-    }
-
     getLoadFactor() {
         const loadFactor = 9;
         return loadFactor;
@@ -83,6 +76,13 @@ class NorwegianBlueParrot extends Parrot {
 
     getSpeed() {
         return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
+    }
+
+    getBaseSpeedWithVoltage(voltage) {
+        const minimalSpeedTreshold = 24;
+        const actualSpeed = voltage * this.getBaseSpeed();
+        const baseSpeed = Math.min(minimalSpeedTreshold, actualSpeed);
+        return baseSpeed;
     }
 }
 
