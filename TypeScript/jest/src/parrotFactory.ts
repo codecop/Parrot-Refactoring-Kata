@@ -1,4 +1,3 @@
-import { Parrot} from './parrot';
 import { EuropeanParrot } from './EuropeanParrot';
 import { AfricanParrot } from './AfricanParrot';
 import { NailedNorwegianBlueParrot } from './NailedNorwegianBlueParrot';
@@ -18,7 +17,7 @@ export class ParrotFactory {
         return new NailedNorwegianBlueParrot();
     }
 
-    public createFreeNorwegianParrot(voltage: number): Parrot {
+    public createFreeNorwegianParrot(voltage: number): IParrot {
         return new FreeNorwegianBlueParrot(voltage);
     }
 }

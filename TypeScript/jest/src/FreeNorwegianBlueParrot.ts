@@ -1,6 +1,7 @@
 import { Parrot } from './parrot';
+import { IParrot } from './IParrot';
 
-export class FreeNorwegianBlueParrot extends Parrot {
+export class FreeNorwegianBlueParrot extends Parrot implements IParrot {
     constructor(private voltage: number) {
         super();
     }
