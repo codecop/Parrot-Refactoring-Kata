@@ -1,4 +1,4 @@
-import { IParrot } from '../IParrot';
+import { IParrot } from './IParrot';
 import { PARROT_BASE_SPEED } from './ParrotBaseSpeed';
 
 const LOAD_FACTOR = 9;

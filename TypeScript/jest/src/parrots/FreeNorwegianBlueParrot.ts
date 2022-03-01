@@ -1,4 +1,4 @@
-import { IParrot } from '../IParrot';
+import { IParrot } from './IParrot';
 import { PARROT_BASE_SPEED } from './ParrotBaseSpeed';
 
 export class FreeNorwegianBlueParrot implements IParrot {

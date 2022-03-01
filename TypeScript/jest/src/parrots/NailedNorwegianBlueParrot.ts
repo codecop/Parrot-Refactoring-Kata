@@ -1,4 +1,4 @@
-import { IParrot } from '../IParrot';
+import { IParrot } from './IParrot';
 
 export class NailedNorwegianBlueParrot implements IParrot {
     public getSpeed() {
