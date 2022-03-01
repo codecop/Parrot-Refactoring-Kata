@@ -8,7 +8,7 @@ public class AfricanParrotTest {
 
     @Test
     public void shouldReturnSpeedWithOneCoconut(){
-        AfricanParrot africanParrot = new AfricanParrot(ParrotTypeEnum.AFRICAN, 1, 0, false);
+        AfricanParrot africanParrot = new AfricanParrot(1, 0, false);
 
         double africanParrotSpeed = africanParrot.getSpeed();
 
@@ -17,7 +17,7 @@ public class AfricanParrotTest {
 
     @Test
     public void shouldReturnSpeedWithTwoCoconut(){
-        AfricanParrot africanParrot = new AfricanParrot(ParrotTypeEnum.AFRICAN, 2, 0, false);
+        AfricanParrot africanParrot = new AfricanParrot(2, 0, false);
 
         double africanParrotSpeed = africanParrot.getSpeed();
 
