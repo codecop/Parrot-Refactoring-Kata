@@ -1,6 +1,7 @@
 from abc import abstractmethod
 
 BASE_SPEED = 12.0
+LOAD_FACTOR = 9.0
 
 class IParrot:
     @abstractmethod
@@ -27,7 +28,7 @@ class AfricanParrot(IParrot):
         return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
 
     def _load_factor(self):
-        return 9.0
+        return LOAD_FACTOR
 
 class NorwegianParrot(IParrot):
     def __init__(self, voltage, nailed):
