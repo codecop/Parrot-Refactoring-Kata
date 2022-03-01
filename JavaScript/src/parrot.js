@@ -42,5 +42,9 @@ class EuropeanParrot extends Parrot {
     constructor() {
         super(PARROT_TYPES.EUROPEAN, undefined, undefined, undefined);
     }
+
+    getSpeed() {
+        return super.getSpeed();
+    }
 }
 
