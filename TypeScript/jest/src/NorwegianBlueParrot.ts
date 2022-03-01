@@ -1,4 +1,4 @@
-import { BASE_SPEED, Parrot} from './parrot';
+import { Parrot} from './parrot';
 
 export class NorwegianBlueParrot extends Parrot {
     constructor(private voltage: number,
@@ -12,6 +12,6 @@ export class NorwegianBlueParrot extends Parrot {
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * BASE_SPEED);
+        return Math.min(24, voltage * Parrot.BASE_SPEED);
     }
 }
