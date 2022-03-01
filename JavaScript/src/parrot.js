@@ -35,7 +35,7 @@ export class Parrot {
     }
 
     handleUnknownParrot() {
-        throw new Error(`Unknown parrot: ${this.type}`);
+        throw new UnknownParrotError(this.type);
     }
 
     getBaseSpeedWithVoltage(voltage) {
