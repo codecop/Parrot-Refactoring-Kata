@@ -1,9 +1,12 @@
 import {Parrot, ParrotTypes} from '../src/parrot'
+import { ParrotFactory } from '../src/parrotFactory';
 
 describe('Parrot', () => {
 
+    const parrotFactory = new ParrotFactory();
+
     it('gets speed of European Parrot', () => {
-        const parrot = new Parrot(ParrotTypes.EUROPEAN, 0, 0, false);
+        const parrot = parrotFactory.createEuropeanParrot();
         expect(parrot.getSpeed()).toBe(12);
     });
 
