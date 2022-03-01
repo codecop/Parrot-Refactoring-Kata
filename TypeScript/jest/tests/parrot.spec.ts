@@ -1,4 +1,4 @@
-import { ParrotFactory } from '../src/parrotFactory';
+import { ParrotFactory } from '../src/ParrotFactory';
 
 describe('Parrot', () => {
 
