@@ -4,11 +4,6 @@ import NorwegianBlueParrot from '../src/parrots/norwegian-blue-parrot';
 
 describe('Parrot', () => {
 
-    it('gets speed of European Parrot', () => {
-        const parrot = new EuropeanParrot();
-        expect(parrot.getSpeed()).toBe(12);
-    });
-
     it('gets speed of Norwegian Blue Parrot nailed', () => {
         const parrot = new NorwegianBlueParrot(  1.5, true);
         expect(parrot.getSpeed()).toBe(0);
