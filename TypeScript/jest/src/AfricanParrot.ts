@@ -9,6 +9,8 @@ export default class AfricanParrot extends AbstractParrot implements ISleepableP
 
     constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         super(numberOfCoconuts, voltage, isNailed);
+
+        this.countOfCoconuts = numberOfCoconuts;
     }
 
     getSpeed(): number {
