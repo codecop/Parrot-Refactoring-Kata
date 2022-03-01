@@ -2,6 +2,8 @@ import AbstractParrot from '../abstract-parrot';
 
 export class AfricanParrot extends AbstractParrot {
 
+    private readonly LOAD_FACTOR = 9;
+
     private readonly numberOfCoconuts: number;
 
     constructor(numberOfCoconuts: number) {
@@ -14,6 +16,6 @@ export class AfricanParrot extends AbstractParrot {
     }
 
     private getLoadFactor(): number {
-        return 9;
+        return this.LOAD_FACTOR;
     }
 }
