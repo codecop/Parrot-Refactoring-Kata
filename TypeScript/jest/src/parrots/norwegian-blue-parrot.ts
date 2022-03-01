@@ -2,7 +2,10 @@ import AbstractParrot from '../abstract-parrot';
 
 export default class NorwegianBlueParrot extends AbstractParrot{
 
+    private readonly MAX_SPEED = 24;
+
     private readonly voltage: number;
+
     private readonly isNailed: boolean;
 
     constructor(voltage: number, isNailed: boolean) {
@@ -16,6 +19,6 @@ export default class NorwegianBlueParrot extends AbstractParrot{
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * this.getBaseSpeed());
+        return Math.min(this.MAX_SPEED, voltage * this.getBaseSpeed());
     }
 }
