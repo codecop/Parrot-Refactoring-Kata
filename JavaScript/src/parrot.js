@@ -49,5 +49,9 @@ class EuropeanParrot extends Parrot {
     }
 }
 
-class AfricanParrot extends Parrot {}
+class AfricanParrot extends Parrot {
+    constructor(type, numberOfCoconuts, voltage, isNailed) {
+        super(type, numberOfCoconuts, voltage, isNailed);
+    }
+}
 
