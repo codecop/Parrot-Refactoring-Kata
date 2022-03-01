@@ -25,7 +25,7 @@ export class Parrot {
                 const norwegianBlueParrot = new NorwegianBlueParrot(this.voltage, this.isNailed);
                 return norwegianBlueParrot.getSpeed();
         }
-        throw new Error("Should be unreachable");
+        throw new Error(`Unknown parrot: ${this.type}`);
     }
 
     getBaseSpeedWithVoltage(voltage) {
