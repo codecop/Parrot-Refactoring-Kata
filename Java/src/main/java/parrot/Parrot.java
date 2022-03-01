@@ -7,7 +7,6 @@ public abstract class Parrot {
     private boolean isNailed;
 
     public Parrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-        this.voltage = voltage;
         this.isNailed = isNailed;
     }
 
