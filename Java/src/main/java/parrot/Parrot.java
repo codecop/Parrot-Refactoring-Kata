@@ -2,7 +2,6 @@ package parrot;
 
 public abstract class Parrot {
 
-    private int numberOfCoconuts;
 
     public Parrot(int numberOfCoconuts, double voltage, boolean isNailed) {
     }
