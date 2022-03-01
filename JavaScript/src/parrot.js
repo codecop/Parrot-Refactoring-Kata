@@ -38,11 +38,6 @@ export class Parrot {
         throw new UnknownParrotError(this.type);
     }
 
-    getLoadFactor() {
-        const loadFactor = 9;
-        return loadFactor;
-    }
-
     getBaseSpeed() {
         const baseSpeed = 12;
         return baseSpeed;
@@ -62,6 +57,11 @@ class EuropeanParrot extends Parrot {
 class AfricanParrot extends Parrot {
     constructor(numberOfCoconuts) {
         super(PARROT_TYPES.AFRICAN, numberOfCoconuts, undefined, undefined);
+    }
+
+    getLoadFactor() {
+        const loadFactor = 9;
+        return loadFactor;
     }
 
     getSpeed() {
