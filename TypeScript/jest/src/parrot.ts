@@ -4,13 +4,13 @@ export enum ParrotTypes {
     NORWEGIAN_BLUE,
 }
 
-export class Parrot {
+export abstract class Parrot {
     private parrotType: ParrotTypes;
     protected readonly numberOfCoconuts: number;
     protected readonly voltage: number;
     protected readonly isNailed: boolean;
 
-    constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
+    protected constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         this.parrotType = parrotType;
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
