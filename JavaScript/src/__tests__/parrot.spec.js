@@ -14,7 +14,7 @@ describe("Parrot", function () {
     });
 
     test("get speed of african parrot with two coconuts", function () {
-        const parrot = new Parrot(PARROT_TYPES.AFRICAN, 2, 0, false);
+        const parrot = new AfricanParrot(2);
 
         expect(parrot.getSpeed()).toBe(0);
     });
