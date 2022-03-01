@@ -4,7 +4,11 @@ export const PARROT_TYPES = {
     NORWEGIAN_BLUE: 'NORWEGIAN_BLUE',
 };
 
-class UnknownParrotError extends Error {}
+class UnknownParrotError extends Error {
+    constructor(type) {
+        super(`Unknown parrot: ${type}`);
+    }
+}
 
 export class Parrot {
 
