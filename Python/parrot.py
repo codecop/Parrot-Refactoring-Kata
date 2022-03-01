@@ -63,7 +63,7 @@ class AfricanParrot(IParrot):
     def _load_factor(self):
         return 9.0
 
-class Norwegian_Parrot(IParrot):
+class NorwegianParrot(IParrot):
     def __init__(self, voltage, nailed):
         self._voltage = voltage
         self._nailed = nailed
