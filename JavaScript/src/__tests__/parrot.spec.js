@@ -1,4 +1,4 @@
-import { EuropeanParrot, Parrot, PARROT_TYPES } from '../parrot';
+import { AfricanParrot, EuropeanParrot, Parrot, PARROT_TYPES } from '../parrot';
 
 describe("Parrot", function () {
     test("get speed of european parrot", function () {
@@ -8,7 +8,7 @@ describe("Parrot", function () {
     });
 
     test("get speed of african parrot with one coconut", function () {
-        const parrot = new Parrot(PARROT_TYPES.AFRICAN, 1, 0, false);
+        const parrot = new AfricanParrot(1);
 
         expect(parrot.getSpeed()).toBe(3);
     });
