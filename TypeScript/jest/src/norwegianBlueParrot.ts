@@ -11,11 +11,11 @@ class NorwegianBlueParrot extends Parrot {
     }
 
     getSpeed(): number {
-        return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage(this.voltage);
+        return (this.isNailed) ? 0 : this.getBaseSpeedWithVoltage();
     }
 
-    private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * this.getBaseSpeed());
+    private getBaseSpeedWithVoltage(): number {
+        return Math.min(24, this.voltage * this.getBaseSpeed());
     }
 }
 
