@@ -9,4 +9,8 @@ public class AfricanParrot extends Parrot{
     public double getSpeed() {
         return super.getSpeed();
     }
+
+    private double getLoadFactor() {
+        return 9.0;
+    }
 }
