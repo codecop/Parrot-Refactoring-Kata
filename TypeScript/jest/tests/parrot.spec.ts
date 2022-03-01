@@ -1,6 +1,7 @@
 import {Parrot, ParrotTypes} from '../src/parrot'
 import EuropeanParrot from '../src/parrots/european-parrot';
 import {AfricanParrot} from '../src/parrots/african-parrot';
+import NorwegianBlueParrot from '../src/parrots/norwegian-blue-parrot';
 
 describe('Parrot', () => {
 
@@ -25,17 +26,17 @@ describe('Parrot', () => {
     });
 
     it('gets speed of Norwegian Blue Parrot nailed', () => {
-        const parrot = new Parrot(ParrotTypes.NORWEGIAN_BLUE, 0, 1.5, true);
+        const parrot = new NorwegianBlueParrot(  1.5, true);
         expect(parrot.getSpeed()).toBe(0);
     });
 
     it('gets speed of Norwegian Blue Parrot not nailed', () => {
-        const parrot = new Parrot(ParrotTypes.NORWEGIAN_BLUE, 0, 1.5, false);
+        const parrot = new NorwegianBlueParrot( 1.5, false);
         expect(parrot.getSpeed()).toBe(18);
     });
 
     it('gets speed of Norwegian Blue Parrot not nailed high voltage', () => {
-        const parrot = new Parrot(ParrotTypes.NORWEGIAN_BLUE, 0, 4, false);
+        const parrot = new NorwegianBlueParrot(  4, false);
         expect(parrot.getSpeed()).toBe(24);
     });
 
