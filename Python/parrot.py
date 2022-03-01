@@ -63,7 +63,7 @@ class African_Parrot(IParrot):
     def _load_factor(self):
         return 9.0
 
-class Norwegian_Parrot(Parrot):
+class Norwegian_Parrot(IParrot):
     def __init__(self, voltage, nailed):
         self._voltage = voltage
         self._nailed = nailed
@@ -73,3 +73,6 @@ class Norwegian_Parrot(Parrot):
             return 0
         else:
             return self._compute_base_speed_for_voltage(self._voltage)
+
+    def _compute_base_speed_for_voltage(self, voltage):
+        return min([24.0, voltage * self._base_speed()])
