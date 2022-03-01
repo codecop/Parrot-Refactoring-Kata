@@ -3,9 +3,10 @@ import { EuropeanParrot } from './EuropeanParrot';
 import { AfricanParrot } from './AfricanParrot';
 import { NailedNorwegianBlueParrot } from './NailedNorwegianBlueParrot';
 import { FreeNorwegianBlueParrot } from './FreeNorwegianBlueParrot';
+import { IParrot } from './IParrot';
 
 export class ParrotFactory {
-    public createEuropeanParrot(): Parrot {
+    public createEuropeanParrot(): IParrot {
         return new EuropeanParrot();
     }
 

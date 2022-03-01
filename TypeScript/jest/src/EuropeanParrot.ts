@@ -1,6 +1,7 @@
 import { Parrot} from './parrot';
+import { IParrot } from './IParrot';
 
-export class EuropeanParrot extends Parrot {
+export class EuropeanParrot extends Parrot implements IParrot {
     constructor() {
         super();
     }
