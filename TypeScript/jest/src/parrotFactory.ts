@@ -12,10 +12,6 @@ export class ParrotFactory {
         return new AfricanParrot(numberOfCoconuts);
     }
 
-    public createNorwegianParrot(voltage: number, isNailed: boolean): Parrot {
-        return new NorwegianBlueParrot(voltage, isNailed);
-    }
-
     public createNailedNorwegianParrot(voltage: number): Parrot {
         return new NorwegianBlueParrot(voltage, true);
     }
