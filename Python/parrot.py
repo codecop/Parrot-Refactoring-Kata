@@ -6,7 +6,7 @@ class ParrotType(Enum):  # If it is not available, just remove it.
     AFRICAN = 2
     NORWEGIAN_BLUE = 3
 
-
+#commit
 class Parrot:
 
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
