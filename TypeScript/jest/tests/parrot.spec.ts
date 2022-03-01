@@ -29,19 +29,21 @@ describe('Parrot', () => {
         });
     });
 
-    it('gets speed of Norwegian Blue Parrot nailed', () => {
-        const parrot = parrotFactory.createNorwegianParrot(1.5, true);
-        expect(parrot.getSpeed()).toBe(0);
-    });
+    describe('Norwegian Blue Parrot', () => {
+        it('gets speed of Norwegian Blue Parrot nailed', () => {
+            const parrot = parrotFactory.createNorwegianParrot(1.5, true);
+            expect(parrot.getSpeed()).toBe(0);
+        });
 
-    it('gets speed of Norwegian Blue Parrot not nailed', () => {
-        const parrot = parrotFactory.createNorwegianParrot(1.5, false);
-        expect(parrot.getSpeed()).toBe(18);
-    });
+        it('gets speed of Norwegian Blue Parrot not nailed', () => {
+            const parrot = parrotFactory.createNorwegianParrot(1.5, false);
+            expect(parrot.getSpeed()).toBe(18);
+        });
 
-    it('gets speed of Norwegian Blue Parrot not nailed high voltage', () => {
-        const parrot = parrotFactory.createNorwegianParrot(4, false);
-        expect(parrot.getSpeed()).toBe(24);
+        it('gets speed of Norwegian Blue Parrot not nailed high voltage', () => {
+            const parrot = parrotFactory.createNorwegianParrot(4, false);
+            expect(parrot.getSpeed()).toBe(24);
+        });
     });
 
 });
