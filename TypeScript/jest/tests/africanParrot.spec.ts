@@ -1,6 +1,5 @@
 import AfricanParrot from '../src/africanParrot';
 
-
 describe('AfricanParrot', () => {
     it.each([
         {numberOfCoconuts: 0, expectedSpeed: 12},
