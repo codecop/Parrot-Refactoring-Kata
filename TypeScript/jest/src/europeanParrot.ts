@@ -1,8 +1,8 @@
-import {Parrot, ParrotTypes} from './parrot';
+import {Parrot} from './parrot';
 
 class EuropeanParrot extends Parrot {
     constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
-        super(ParrotTypes.EUROPEAN, numberOfCoconuts, voltage, isNailed);
+        super(numberOfCoconuts, voltage, isNailed);
     }
 
     getSpeed(): number {

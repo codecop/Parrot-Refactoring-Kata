@@ -1,17 +1,9 @@
-export enum ParrotTypes {
-    EUROPEAN,
-    AFRICAN,
-    NORWEGIAN_BLUE,
-}
-
 export abstract class Parrot {
-    private parrotType: ParrotTypes;
     protected readonly numberOfCoconuts: number;
     protected readonly voltage: number;
     protected readonly isNailed: boolean;
 
-    protected constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
-        this.parrotType = parrotType;
+    protected constructor( numberOfCoconuts: number, voltage: number, isNailed: boolean) {
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
         this.isNailed = isNailed;
@@ -22,6 +14,4 @@ export abstract class Parrot {
     protected getBaseSpeed(): number {
         return 12;
     }
-
-
 }

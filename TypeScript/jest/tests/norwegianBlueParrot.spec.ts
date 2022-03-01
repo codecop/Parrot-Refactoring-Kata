@@ -1,4 +1,3 @@
-import {Parrot, ParrotTypes} from '../src/parrot';
 import NorwegianBlueParrot from '../src/norwegianBlueParrot';
 
 describe('NorwegianBlueParrot', () => {
