@@ -1,5 +1,5 @@
 import { EuropeanParrot } from './EuropeanParrot';
-import { AfricanParrot } from './AfricanParrot';
+import { AfricanParrot } from './parrots/AfricanParrot';
 import { NailedNorwegianBlueParrot } from './NailedNorwegianBlueParrot';
 import { FreeNorwegianBlueParrot } from './FreeNorwegianBlueParrot';
 import { IParrot } from './IParrot';
