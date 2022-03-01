@@ -2,6 +2,7 @@ from abc import abstractmethod
 
 BASE_SPEED = 12.0
 LOAD_FACTOR = 9.0
+NAILED_SPEED = 0
 
 class IParrot:
     @abstractmethod
@@ -37,7 +38,7 @@ class NorwegianParrot(IParrot):
 
     def speed(self):
         if self._nailed:
-            return 0
+            return NAILED_SPEED
         else:
             return self._compute_base_speed_for_voltage(self._voltage)
 
