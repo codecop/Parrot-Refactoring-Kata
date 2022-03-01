@@ -21,6 +21,10 @@ export default class NorwegianBlueParrot extends AbstractParrot{
     }
 
     private getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(this.MAX_SPEED, voltage * this.getBaseSpeed());
+        return Math.min(this.MAX_SPEED, this.getSpeedUnderVoltage(voltage));
+    }
+
+    private getSpeedUnderVoltage(voltage: number) {
+        return voltage * this.getBaseSpeed();
     }
 }
