@@ -1,0 +1,1 @@
+export const PARROT_BASE_SPEED = 12;

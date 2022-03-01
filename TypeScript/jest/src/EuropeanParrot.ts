@@ -1,5 +1,6 @@
 import { Parrot} from './parrot';
 import { IParrot } from './IParrot';
+import { PARROT_BASE_SPEED } from './ParrotBaseSpeed';
 
 export class EuropeanParrot extends Parrot implements IParrot {
     constructor() {
@@ -7,6 +8,6 @@ export class EuropeanParrot extends Parrot implements IParrot {
     }
 
     public getSpeed(): number {
-        return Parrot.BASE_SPEED;
+        return PARROT_BASE_SPEED;
     }
 }
