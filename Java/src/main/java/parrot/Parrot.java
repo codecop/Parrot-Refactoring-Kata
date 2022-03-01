@@ -13,9 +13,6 @@ public abstract class Parrot {
         throw new RuntimeException("Should be unreachable");
     }
 
-    private double getAfricanParrotSpeed() {
-        return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
-    }
 
     private double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * getBaseSpeed());
