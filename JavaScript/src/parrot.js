@@ -48,7 +48,8 @@ export class Parrot {
     }
 
     getBaseSpeed() {
-        return 12;
+        const baseSpeed = 12;
+        return baseSpeed;
     }
 }
 
