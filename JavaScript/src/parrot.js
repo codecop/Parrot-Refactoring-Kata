@@ -25,6 +25,10 @@ export class Parrot {
                 const norwegianBlueParrot = new NorwegianBlueParrot(this.voltage, this.isNailed);
                 return norwegianBlueParrot.getSpeed();
         }
+        this.handleUnknownParrot();
+    }
+
+    handleUnknownParrot() {
         throw new Error(`Unknown parrot: ${this.type}`);
     }
 
