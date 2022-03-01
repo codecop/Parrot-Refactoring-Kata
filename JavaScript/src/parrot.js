@@ -64,5 +64,9 @@ class NorwegianBlueParrot extends Parrot {
     constructor(voltage, isNailed) {
         super(PARROT_TYPES.NORWEGIAN_BLUE, undefined, voltage, isNailed);
     }
+
+    getSpeed() {
+        return super.getSpeed();
+    }
 }
 
