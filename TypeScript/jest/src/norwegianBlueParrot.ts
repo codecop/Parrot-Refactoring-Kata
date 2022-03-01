@@ -17,7 +17,11 @@ class NorwegianBlueParrot extends Parrot {
     }
 
     private getBoundedSpeed(): number {
-        return Math.min(NorwegianBlueParrot.MAX_SPEED, this.voltage * this.getBaseSpeed());
+        return Math.min(NorwegianBlueParrot.MAX_SPEED, this.getUnboundedSpeed());
+    }
+
+    private getUnboundedSpeed(): number {
+        return this.voltage * this.getBaseSpeed();
     }
 }
 
