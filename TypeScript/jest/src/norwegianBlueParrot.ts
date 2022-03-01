@@ -1,6 +1,8 @@
 import {Parrot} from './parrot';
 
 class NorwegianBlueParrot extends Parrot {
+    static readonly MAX_SPEED = 24;
+
     private readonly voltage: number;
     private readonly isNailed: boolean;
 
@@ -15,7 +17,7 @@ class NorwegianBlueParrot extends Parrot {
     }
 
     private getBaseSpeedWithVoltage(): number {
-        return Math.min(24, this.voltage * this.getBaseSpeed());
+        return Math.min(NorwegianBlueParrot.MAX_SPEED, this.voltage * this.getBaseSpeed());
     }
 }
 
