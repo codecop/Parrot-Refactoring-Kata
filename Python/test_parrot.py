@@ -1,5 +1,5 @@
 
-from parrot import Parrot, ParrotType, Norwegian_Parrot, African_Parrot
+from parrot import Parrot, ParrotType, Norwegian_Parrot, African_Parrot, European_Parrot
 
 
 def test_speedOfEuropeanParrot():
@@ -59,3 +59,7 @@ def test_speedOfAfricanParrot_With_Two_Coconuts2():
 def test_speedOfAfricanParrot_With_One_Coconut2():
     parrot = African_Parrot(1)
     assert parrot.speed() == 3.0
+
+def test_speedOfEuropeanParrot2():
+    parrot = European_Parrot()
+    assert parrot.speed() == 12.0
