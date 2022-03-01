@@ -4,9 +4,8 @@ from enum import Enum  # Enum is introduced in Python 3.4.
 class ParrotType(Enum):  # If it is not available, just remove it.
     EUROPEAN = 1
     AFRICAN = 2
-    NORWEGIAN_BLUE = 3
+    NORWEGIAN_BLUE = 3 
 
-#commit
 class Parrot:
 
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
@@ -36,3 +35,7 @@ class Parrot:
 
     def _base_speed(self):
         return 12.0
+
+class European_Parrot(Parrot):
+    def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
+        super().__init__(self, type_of_parrot, number_of_coconuts, voltage, nailed)
