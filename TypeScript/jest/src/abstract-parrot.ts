@@ -1,8 +1,10 @@
 export default abstract class AbstractParrot {
 
+    private readonly BASE_SPEED = 12;
+
     public abstract getSpeed(): number;
 
     protected getBaseSpeed(): number {
-        return 12;
+        return this.BASE_SPEED;
     }
 }
