@@ -7,7 +7,7 @@ export enum ParrotTypes {
 export class Parrot {
     private parrotType: ParrotTypes;
     protected readonly numberOfCoconuts: number;
-    private voltage: number;
+    protected readonly voltage: number;
     protected readonly isNailed: boolean;
 
     constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
