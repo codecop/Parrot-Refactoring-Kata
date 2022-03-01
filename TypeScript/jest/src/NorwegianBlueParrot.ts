@@ -9,8 +9,8 @@ export default class NorwegianBlueParrot extends AbstractParrot implements ISlee
 
     voltageNumber: number;
 
-    constructor(numberOfCoconuts: number, voltage: number, isNailed: boolean) {
-        super(numberOfCoconuts);
+    constructor(voltage: number, isNailed: boolean) {
+        super();
         this.isNailedValue = isNailed;
         this.voltageNumber = voltage;
     }
