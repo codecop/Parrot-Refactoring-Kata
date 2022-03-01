@@ -1,7 +1,6 @@
 import {Parrot, ParrotTypes} from '../src/parrot'
 
 describe('Parrot', () => {
-
     it('gets speed of European Parrot', () => {
         const parrot = new Parrot(ParrotTypes.EUROPEAN, 0, 0, false);
         expect(parrot.getSpeed()).toBe(12);

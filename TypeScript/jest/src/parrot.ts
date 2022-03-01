@@ -5,10 +5,16 @@ export enum ParrotTypes {
 }
 
 export class Parrot {
-    constructor(private parrotType: ParrotTypes,
-                private numberOfCoconuts: number,
-                private voltage: number,
-                private isNailed: boolean) {
+    private parrotType: ParrotTypes;
+    private numberOfCoconuts: number;
+    private voltage: number;
+    private isNailed: boolean;
+
+    constructor(parrotType: ParrotTypes, numberOfCoconuts: number, voltage: number, isNailed: boolean) {
+        this.parrotType = parrotType;
+        this.numberOfCoconuts = numberOfCoconuts;
+        this.voltage = voltage;
+        this.isNailed = isNailed;
     }
 
     public getSpeed(): number {
