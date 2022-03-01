@@ -5,7 +5,7 @@ export default class NorwegianBlueParrot extends AbstractParrot implements ISlee
     private minSpeedWithVoltage: number = 24;
     minSpeed: number = 0;
 
-    isNailedValue: boolean = true;
+    isNailedValue: boolean;
 
     voltageNumber: number = 0;
 
@@ -16,7 +16,7 @@ export default class NorwegianBlueParrot extends AbstractParrot implements ISlee
     }
 
     getSpeed(): number {
-        if(this.isNailed) {
+        if(this.isNailedValue) {
             return this.minSpeed;
         }
         return this.getBaseSpeedWithVoltage(this.voltage);
