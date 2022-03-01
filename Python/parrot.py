@@ -53,3 +53,8 @@ class African_Parrot(Parrot):
 class Norwegian_Parrot(Parrot):
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
         super().__init__(self, type_of_parrot, number_of_coconuts, voltage, nailed)
+    def speed(self):
+        if self._nailed:
+            return 0
+        else:
+            return self._compute_base_speed_for_voltage(self._voltage)
