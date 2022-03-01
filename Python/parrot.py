@@ -47,6 +47,8 @@ class European_Parrot(Parrot):
 class African_Parrot(Parrot):
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
         super().__init__(self, type_of_parrot, number_of_coconuts, voltage, nailed)
+    def speed(self):
+        return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
 
 class Norwegian_Parrot(Parrot):
     def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
