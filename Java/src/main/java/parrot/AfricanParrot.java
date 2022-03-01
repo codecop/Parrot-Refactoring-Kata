@@ -1,16 +1,16 @@
 package parrot;
 
 public class AfricanParrot extends Parrot {
-    private int numberOfCocunuts;
+    private int numberOfCoconuts;
 
     public AfricanParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         super(type, numberOfCoconuts, voltage, isNailed);
-        this.numberOfCocunuts = numberOfCoconuts;
+        this.numberOfCoconuts = numberOfCoconuts;
     }
 
     @Override
     public double getSpeed() {
-        return Math.max(0, getBaseSpeed() - getLoadFactor() * this.numberOfCocunuts);
+        return Math.max(0, getBaseSpeed() - getLoadFactor() * this.numberOfCoconuts);
     }
 
     private double getLoadFactor() {
