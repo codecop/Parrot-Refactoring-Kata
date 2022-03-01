@@ -1,4 +1,4 @@
-from parrot import Parrot, ParrotType
+from parrot import Parrot, ParrotType, Norwegian_Parrot
 
 
 def test_speedOfEuropeanParrot():
@@ -34,3 +34,8 @@ def test_speedNorwegianBlueParrot_not_nailed():
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
     parrot = Parrot(ParrotType.NORWEGIAN_BLUE, 0, 4, False)
     assert parrot.speed() == 24.0
+
+def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
+    parrot = Norwegian_Parrot(4, False)
+    assert parrot.speed() == 24.0
+
