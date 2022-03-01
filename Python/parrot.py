@@ -53,7 +53,7 @@ class EuropeanParrot(IParrot):
 
 
 
-class African_Parrot(IParrot):
+class AfricanParrot(IParrot):
     
     def __init__(self, number_of_coconuts):
         self._number_of_coconuts = number_of_coconuts
