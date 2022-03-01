@@ -23,8 +23,8 @@ def test_speedOfAfricanParrot_With_Two_Coconuts():
     assert african_parrot.speed() == 0.0
 
 def test_speedOfAfricanParrot_With_One_Coconut():
-    parrot = AfricanParrot(1)
-    assert parrot.speed() == 3.0
+    african_parrot = AfricanParrot(1)
+    assert african_parrot.speed() == 3.0
 
 def test_speedOfEuropeanParrot():
     parrot = EuropeanParrot()
