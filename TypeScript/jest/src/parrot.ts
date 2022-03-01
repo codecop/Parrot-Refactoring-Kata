@@ -4,6 +4,7 @@ export enum ParrotTypes {
     NORWEGIAN_BLUE,
 }
 
+export const BASE_SPEED = 12;
 
 export class Parrot {
     constructor(private parrotType: ParrotTypes,
@@ -25,7 +26,7 @@ export class Parrot {
     }
 
     private getBaseSpeed(): number {
-        return 12;
+        return BASE_SPEED;
     }
 
     private getLoadFactor(): number {
