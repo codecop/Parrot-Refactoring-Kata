@@ -33,7 +33,7 @@ export class Parrot {
         return 12;
     }
 
-    private getLoadFactor(): number {
+    protected getLoadFactor(): number {
         return 9;
     }
 
