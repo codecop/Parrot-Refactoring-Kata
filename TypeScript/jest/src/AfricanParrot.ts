@@ -4,7 +4,7 @@ const LOAD_FACTOR = 9;
 
 export class AfricanParrot extends Parrot {
     constructor(private numberOfCoconuts: number) {
-        super(ParrotTypes.AFRICAN, 0, false);
+        super(ParrotTypes.AFRICAN);
     }
 
     public getSpeed(): number {
