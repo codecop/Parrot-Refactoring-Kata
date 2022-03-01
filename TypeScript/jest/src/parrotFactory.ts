@@ -14,7 +14,7 @@ export class ParrotFactory {
         return new AfricanParrot(numberOfCoconuts);
     }
 
-    public createNailedNorwegianParrot(): Parrot {
+    public createNailedNorwegianParrot(): IParrot {
         return new NailedNorwegianBlueParrot();
     }
 
