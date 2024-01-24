@@ -18,6 +18,28 @@ class EuropeanStrategy {
     }
 }
 
+class AfricanStrategy {
+    public function __construct(
+        private int $numberOfCoconuts,
+    ) { }
+
+    public function getSpeed(float $baseSpeed): float
+    {
+        return max(0, $baseSpeed - $this->getLoadFactor() * $this->numberOfCoconuts);
+    }
+
+    public function getCry(): string
+    {
+        return 'Sqaark!';
+    }
+
+    private function getLoadFactor(): float
+    {
+        return 9.0;
+    }
+}
+
+
 class Parrot
 {
     public function __construct(
@@ -39,7 +61,7 @@ class Parrot
     {
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getSpeed($this->getBaseSpeed()),
-            ParrotTypeEnum::AFRICAN => max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts),
+            ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getSpeed($this->getBaseSpeed()),
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->isNailed ? 0 : $this->getBaseSpeedWith($this->voltage),
             default => throw new Exception('Should be unreachable'),
         };
@@ -52,7 +74,7 @@ class Parrot
     {
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getCry(),
-            ParrotTypeEnum::AFRICAN => 'Sqaark!',
+            ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getCry(),
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->voltage > 0 ? 'Bzzzzzz' : '...',
             default => throw new Exception('Should be unreachable'),
         };
@@ -61,11 +83,6 @@ class Parrot
     private function getBaseSpeedWith(float $voltage): float
     {
         return min(24.0, $voltage * $this->getBaseSpeed());
-    }
-
-    private function getLoadFactor(): float
-    {
-        return 9.0;
     }
 
     private function getBaseSpeed(): float
