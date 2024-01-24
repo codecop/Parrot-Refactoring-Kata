@@ -71,7 +71,8 @@ class Parrot
         private int $type,
         private int $numberOfCoconuts,
         private float $voltage,
-        private bool $isNailed
+        private bool $isNailed,
+        private $strategy = null
     ) {
 
     }
@@ -81,6 +82,9 @@ class Parrot
      */
     public function getSpeed(): float
     {
+        if ($this->strategy) {
+            return $this->strategy->getSpeed($this->getBaseSpeed());
+        }
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getSpeed($this->getBaseSpeed()),
             ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getSpeed($this->getBaseSpeed()),
@@ -94,6 +98,9 @@ class Parrot
      */
     public function getCry(): string
     {
+        if ($this->strategy) {
+            return $this->strategy->getCry();
+        }
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getCry(),
             ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getCry(),
