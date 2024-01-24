@@ -39,6 +39,28 @@ class AfricanStrategy {
     }
 }
 
+class NorwegianStrategy {
+    public function __construct(
+        private float $voltage,
+        private bool $isNailed
+    ) { }
+
+    public function getSpeed(float $baseSpeed): float
+    {
+        return $this->isNailed ? 0 : $this->getBaseSpeedWith($baseSpeed, $this->voltage);
+    }
+
+    public function getCry(): string
+    {
+        return $this->voltage > 0 ? 'Bzzzzzz' : '...';
+    }
+
+    private function getBaseSpeedWith($baseSpeed, float $voltage): float
+    {
+        return min(24.0, $voltage * $baseSpeed);
+    }
+
+}
 
 class Parrot
 {
@@ -62,7 +84,7 @@ class Parrot
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getSpeed($this->getBaseSpeed()),
             ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getSpeed($this->getBaseSpeed()),
-            ParrotTypeEnum::NORWEGIAN_BLUE => $this->isNailed ? 0 : $this->getBaseSpeedWith($this->voltage),
+            ParrotTypeEnum::NORWEGIAN_BLUE => (new NorwegianStrategy($this->voltage, $this->isNailed))->getSpeed($this->getBaseSpeed()),
             default => throw new Exception('Should be unreachable'),
         };
     }
@@ -75,14 +97,9 @@ class Parrot
         return match ($this->type) {
             ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getCry(),
             ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getCry(),
-            ParrotTypeEnum::NORWEGIAN_BLUE => $this->voltage > 0 ? 'Bzzzzzz' : '...',
+            ParrotTypeEnum::NORWEGIAN_BLUE => (new NorwegianStrategy($this->voltage, $this->isNailed))->getCry(),
             default => throw new Exception('Should be unreachable'),
         };
-    }
-
-    private function getBaseSpeedWith(float $voltage): float
-    {
-        return min(24.0, $voltage * $this->getBaseSpeed());
     }
 
     private function getBaseSpeed(): float
