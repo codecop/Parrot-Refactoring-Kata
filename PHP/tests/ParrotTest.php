@@ -22,19 +22,19 @@ class ParrotTest extends TestCase
 
     public function testSpeedOfAfricanParrotWithOneCoconut(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 1, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 1, 0, false, new AfricanStrategy(1));
         self::assertSame(3.0, $parrot->getSpeed());
     }
 
     public function testSpeedOfAfricanParrotWithTwoCoconuts(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 2, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 2, 0, false, new AfricanStrategy(2));
         self::assertSame(0.0, $parrot->getSpeed());
     }
 
     public function testSpeedOfAfricanParrotWithNoCoconuts(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 0, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 0, 0, false, new AfricanStrategy(0));
         self::assertSame(12.0, $parrot->getSpeed());
     }
 
@@ -71,7 +71,7 @@ class ParrotTest extends TestCase
 
     public function testGetCryOfAfricanParrot(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 1, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::AFRICAN, 1, 0, false, new AfricanStrategy(1));
         self::assertSame('Sqaark!', $parrot->getCry());
     }
 
