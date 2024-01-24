@@ -65,14 +65,7 @@ class NorwegianStrategy {
 class Parrot
 {
     public function __construct(
-        /**
-         * @var int ParrotTypeEnum
-         */
-        private int $type,
-        private int $numberOfCoconuts,
-        private float $voltage,
-        private bool $isNailed,
-        private $strategy = null
+        private $strategy
     ) {
 
     }
@@ -85,12 +78,7 @@ class Parrot
         if ($this->strategy) {
             return $this->strategy->getSpeed($this->getBaseSpeed());
         }
-        return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getSpeed($this->getBaseSpeed()),
-            ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getSpeed($this->getBaseSpeed()),
-            ParrotTypeEnum::NORWEGIAN_BLUE => (new NorwegianStrategy($this->voltage, $this->isNailed))->getSpeed($this->getBaseSpeed()),
-            default => throw new Exception('Should be unreachable'),
-        };
+        throw new Exception('Should be unreachable');
     }
 
     /**
