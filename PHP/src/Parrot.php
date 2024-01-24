@@ -6,6 +6,18 @@ namespace Parrot;
 
 use Exception;
 
+class EuropeanStrategy {
+    public function getSpeed(float $baseSpeed): float
+    {
+        return $baseSpeed;
+    }
+
+    public function getCry(): string
+    {
+        return 'Sqoork!';
+    }
+}
+
 class Parrot
 {
     public function __construct(
@@ -17,6 +29,7 @@ class Parrot
         private float $voltage,
         private bool $isNailed
     ) {
+
     }
 
     /**
@@ -25,7 +38,7 @@ class Parrot
     public function getSpeed(): float
     {
         return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => $this->getBaseSpeed(),
+            ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getSpeed($this->getBaseSpeed()),
             ParrotTypeEnum::AFRICAN => max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts),
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->isNailed ? 0 : $this->getBaseSpeedWith($this->voltage),
             default => throw new Exception('Should be unreachable'),
@@ -38,7 +51,7 @@ class Parrot
     public function getCry(): string
     {
         return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => 'Sqoork!',
+            ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getCry(),
             ParrotTypeEnum::AFRICAN => 'Sqaark!',
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->voltage > 0 ? 'Bzzzzzz' : '...',
             default => throw new Exception('Should be unreachable'),
