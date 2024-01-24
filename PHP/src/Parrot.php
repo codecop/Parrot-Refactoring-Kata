@@ -28,14 +28,14 @@ class AfricanStrategy {
         return max(0, $baseSpeed - $this->getLoadFactor() * $this->numberOfCoconuts);
     }
 
-    public function getCry(): string
-    {
-        return 'Sqaark!';
-    }
-
     private function getLoadFactor(): float
     {
         return 9.0;
+    }
+
+    public function getCry(): string
+    {
+        return 'Sqaark!';
     }
 }
 
@@ -50,16 +50,15 @@ class NorwegianStrategy {
         return $this->isNailed ? 0 : $this->getBaseSpeedWith($baseSpeed, $this->voltage);
     }
 
-    public function getCry(): string
-    {
-        return $this->voltage > 0 ? 'Bzzzzzz' : '...';
-    }
-
     private function getBaseSpeedWith($baseSpeed, float $voltage): float
     {
         return min(24.0, $voltage * $baseSpeed);
     }
 
+    public function getCry(): string
+    {
+        return $this->voltage > 0 ? 'Bzzzzzz' : '...';
+    }
 }
 
 class Parrot
@@ -67,7 +66,9 @@ class Parrot
     public function __construct(
         private $strategy
     ) {
-
+        if (!$this->strategy) {
+            throw new Exception('Should be unreachable');
+        }
     }
 
     /**
@@ -75,10 +76,12 @@ class Parrot
      */
     public function getSpeed(): float
     {
-        if ($this->strategy) {
-            return $this->strategy->getSpeed($this->getBaseSpeed());
-        }
-        throw new Exception('Should be unreachable');
+        return $this->strategy->getSpeed($this->getBaseSpeed());
+    }
+
+    private function getBaseSpeed(): float
+    {
+        return 12.0;
     }
 
     /**
@@ -86,19 +89,6 @@ class Parrot
      */
     public function getCry(): string
     {
-        if ($this->strategy) {
-            return $this->strategy->getCry();
-        }
-        return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => (new EuropeanStrategy())->getCry(),
-            ParrotTypeEnum::AFRICAN => (new AfricanStrategy($this->numberOfCoconuts))->getCry(),
-            ParrotTypeEnum::NORWEGIAN_BLUE => (new NorwegianStrategy($this->voltage, $this->isNailed))->getCry(),
-            default => throw new Exception('Should be unreachable'),
-        };
-    }
-
-    private function getBaseSpeed(): float
-    {
-        return 12.0;
+        return $this->strategy->getCry();
     }
 }
