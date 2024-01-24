@@ -6,7 +6,12 @@ namespace Parrot;
 
 use Exception;
 
-class EuropeanStrategy {
+interface ParrotStrategy {
+    function getSpeed(float $baseSpeed): float;
+    function getCry(): string;
+}
+
+class EuropeanStrategy implements ParrotStrategy {
     public function getSpeed(float $baseSpeed): float
     {
         return $baseSpeed;
@@ -18,7 +23,7 @@ class EuropeanStrategy {
     }
 }
 
-class AfricanStrategy {
+class AfricanStrategy implements ParrotStrategy {
     public function __construct(
         private int $numberOfCoconuts,
     ) { }
@@ -39,7 +44,7 @@ class AfricanStrategy {
     }
 }
 
-class NorwegianStrategy {
+class NorwegianStrategy implements ParrotStrategy {
     public function __construct(
         private float $voltage,
         private bool $isNailed
@@ -64,11 +69,8 @@ class NorwegianStrategy {
 class Parrot
 {
     public function __construct(
-        private $strategy
+        private ParrotStrategy $strategy
     ) {
-        if (!$this->strategy) {
-            throw new Exception('Should be unreachable');
-        }
     }
 
     /**
