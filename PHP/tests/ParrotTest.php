@@ -6,6 +6,9 @@ namespace Parrot\Tests;
 
 use Exception;
 use Parrot\Parrot;
+use Parrot\EuropeanStrategy;
+use Parrot\AfricanStrategy;
+use Parrot\NorwegianStrategy;
 use Parrot\ParrotTypeEnum;
 use PHPUnit\Framework\TestCase;
 
@@ -13,7 +16,7 @@ class ParrotTest extends TestCase
 {
     public function testSpeedOfEuropeanParrot(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::EUROPEAN, 0, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::EUROPEAN, 0, 0, false, new EuropeanStrategy());
         self::assertSame(12.0, $parrot->getSpeed());
     }
 
@@ -62,7 +65,7 @@ class ParrotTest extends TestCase
 
     public function testGetCryOfEuropeanParrot(): void
     {
-        $parrot = new Parrot(ParrotTypeEnum::EUROPEAN, 0, 0, false);
+        $parrot = new Parrot(ParrotTypeEnum::EUROPEAN, 0, 0, false, new EuropeanStrategy());
         self::assertSame('Sqoork!', $parrot->getCry());
     }
 
