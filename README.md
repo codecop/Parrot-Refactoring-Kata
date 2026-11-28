@@ -1,21 +1,48 @@
-_Support this and all my katas via [Patreon](https://www.patreon.com/EmilyBache)_
+\# SCD-Group-6-Refactoring
 
-Parrot Refactoring Kata
-=======================
 
-Can you spot any code smells in this code? I'll give you a clue - a spot of Pol(l)ymorphism should improve matters!
 
-Refactor this code, take small steps, run the tests often. See how small and beautiful and polymorphic you can make it.
+\## Project Description
 
-I made a [video explaining this kata](https://youtu.be/UxNEHKg_2eA), and videos with worked solutions:
+Refactoring of the Parrot legacy code (Python) from the Parrot Refactoring Kata.
 
-* [in C#](https://youtu.be/IvFX8Ivit1k)
-* [in Java](https://youtu.be/7IT6c8wwHs4)
-* [in Python](https://youtu.be/pO_5DQ3vDtc)
+Focus: Replace Type Code with Polymorphism. External behavior is preserved
 
-There is also a Guided Learning Hour using this exercise: [Everyday Design Improvements in OO Code](https://youtu.be/NCEWAqEFPic)
+and verified by characterization tests.
 
-Acknowlegements
----------------
 
-This code is heavily inspired by one of the examples in Martin Fowler's book "Refactoring". It's a classic, and if it's not on your bookshelf already I suggest you treat yourself to a copy!
+
+\## How to Run
+
+cd Python
+
+python -m pip install -r requirements.txt
+
+python -m pytest
+
+
+
+\## Group Members
+
+| Name | Roll No |
+
+|------|---------|
+
+| Fatima Imran(Group Leader) | (SWEN241101058) |
+
+| Khansa Iftikhar| (SWEN241101082) |
+
+| Fatima Bilal | (SWEN241101067) |
+
+| Wajiha Arfat | (SWEN241101086) |
+
+| Atika Tariq | (SWEN241101056) |
+
+
+
+
+
+\## Changelog
+
+(To be updated in the final release)
+
